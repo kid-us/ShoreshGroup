@@ -20,9 +20,9 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
-    if (previous && latest > previous && latest > 1050) {
+    if (previous && latest > previous && latest > 700) {
       setHidden(true);
-    } else if (previous && latest < previous && latest < 1050) {
+    } else if (previous && latest < previous && latest < 700) {
       setHidden(false);
     }
   });
@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <AnimatePresence>
       <nav
-        className={`fixed z-10 w-full lg:py-5 py-6 lg:px-0 px-5 ${
+        className={`fixed z-10 w-full lg:py-5 py-5 lg:px-0 px-5 ${
           hidden ? "bg-white" : "nav"
         }`}
       >
