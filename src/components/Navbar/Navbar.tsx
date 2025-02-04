@@ -1,16 +1,31 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { assets, navs } from "../../services/nav";
-import { motion } from "motion/react";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "motion/react";
 import Menu from "./Menu";
 
 const Navbar = () => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
-
   const [animationClass, setAnimationClass] = useState<string>(
     "animate__fadeInLeft"
   );
+  const [hidden, setHidden] = useState<boolean>(false);
+
+  const { scrollY } = useScroll();
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (previous && latest > previous && latest > 1050) {
+      setHidden(true);
+    } else if (previous && latest < previous && latest < 1050) {
+      setHidden(false);
+    }
+  });
 
   // Menu Animation
   const handleCloseMenu = () => {
@@ -22,99 +37,111 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-10 w-full lg:py-5 py-6 lg:px-0 px-5">
-      <div className="container mx-auto">
-        <div className="flex justify-between text-white">
-          <motion.a
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-            href="/"
-            className="text-2xl mt-2 uppercase poppins-bold"
+    <AnimatePresence>
+      <nav
+        className={`fixed z-10 w-full lg:py-5 py-6 lg:px-0 px-5 ${
+          hidden ? "bg-white" : "nav"
+        }`}
+      >
+        <div className="container mx-auto">
+          <div
+            className={`flex justify-between ${
+              hidden ? "text-black" : "text-white"
+            }`}
           >
-            <span className="bi-house-fill text-btn"></span> Shoresh Group
-          </motion.a>
-          {/* Large device */}
-          <div className="lg:flex hidden gap-x-14">
-            <div className="mt-2">
-              <motion.button
-                whileHover={{
-                  y: -1,
-                  scale: 1.05,
-                  transition: { duration: 0.5 },
-                }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                onClick={() => (hovered ? setHovered(false) : setHovered(true))}
-                className="relative transition-colors poppins-medium"
-              >
-                Assets{" "}
-                <span
-                  className={`${
-                    hovered ? "bi-chevron-up" : "bi-chevron-down"
-                  } text-sm ms-3`}
-                ></span>
-                {/* Modal shown when hovered */}
-                {hovered && (
-                  <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg py-3 ps-5 text-start">
-                    {assets.map((asset) => (
-                      <Link
-                        key={asset.id}
-                        className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
-                        to="/our-assets"
-                      >
-                        <span className={`${asset.icon} me-2`}></span>
-                        {asset.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </motion.button>
+            <motion.a
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              href="/"
+              className="text-2xl mt-2 uppercase poppins-bold"
+            >
+              <span className="bi-house-fill text-btn"></span> Shoresh Group
+            </motion.a>
+            {/* Large device */}
+            <div className="lg:flex hidden gap-x-14">
+              <div className="mt-2">
+                <motion.button
+                  whileHover={{
+                    y: -1,
+                    scale: 1.05,
+                    transition: { duration: 0.5 },
+                  }}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
+                  onClick={() =>
+                    hovered ? setHovered(false) : setHovered(true)
+                  }
+                  className="relative transition-colors poppins-medium"
+                >
+                  Assets{" "}
+                  <span
+                    className={`${
+                      hovered ? "bi-chevron-up" : "bi-chevron-down"
+                    } text-sm ms-3`}
+                  ></span>
+                  {/* Modal shown when hovered */}
+                  {hovered && (
+                    <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg py-3 ps-5 text-start">
+                      {assets.map((asset) => (
+                        <Link
+                          key={asset.id}
+                          className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
+                          to="/our-assets"
+                        >
+                          <span className={`${asset.icon} me-2`}></span>
+                          {asset.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </motion.button>
+              </div>
+
+              {/* Links */}
+              {navs.map((n, index) => (
+                <motion.a
+                  key={n.id || index}
+                  whileHover={{
+                    y: -1,
+                    scale: 1.05,
+                    transition: { duration: 0.5 },
+                  }}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
+                  href={n.path}
+                  className={`relative transition-colors poppins-medium ${
+                    n.name === "Login"
+                      ? "border px-14 py-2 text-sm text-white bg-btn rounded-lg poppins-bold"
+                      : "mt-2"
+                  }`}
+                >
+                  {n.name}
+                </motion.a>
+              ))}
             </div>
 
-            {/* Links */}
-            {navs.map((n, index) => (
-              <motion.a
-                key={n.id || index}
-                whileHover={{
-                  y: -1,
-                  scale: 1.05,
-                  transition: { duration: 0.5 },
-                }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                href={n.path}
-                className={`relative transition-colors poppins-medium ${
-                  n.name === "Login"
-                    ? "border px-14 py-2 text-sm text-white bg-btn rounded-lg poppins-bold"
-                    : "mt-2"
-                }`}
-              >
-                {n.name}
-              </motion.a>
-            ))}
-          </div>
-
-          {/* Small device */}
-          <div className="flex lg:hidden gap-x-5">
-            <button
-              onClick={() => setMenu(true)}
-              className="bi-list text-2xl"
-            ></button>
+            {/* Small device */}
+            <div className="flex lg:hidden gap-x-5">
+              <button
+                onClick={() => setMenu(true)}
+                className="bi-list text-2xl"
+              ></button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Menu */}
-      {menu && (
-        <Menu
-          onClose={() => handleCloseMenu()}
-          menuAnimation={animationClass}
-        />
-      )}
-    </div>
+        {/* Menu */}
+        {menu && (
+          <Menu
+            onClose={() => handleCloseMenu()}
+            menuAnimation={animationClass}
+          />
+        )}
+      </nav>
+    </AnimatePresence>
   );
 };
 

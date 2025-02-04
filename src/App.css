@@ -1,3 +1,15 @@
+.nav {
+  background: rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -11,7 +23,7 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -2;
 }
