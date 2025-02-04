@@ -10,6 +10,7 @@ module.exports = {
           200: "var(--color-link-200)",
         },
         background: "var(--color-bg)",
+        btn: "oklch(0.769 0.188 70.08);",
       },
     },
   },

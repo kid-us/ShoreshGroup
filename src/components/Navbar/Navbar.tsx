@@ -1,43 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { assets, navs } from "../../services/nav";
 import { motion } from "motion/react";
 import Menu from "./Menu";
 
 const Navbar = () => {
-  const [savedTheme, setSavedTheme] = useState<string>("");
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-
-    if (storedTheme) {
-      document.body.classList.add(storedTheme);
-      setSavedTheme(storedTheme);
-    } else {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.body.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        setSavedTheme("dark");
-      } else {
-        document.body.classList.add("light");
-        localStorage.setItem("theme", "light");
-        setSavedTheme("light");
-      }
-    }
-  }, []); // Run once on mount
-
-  const toggleTheme = () => {
-    const currentTheme = localStorage.getItem("theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-    // Update state and document body classes
-    document.body.classList.remove("dark", "light");
-    document.body.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
-    setSavedTheme(newTheme);
-  };
 
   const [animationClass, setAnimationClass] = useState<string>(
     "animate__fadeInLeft"
@@ -53,12 +22,11 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <div className="lg:py-7 py-6">
-        {/* border border-zinc-700 rounded-b-[40px] rounded-t-2xl px-8 */}
-        <div className="flex justify-between">
-          <Link to="/" className="text-2xl text-blue-500">
-            <span className="bi-house-fill"></span> Shoresh Group
+    <div className="fixed z-10 w-full lg:py-5 py-6 lg:px-0 px-5">
+      <div className="container mx-auto">
+        <div className="flex justify-between text-white">
+          <Link to="/" className="text-2xl mt-2 uppercase poppins-bold">
+            <span className="bi-house-fill text-btn"></span> Shoresh Group
           </Link>
           {/* Large device */}
           <div className="lg:flex hidden gap-x-14">
@@ -69,9 +37,8 @@ const Navbar = () => {
                   scale: 1.05,
                   transition: { duration: 0.5 },
                 }}
-                onMouseEnter={() => setHovered(true)}
                 onClick={() => (hovered ? setHovered(false) : setHovered(true))}
-                className="relative transition-colors text-link-100 hover:text-link-200 text-start"
+                className="relative transition-colors poppins-medium"
               >
                 Assets{" "}
                 <span
@@ -81,16 +48,14 @@ const Navbar = () => {
                 ></span>
                 {/* Modal shown when hovered */}
                 {hovered && (
-                  <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg p-3">
+                  <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg py-3 ps-5 text-start">
                     {assets.map((asset) => (
                       <Link
                         key={asset.id}
                         className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
                         to="/our-assets"
                       >
-                        <span
-                          className={`${asset.icon} me-2 font-light`}
-                        ></span>
+                        <span className={`${asset.icon} me-2`}></span>
                         {asset.name}
                       </Link>
                     ))}
@@ -109,24 +74,15 @@ const Navbar = () => {
                   transition: { duration: 0.5 },
                 }}
                 href={n.path}
-                className={`relative transition-colors text-link-100 hover:text-link-200 ${
+                className={`relative transition-colors poppins-medium ${
                   n.name === "Login"
-                    ? "border px-14 py-2 text-sm rounded"
-                    : "text-[17px] mt-2"
+                    ? "border px-14 py-2 text-sm text-white bg-btn rounded-lg poppins-bold"
+                    : "mt-2"
                 }`}
               >
                 {n.name}
               </motion.a>
             ))}
-
-            <button
-              onClick={toggleTheme}
-              className={`${
-                savedTheme === "light"
-                  ? "bi-moon-fill"
-                  : "bi-brightness-high text-xl"
-              }`}
-            ></button>
           </div>
 
           {/* Small device */}
@@ -134,14 +90,6 @@ const Navbar = () => {
             <button
               onClick={() => setMenu(true)}
               className="bi-list text-2xl"
-            ></button>
-            <button
-              onClick={toggleTheme}
-              className={`${
-                savedTheme === "light"
-                  ? "bi-moon-fill"
-                  : "bi-brightness-high text-xl"
-              }`}
             ></button>
           </div>
         </div>
@@ -154,7 +102,7 @@ const Navbar = () => {
           menuAnimation={animationClass}
         />
       )}
-    </>
+    </div>
   );
 };
 
