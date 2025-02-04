@@ -1,11 +1,14 @@
+import Container from "../components/Container/Container";
 import Navbar from "../components/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <div className="container mx-auto">
+    <Container>
       <Navbar />
-      <p>Home</p>
-    </div>
+      <div className="mt-20">
+        <p>Home</p>
+      </div>
+    </Container>
   );
 };
 
