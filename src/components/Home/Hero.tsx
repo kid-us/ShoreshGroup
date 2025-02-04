@@ -13,7 +13,7 @@ const Hero = () => {
             <motion.h1
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="text-white lg:text-7xl text-4xl w-80 font-bold"
             >
               Revitalizing
@@ -23,7 +23,7 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
               className="text-gray-200 mt-5 poppins-semibold lg:text-md text-sm"
             >
               Invest passively like an LP, but earn like a GP with our Co-GP
@@ -33,7 +33,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
               className="flex text-white mt-10 gap-x-6"
             >
               <Link to="/" className="bi-facebook"></Link>

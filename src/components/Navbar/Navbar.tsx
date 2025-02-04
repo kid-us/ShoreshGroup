@@ -25,9 +25,15 @@ const Navbar = () => {
     <div className="fixed z-10 w-full lg:py-5 py-6 lg:px-0 px-5">
       <div className="container mx-auto">
         <div className="flex justify-between text-white">
-          <Link to="/" className="text-2xl mt-2 uppercase poppins-bold">
+          <motion.a
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            href="/"
+            className="text-2xl mt-2 uppercase poppins-bold"
+          >
             <span className="bi-house-fill text-btn"></span> Shoresh Group
-          </Link>
+          </motion.a>
           {/* Large device */}
           <div className="lg:flex hidden gap-x-14">
             <div className="mt-2">
@@ -37,6 +43,9 @@ const Navbar = () => {
                   scale: 1.05,
                   transition: { duration: 0.5 },
                 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 onClick={() => (hovered ? setHovered(false) : setHovered(true))}
                 className="relative transition-colors poppins-medium"
               >
@@ -73,6 +82,9 @@ const Navbar = () => {
                   scale: 1.05,
                   transition: { duration: 0.5 },
                 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 href={n.path}
                 className={`relative transition-colors poppins-medium ${
                   n.name === "Login"
