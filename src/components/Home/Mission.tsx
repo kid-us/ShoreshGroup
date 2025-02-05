@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 import { motion } from "motion/react";
 import { aim } from "../../assets";
 
-interface Mission {
+export interface Mission {
   id: number;
   name: string;
 }
@@ -38,11 +38,13 @@ const Mission = () => {
 
   return (
     <Container>
-      <div className="lg:grid grid-cols-3 my-50 gap-x-8">
+      <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
         <div className="flex items-center">
           <div>
-            <h1 className="text-3xl poppins-bold">Our</h1>
-            <h1 className="text-3xl poppins-bold text-btn">Mission</h1>
+            <h1 className="lg:text-3xl text-2xl poppins-bold">Our</h1>
+            <h1 className="lg:text-3xl text-2xl poppins-bold text-btn">
+              Mission
+            </h1>
             <p className="mt-5 text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
               suscipit, voluptas placeat magni unde at deserunt possimus a quas
@@ -69,7 +71,7 @@ const Mission = () => {
                 onClick={() => setMissionId(m.id)}
                 className={`${
                   m.id === missionId
-                    ? "col-span-3 border-2 border-amber-400"
+                    ? "lg:col-span-3 col-span-4 border-2 border-amber-400"
                     : "col-span-4 border border-gray-300"
                 } shadow rounded-xl flex justify-center items-center p-8`}
               >

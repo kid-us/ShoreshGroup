@@ -12,6 +12,12 @@ import we4 from "./we/4.jpg";
 import arrow from "./arrow.svg";
 import aim from "./target.png";
 
+import excellence from "./value/excellence.png";
+import accountability from "./value/accountability.png";
+import innovation from "./value/innovation.png";
+import community from "./value/community.png";
+import transparency from "./value/Transparency.png";
+
 export {
   hero,
   hero1,
@@ -26,4 +32,9 @@ export {
   we4,
   arrow,
   aim,
+  accountability,
+  community,
+  excellence,
+  innovation,
+  transparency,
 };

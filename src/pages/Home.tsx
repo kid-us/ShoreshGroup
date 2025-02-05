@@ -1,3 +1,4 @@
+import CoreValues from "../components/Home/CoreValues";
 import Hero from "../components/Home/Hero";
 import Mission from "../components/Home/Mission";
 import WhoWeAre from "../components/Home/WhoWeAre";
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <WhoWeAre />
       <Mission />
+      <CoreValues />
     </main>
   );
 };
