@@ -117,7 +117,7 @@ const Navbar = () => {
                   href={n.path}
                   className={`relative transition-colors poppins-medium ${
                     n.name === "Login"
-                      ? "bg-btn  flex items-center font-semibold uppercase text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] translate-x-[0px] h-11 px-14"
+                      ? "bg-btn flex items-center font-semibold uppercase text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] h-11 px-14"
                       : "mt-2"
                   }`}
                 >
