@@ -9,6 +9,7 @@ import Container from "../Container/Container";
 import { AnimatedBeam, Circle } from "./AnimatedBeam";
 import { useRef } from "react";
 import { Mission } from "./Mission";
+import { motion } from "motion/react";
 
 interface Value extends Mission {
   icon: string;
@@ -190,12 +191,20 @@ const CoreValues = () => {
       {/* On Small device */}
       <div className="lg:hidden grid gap-y-5">
         <h1 className="text-2xl poppins-bold">Our Values</h1>
-        {values.map((value) => (
-          <div className="border border-amber-400 rounded-xl bg-white  p-3 shadow hover:bg-black hover:text-white hover:shadow-amber-500 hover:shadow-lg transition-colors">
+        {values.map((value, index) => (
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { delay: index * 0.01, duration: 0.5 },
+            }}
+            className="border border-amber-400 rounded-xl bg-white  p-3 shadow hover:bg-black hover:text-white hover:shadow-amber-500 hover:shadow-lg transition-colors"
+          >
             <img src={value.icon} alt="logo" />
             <p className="poppins-semibold text-lg mt-3">{value.name}</p>
             <p className="text-xs mt-2">{value.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </Container>
