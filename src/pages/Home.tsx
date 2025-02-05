@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import CoreValues from "../components/Home/CoreValues";
 import Hero from "../components/Home/Hero";
 import Mission from "../components/Home/Mission";
@@ -14,6 +15,7 @@ const Home = () => {
       <Mission />
       <CoreValues />
       <Testimony />
+      <Footer />
     </main>
   );
 };
