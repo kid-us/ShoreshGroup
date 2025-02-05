@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <Container>
       <div className="border-t border-b border-gray-200">
-        <div className="lg:flex justify-between lg:my-10 mt-10 mb-6">
+        <div className="lg:flex justify-between lg:mt-10 lg:mb-5 mt-10 mb-6">
           <div className="lg:flex items-center">
-            <div className="grid grid-cols-2 lg:space-x-20 gap-y-3">
+            <div className="lg:block grid grid-cols-2 lg:space-x-20 gap-y-3">
               {footer.map((nav) => (
                 <Link
                   to={nav.path}
@@ -18,7 +18,21 @@ const Footer = () => {
                   {nav.name}
                 </Link>
               ))}
-              <p className="lg:block hidden text-xs text-gray-500 mt-3">
+              <div className="space-x-20 mt-5 flex">
+                <Link
+                  to={"/"}
+                  className="text-gray-500 text-sm hover:text-black transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  to={"/"}
+                  className="text-gray-500 text-sm hover:text-black transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </div>
+              <p className="lg:block hidden text-xs text-gray-500 mt-6">
                 &copy;2025 SHORESH GROUP. All right reserved.
               </p>
             </div>
