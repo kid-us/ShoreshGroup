@@ -8,6 +8,7 @@ import {
   useScroll,
 } from "motion/react";
 import Menu from "./Menu";
+import { logo } from "../../assets";
 
 const Navbar = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -54,9 +55,11 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               href="/"
-              className="text-2xl mt-2 uppercase poppins-bold"
+              className="text-2xl uppercase poppins-bold flex gap-x-5"
             >
-              <span className="bi-house-fill text-btn"></span> Shoresh Group
+              <img src={logo} alt="Logo" className="w-13" />
+
+              <span className="items-center flex">Shoresh Group</span>
             </motion.a>
             {/* Large device */}
             <div className="lg:flex hidden gap-x-14">
@@ -114,7 +117,7 @@ const Navbar = () => {
                   href={n.path}
                   className={`relative transition-colors poppins-medium ${
                     n.name === "Login"
-                      ? "border px-14 py-2 text-sm text-white bg-btn rounded-lg poppins-bold"
+                      ? "bg-btn  flex items-center font-semibold uppercase text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] translate-x-[0px] h-11 px-14"
                       : "mt-2"
                   }`}
                 >

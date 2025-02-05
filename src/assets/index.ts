@@ -11,6 +11,7 @@ import we3 from "./we/3.jpg";
 import we4 from "./we/4.jpg";
 import arrow from "./arrow.svg";
 import aim from "./target.png";
+import logo from "./Logo.png";
 
 import excellence from "./value/excellence.png";
 import accountability from "./value/accountability.png";
@@ -37,4 +38,5 @@ export {
   excellence,
   innovation,
   transparency,
+  logo,
 };
