@@ -37,57 +37,65 @@ const Mission = () => {
   }, []);
 
   return (
-    <Container>
-      <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
-        <div className="flex items-center">
-          <div>
-            <h1 className="lg:text-3xl text-2xl poppins-bold">Our</h1>
-            <h1 className="lg:text-3xl text-2xl poppins-bold text-btn">
-              Mission
-            </h1>
-            <p className="mt-5 text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              suscipit, voluptas placeat magni unde at deserunt possimus a quas
-              vero laborum enim optio assumenda aspernatur dolore voluptatibus
-              et illo facilis.
-            </p>
-
-            <p className="mt-4 italic">
-              Lorem ipsum, dolor sit amet consectetur adipisicing.
-            </p>
-          </div>
-        </div>
-
-        <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-5 lg:mx-10 lg:mt-0 mt-8">
-          {mission.map((m) => (
-            <>
-              {m.id === missionId && (
-                <motion.div layoutId="lol" className="lg:block hidden h-full">
-                  <img src={aim} alt="target" />
-                </motion.div>
-              )}
-              <motion.div
-                layout
-                onClick={() => setMissionId(m.id)}
-                className={`${
-                  m.id === missionId
-                    ? "lg:col-span-3 col-span-4 border-2 border-amber-400"
-                    : "col-span-4 border border-gray-300"
-                } shadow rounded-xl flex justify-center items-center p-8`}
-              >
-                <p
-                  className={`${
-                    m.id === missionId ? "text-black" : "text-gray-800"
-                  }`}
-                >
-                  {m.name}
+    <div className="overflow-hidden lg:mb-28 lg:mt-10">
+      <div className="relative lg:h-[85vh] h-auto w-full">
+        <div className="absolute lg:-top-20 -left-96 bg-amber-400 w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
+        <Container>
+          <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
+            <div className="flex items-center">
+              <div className="mt-20">
+                <h1 className="lg:text-3xl text-2xl poppins-bold">Our</h1>
+                <h1 className="lg:text-3xl text-2xl poppins-bold text-white">
+                  Mission
+                </h1>
+                <p className="mt-5 lg:text-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, suscipit, voluptas placeat magni unde at deserunt
+                  possimus a quas vero laborum enim optio assumenda aspernatur
+                  dolore voluptatibus et illo facilis.
                 </p>
-              </motion.div>
-            </>
-          ))}
-        </div>
+
+                <p className="mt-4 italic">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+
+            <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-5 lg:mx-10 lg:mt-0 mt-8">
+              {mission.map((m) => (
+                <>
+                  {m.id === missionId && (
+                    <motion.div
+                      layoutId="lol"
+                      className="lg:block hidden h-full"
+                    >
+                      <img src={aim} alt="target" />
+                    </motion.div>
+                  )}
+                  <motion.div
+                    layout
+                    onClick={() => setMissionId(m.id)}
+                    className={`${
+                      m.id === missionId
+                        ? "lg:col-span-3 col-span-4 border-2 border-white"
+                        : "col-span-4 border-2 border-black"
+                    } shadow rounded-xl flex justify-center items-center p-8`}
+                  >
+                    <p
+                      className={`${
+                        m.id === missionId ? "text-black" : " text-white"
+                      }`}
+                    >
+                      {m.name}
+                    </p>
+                  </motion.div>
+                </>
+              ))}
+            </div>
+          </div>
+        </Container>
       </div>
-    </Container>
+    </div>
   );
 };
 
