@@ -61,8 +61,8 @@ const Mission = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-5 lg:mx-10 lg:mt-0 mt-8">
-              {mission.map((m) => (
+            <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-6 lg:mx-10 lg:mt-0 mt-8">
+              {mission.map((m, index) => (
                 <>
                   {m.id === missionId && (
                     <motion.div
@@ -74,6 +74,11 @@ const Mission = () => {
                   )}
                   <motion.div
                     layout
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: { delay: 0.05 * index, duration: 0.5 },
+                    }}
                     onClick={() => setMissionId(m.id)}
                     className={`${
                       m.id === missionId
