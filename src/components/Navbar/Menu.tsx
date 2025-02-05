@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { assets, navs } from "../../services/nav";
+import { logo } from "../../assets";
 
 interface Props {
   menuAnimation: string;
@@ -15,9 +16,15 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
         className={`fixed z-50 top-0 left-0 w-[95%] h-screen bg-white animate__animated ${menuAnimation}`}
       >
         <div className="lg:py-7 py-6 px-5">
-          {/* border border-zinc-700 rounded-b-[40px] rounded-t-2xl px-8 */}
-          <div className="flex justify-between text-xl mb-20">
-            <Link to="/">Logo</Link>
+          <div className="flex justify-between text-xl mb-10">
+            <a
+              href="/"
+              className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
+            >
+              <img src={logo} alt="Logo" className="w-13" />
+
+              <span className="items-center flex">Shoresh Group</span>
+            </a>
 
             <button onClick={onClose} className="bi-x text-2xl"></button>
           </div>
@@ -41,12 +48,18 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
                 to={n.path}
                 className={`block text-lg poppins-semibold${
                   n.name === "Login" &&
-                  "border px-14 text-center rounded-xl poppins-semibold bg-btn py-3"
+                  "border px-14 text-center poppins-semibold bg-btn flex justify-center items-center h-13 text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] mt-10"
                 }`}
               >
                 {n.name}
               </Link>
             ))}
+          </div>
+
+          <div className="absolute bottom-4 w-full">
+            <p className="text-sm text-gray-800">
+              &copy;2025 SHORESH GROUP. All right reserved.
+            </p>
           </div>
         </div>
       </div>

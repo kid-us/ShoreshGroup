@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <AnimatePresence>
       <nav
-        className={`fixed z-20 w-full lg:py-5 py-5 lg:px-0 px-5 ${
+        className={`fixed z-20 w-full lg:py-5 py-3 lg:px-0 px-5 ${
           hidden ? "bg-white" : "nav"
         }`}
       >
@@ -55,7 +55,7 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               href="/"
-              className="text-2xl uppercase poppins-bold flex gap-x-5"
+              className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
             >
               <img src={logo} alt="Logo" className="w-13" />
 
