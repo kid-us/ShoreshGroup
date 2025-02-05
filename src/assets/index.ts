@@ -10,6 +10,7 @@ import we2 from "./we/2.jpg";
 import we3 from "./we/3.jpg";
 import we4 from "./we/4.jpg";
 import arrow from "./arrow.svg";
+import aim from "./target.png";
 
 export {
   hero,
@@ -24,4 +25,5 @@ export {
   we3,
   we4,
   arrow,
+  aim,
 };
