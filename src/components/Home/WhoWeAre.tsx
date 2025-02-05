@@ -13,7 +13,7 @@ const WhoWeAre = () => {
       <div className="grid lg:grid-cols-2 gap-x-10 my-20">
         <div className="flex items-center">
           <div>
-            <h1 className="text-3xl poppins-bold">Who We Are</h1>
+            <h1 className="lg:text-3xl text-2xl poppins-bold">Who We Are</h1>
             <p className="text-xl leading-9 mt-5">
               {words.map((word, index) => (
                 <motion.span
