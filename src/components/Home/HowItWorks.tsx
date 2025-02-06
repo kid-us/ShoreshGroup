@@ -69,7 +69,9 @@ const HowItWorks = () => {
               </div>
               <p className="font-bold text-xl w-32">{s.title}</p>
 
-              <p className="text-sm pt-8 border-t-2 mt-4">{s.info}</p>
+              <p className="text-sm pt-8 border-t-2 border-gray-400 mt-4">
+                {s.info}
+              </p>
             </motion.div>
           ))}
         </div>
