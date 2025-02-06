@@ -15,7 +15,7 @@ import ImageFromFrames from "./ImageFrame";
 const Hero = () => {
   const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
   return (
-    <div className="hero h-screen  relative">
+    <div className="hero h-[100dvh]  relative">
       <div className="lg:block hidden">
         <video src={heroVid} autoPlay muted loop></video>
       </div>
