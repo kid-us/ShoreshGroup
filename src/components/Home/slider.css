@@ -1,10 +1,10 @@
-.white-gradient {
+/* .white-gradient {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-}
+} */
 
 @keyframes scrollRight {
   0% {
@@ -35,6 +35,12 @@
     #000 70%,
     transparent 150%
   );
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    mask-image: none;
+  }
 }
 
 .slider::after {
