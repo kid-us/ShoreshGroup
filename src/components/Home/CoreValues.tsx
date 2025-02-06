@@ -158,7 +158,7 @@ const CoreValues = () => {
           fromRef={div7Ref}
           toRef={div4Ref}
           curvature={75}
-          endYOffset={30}
+          endYOffset={10}
           reverse
           dotted
           gradientStartColor="#00adee"
