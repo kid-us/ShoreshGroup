@@ -13,7 +13,7 @@ const Footer = () => {
               {footer.map((nav) => (
                 <Link
                   to={nav.path}
-                  className="text-gray-700 hover:text-black transition-colors"
+                  className="text-gray-700 hover:text-black transition-colors text-sm"
                 >
                   {nav.name}
                 </Link>
