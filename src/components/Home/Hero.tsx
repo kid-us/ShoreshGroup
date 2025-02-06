@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="hero lg:h-screen h-[90vh] relative">
+    <div className="hero lg:h-screen h-[90dvh] relative">
       <video src={heroVid} autoPlay muted loop></video>
       <Container>
         <div className="flex items-center h-screen">
