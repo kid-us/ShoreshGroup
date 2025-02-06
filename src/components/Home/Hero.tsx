@@ -1,12 +1,28 @@
 import { motion } from "motion/react";
-import { heroVid } from "../../assets";
+import {
+  heroVid,
+  hero2,
+  hero3,
+  hero4,
+  hero5,
+  hero6,
+  hero7,
+} from "../../assets";
 import Container from "../Container/Container";
 import { Link } from "react-router-dom";
+import ImageFromFrames from "./ImageFrame";
 
 const Hero = () => {
+  const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
   return (
-    <div className="hero lg:h-screen h-[90dvh] relative">
-      <video src={heroVid} autoPlay muted loop></video>
+    <div className="hero h-screen  relative">
+      <div className="lg:block hidden">
+        <video src={heroVid} autoPlay muted loop></video>
+      </div>
+      <div className="lg:hidden block">
+        <ImageFromFrames frames={frames} fps={0.3} />
+      </div>
+
       <Container>
         <div className="flex items-center h-screen">
           <div className="mt-40">

@@ -79,7 +79,7 @@ const Mission = () => {
                       opacity: 1,
                       transition: { delay: 0.05 * index, duration: 0.5 },
                     }}
-                    onClick={() => setMissionId(m.id)}
+                  onClick={() => setMissionId(m.id)}
                     className={`${
                       m.id === missionId
                         ? "lg:col-span-3 col-span-4 border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded"

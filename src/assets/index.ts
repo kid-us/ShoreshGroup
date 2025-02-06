@@ -1,16 +1,21 @@
-import hero from "./hero.png";
-import hero22 from "./hero2.jpg";
-import hero1 from "./1.jpg";
-import hero2 from "./2.jpg";
-import hero3 from "./3.jpg";
 import heroVid from "./hero.mp4";
-import side from "./side.jpg";
+
+import hero from "./hero.png";
+import hero2 from "./hero2.jpg";
+import hero3 from "./hero3.jpg";
+import hero4 from "./hero4.jpg";
+import hero5 from "./hero5.jpg";
+import hero6 from "./hero6.jpg";
+import hero7 from "./hero7.jpg";
+
 import we1 from "./we/1.jpg";
 import we2 from "./we/2.jpg";
 import we3 from "./we/3.jpg";
 import we4 from "./we/4.jpg";
+
 import arrow from "./arrow.svg";
 import aim from "./target.png";
+
 import logo from "./Logo.png";
 
 import excellence from "./value/excellence.png";
@@ -20,23 +25,33 @@ import community from "./value/community.png";
 import transparency from "./value/transparency.png";
 
 export {
+  // Hero vid
+  heroVid,
+
+  // Hero img
   hero,
-  hero1,
   hero2,
   hero3,
-  hero22,
-  heroVid,
-  side,
+  hero4,
+  hero5,
+  hero6,
+  hero7,
+
+  // Team
   we1,
   we2,
   we3,
   we4,
   arrow,
   aim,
+
+  // Value
   accountability,
   community,
   excellence,
   innovation,
   transparency,
+
+  // Logo
   logo,
 };
