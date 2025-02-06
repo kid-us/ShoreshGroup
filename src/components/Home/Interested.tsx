@@ -26,7 +26,7 @@ const Interested = () => {
           </form>
         </div>
 
-        <div className="flex mt-10 gap-x-14">
+        <div className="flex lg:mt-10 mt-14 gap-x-14">
           <Link
             to="/"
             className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-facebook"
