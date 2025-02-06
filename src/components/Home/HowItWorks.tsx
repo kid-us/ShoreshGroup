@@ -33,17 +33,21 @@ const HowItWorks = () => {
 
   return (
     <Container>
-      <div className="mt-32">
-        <h1 className="lg:text-3xl text-2xl poppins-bold text-center mb-20">
+      <div className="lg:mt-32">
+        <h1 className="lg:text-3xl text-2xl poppins-bold text-center lg:mb-5 mb-3">
           How it works
         </h1>
-        <div className="grid lg:grid-cols-3 lg:gap-x-10 gap-y-5 lg:mx-20 mb-10">
+        <p className="text-center text-gray-500 lg:mb-20 mb-10">
+          Seamless Property Transactions with Transparent Profit Sharing
+        </p>
+
+        <div className="grid lg:grid-cols-3 lg:gap-x-10 gap-y-5 lg:mx-20">
           {steps.map((s) => (
             <motion.div
               initial={{ scale: 0, opacity: 0, y: 20 }}
               whileHover={{
                 scale: 1.03,
-                transition: { delay: 0.1, duration: 0.5 },
+                transition: { delay: 0.1, duration: 1 },
               }}
               whileInView={{
                 opacity: 1,

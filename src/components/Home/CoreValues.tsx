@@ -189,7 +189,7 @@ const CoreValues = () => {
       </div>
 
       {/* On Small device */}
-      <div className="lg:hidden grid gap-y-5">
+      <div className="lg:hidden grid gap-y-5 mt-10">
         <h1 className="text-2xl poppins-bold">Our Values</h1>
         {values.map((value, index) => (
           <motion.div
