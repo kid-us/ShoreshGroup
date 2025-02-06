@@ -82,17 +82,11 @@ const Mission = () => {
                     onClick={() => setMissionId(m.id)}
                     className={`${
                       m.id === missionId
-                        ? "lg:col-span-3 col-span-4 border-2 border-white"
-                        : "col-span-4 border-2 border-black"
-                    } shadow rounded-xl flex justify-center items-center p-8`}
+                        ? "lg:col-span-3 col-span-4 border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded"
+                        : "col-span-4 border border-black/20 rounded"
+                    }  flex justify-center items-center p-8`}
                   >
-                    <p
-                      className={`${
-                        m.id === missionId ? "text-black" : " text-white"
-                      }`}
-                    >
-                      {m.name}
-                    </p>
+                    <p className={``}>{m.name}</p>
                   </motion.div>
                 </>
               ))}
