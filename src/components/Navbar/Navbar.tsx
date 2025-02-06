@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <AnimatePresence>
       <nav
-        className={`fixed z-20 w-full lg:py-5 py-3 lg:px-0 px-5 ${
+        className={`fixed z-20 w-full lg:py-4 py-3 lg:px-0 px-5 ${
           hidden ? "bg-white" : "nav"
         }`}
       >
@@ -59,7 +59,9 @@ const Navbar = () => {
             >
               <img src={logo} alt="Logo" className="w-13" />
 
-              <span className="items-center flex">Shoresh Group</span>
+              <span className="items-center flex logo-font logo-font uppercase">
+                Shoresh Group
+              </span>
             </motion.a>
             {/* Large device */}
             <div className="lg:flex hidden gap-x-14">
@@ -104,25 +106,17 @@ const Navbar = () => {
 
               {/* Links */}
               {navs.map((n, index) => (
-                <motion.a
+                <Link
+                  to={n.path}
                   key={n.id || index}
-                  whileHover={{
-                    y: -1,
-                    scale: 1.05,
-                    transition: { duration: 0.5 },
-                  }}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.5 }}
-                  href={n.path}
                   className={`relative transition-colors poppins-medium ${
                     n.name === "Login"
-                      ? "bg-btn flex items-center font-semibold uppercase text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] h-11 px-14"
+                      ? "bg-btn flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] h-10 px-14 hover:shadow-none rounded"
                       : "mt-2"
                   }`}
                 >
                   {n.name}
-                </motion.a>
+                </Link>
               ))}
             </div>
 

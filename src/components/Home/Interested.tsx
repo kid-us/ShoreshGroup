@@ -16,10 +16,10 @@ const Interested = () => {
             <div className="lg:flex gap-x-8 mt-3">
               <input
                 type="email"
-                className="focus:outline-hidden border border-gray-400 h-13 rounded-lg lg:w-80 w-full px-5"
+                className="focus:outline-hidden border border-gray-400 h-11 rounded-lg lg:w-80 w-full px-5"
                 placeholder="Email address"
               />
-              <button className="bg-btn flex items-center font-semibold uppercase text-white transition-all duration-300  translate-y-[-4px] shadow-[3px_3px_0px_black] translate-x-[0px] h-13 lg:px-14 px-32 active:shadow-none lg:w-auto w-full lg:mt-0 mt-4 ">
+              <button className="bg-btn flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] hover:shadow-none h-11 lg:px-14 px-32 active:shadow-none lg:w-auto w-full lg:mt-0 mt-4 rounded">
                 Subscribe
               </button>
             </div>

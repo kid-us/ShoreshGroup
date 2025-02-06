@@ -40,7 +40,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-x-3 lg:mt-0 my-8">
             <img src={logo} alt="Logo" className="w-16 h-16" />
-            <p className="flex items-center text-2xl font-extrabold">
+            <p className="flex items-center text-2xl font-extrabold logo-font uppercase">
               SHORESH GROUP
             </p>
           </div>
