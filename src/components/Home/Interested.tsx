@@ -29,19 +29,19 @@ const Interested = () => {
         <div className="flex mt-10 gap-x-14">
           <Link
             to="/"
-            className="text-4xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-facebook"
+            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-facebook"
           ></Link>
           <Link
             to="/"
-            className="text-4xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-instagram"
+            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-instagram"
           ></Link>
           <Link
             to="/"
-            className="text-4xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-linkedin"
+            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-linkedin"
           ></Link>
           <Link
             to="/"
-            className="text-4xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-twitter-x"
+            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-twitter-x"
           ></Link>
         </div>
       </div>

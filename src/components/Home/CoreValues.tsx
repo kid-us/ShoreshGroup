@@ -57,7 +57,7 @@ const CoreValues = () => {
     <Container>
       {/* Only on Large device */}
       <div
-        className="relative lg:flex hidden w-full lg:max-w-[100%] mx-auto items-center justify-center mt-2 mb-6"
+        className="relative lg:flex hidden w-full lg:max-w-[100%] mx-auto items-center justify-center mt-2 mb-6 overflow-hidden"
         ref={containerRef}
       >
         <div className="flex h-full w-full flex-col items-stretch justify-between lg:gap-8">
