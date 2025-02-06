@@ -20,7 +20,7 @@ const Hero = () => {
         <video src={heroVid} autoPlay muted loop></video>
       </div>
       <div className="lg:hidden block">
-        <ImageFromFrames frames={frames} fps={0.3} />
+        <ImageFromFrames frames={frames} fps={0.4} />
       </div>
 
       <Container>
