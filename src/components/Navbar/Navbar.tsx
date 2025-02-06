@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <AnimatePresence>
       <nav
-        className={`fixed z-20 w-full lg:py-4 py-3 lg:px-0 px-5 ${
+        className={`fixed z-20 w-full lg:py-4 py-3 ${
           hidden ? "bg-white" : "nav"
         }`}
       >

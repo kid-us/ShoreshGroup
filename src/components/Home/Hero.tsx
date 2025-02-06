@@ -30,7 +30,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-white lg:text-7xl md:text-5xl text-4xl w-80 font-bold"
+              className="text-white lg:text-6xl md:text-5xl text-4xl w-80 font-bold"
             >
               Revitalizing
               <span className="text-btn"> Assets</span>, Empowering
