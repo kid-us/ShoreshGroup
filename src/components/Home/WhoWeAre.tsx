@@ -32,8 +32,9 @@ const WhoWeAre = () => {
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
-                transition: { delay: 0.4, duration: 1.5 },
+                transition: { delay: 0.2, duration: 1.5 },
               }}
+              viewport={{ once: true }}
               src={arrow}
               alt="Arrow"
               className="h-32 object-contain w-full"
@@ -49,8 +50,8 @@ const WhoWeAre = () => {
               transition={{
                 delay: 0.2,
                 duration: 0.5,
-                ease: "easeInOut",
               }}
+              viewport={{ once: true }}
               className="relative rounded-xl overflow-hidden"
             >
               <img
@@ -74,8 +75,8 @@ const WhoWeAre = () => {
               transition={{
                 delay: 0.2,
                 duration: 0.5,
-                ease: "easeInOut",
               }}
+              viewport={{ once: true }}
               className="relative rounded-xl overflow-hidden"
             >
               <img
@@ -102,8 +103,8 @@ const WhoWeAre = () => {
               transition={{
                 delay: 0.2,
                 duration: 0.5,
-                ease: "easeInOut",
               }}
+              viewport={{ once: true }}
               className="relative rounded-xl overflow-hidden"
             >
               <img
@@ -128,8 +129,8 @@ const WhoWeAre = () => {
               transition={{
                 delay: 0.2,
                 duration: 0.5,
-                ease: "easeInOut",
               }}
+              viewport={{ once: true }}
               className="relative rounded-xl overflow-hidden"
             >
               <img
