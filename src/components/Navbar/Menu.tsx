@@ -26,7 +26,10 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
               <span className="items-center flex logo-font">Shoresh Group</span>
             </a>
 
-            <button onClick={onClose} className="bi-x text-2xl"></button>
+            <button
+              onClick={onClose}
+              className="bi-chevron-left text-2xl"
+            ></button>
           </div>
 
           {/* Links */}
