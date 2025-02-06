@@ -24,6 +24,10 @@ import innovation from "./value/innovation.png";
 import community from "./value/community.png";
 import transparency from "./value/transparency.png";
 
+import invest from "./investment.png";
+import buy from "./buy.png";
+import sale from "./sale.png";
+
 export {
   // Hero vid
   heroVid,
@@ -54,4 +58,9 @@ export {
 
   // Logo
   logo,
+
+  // How it works
+  buy,
+  invest,
+  sale,
 };

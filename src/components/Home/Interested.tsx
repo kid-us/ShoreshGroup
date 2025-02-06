@@ -6,8 +6,8 @@ const Interested = () => {
     <Container>
       <div className="lg:flex justify-between mb-16">
         <div className="mt-10">
-          <form>
-            <h1 className="lg:text-2xl text-xl poppins-bold mb-8">
+          <form onSubmit={(e) => e.preventDefault()}>
+            <h1 className="lg:text-2xl text-xl poppins-bold mb-10">
               DO YOU LIKE OUR WORKS?
             </h1>
             <label htmlFor="email" className="block text-gray-500">
