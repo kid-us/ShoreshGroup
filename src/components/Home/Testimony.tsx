@@ -64,7 +64,6 @@ const Testimony = () => {
   ];
 
   return (
-    // <Container>
     <div className="lg:my-40 mt-32 mb-20">
       <h1 className="lg:text-3xl text-2xl poppins-bold mb-4 text-center">
         Hear What Our Clients Are Saying
@@ -155,7 +154,6 @@ const Testimony = () => {
         </div>
       </div>
     </div>
-    // </Container>
   );
 };
 
