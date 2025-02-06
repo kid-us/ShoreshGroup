@@ -13,21 +13,21 @@ const Footer = () => {
               {footer.map((nav) => (
                 <Link
                   to={nav.path}
-                  className="text-gray-500 hover:text-black transition-colors"
+                  className="text-gray-700 hover:text-black transition-colors"
                 >
                   {nav.name}
                 </Link>
               ))}
-              <div className="space-x-20 mt-5 flex">
+              <div className="lg:flex hidden space-x-20 mt-5 ">
                 <Link
                   to={"/"}
-                  className="text-gray-500 text-sm hover:text-black transition-colors"
+                  className="text-gray-700 text-sm hover:text-black transition-colors"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   to={"/"}
-                  className="text-gray-500 text-sm hover:text-black transition-colors"
+                  className="text-gray-700 text-sm hover:text-black transition-colors"
                 >
                   Terms of Service
                 </Link>
@@ -38,13 +38,29 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-x-3 lg:mt-0 mt-10">
+          <div className="flex items-center gap-x-3 lg:mt-0 my-8">
             <img src={logo} alt="Logo" className="w-16 h-16" />
             <p className="flex items-center text-2xl font-extrabold">
               SHORESH GROUP
             </p>
           </div>
-          <p className="lg:hidden block text-xs text-gray-500 mt-9">
+
+          <div className="lg:hidden flex gap-x-10">
+            <Link
+              to={"/"}
+              className="text-gray-700 text-sm hover:text-black transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to={"/"}
+              className="text-gray-700 text-sm hover:text-black transition-colors"
+            >
+              Terms of Service
+            </Link>
+          </div>
+
+          <p className="lg:hidden block text-xs text-amber-600 mt-5">
             &copy;2025 SHORESH GROUP. All right reserved.
           </p>
         </div>
