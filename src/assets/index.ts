@@ -17,7 +17,7 @@ import excellence from "./value/excellence.png";
 import accountability from "./value/accountability.png";
 import innovation from "./value/innovation.png";
 import community from "./value/community.png";
-import transparency from "./value/Transparency.png";
+import transparency from "./value/transparency.png";
 
 export {
   hero,
