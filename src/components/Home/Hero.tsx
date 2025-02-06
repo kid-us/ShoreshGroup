@@ -50,12 +50,12 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex text-white mt-10 gap-x-6"
+              className="flex text-white mt-10 gap-x-10"
             >
-              <Link to="/" className="bi-facebook"></Link>
-              <Link to="/" className="bi-instagram"></Link>
-              <Link to="/" className="bi-linkedin"></Link>
-              <Link to="/" className="bi-twitter-x"></Link>
+              <Link to="/" className="text-xl bi-facebook"></Link>
+              <Link to="/" className="text-xl bi-instagram"></Link>
+              <Link to="/" className="text-xl bi-linkedin"></Link>
+              <Link to="/" className="text-xl bi-twitter-x"></Link>
             </motion.div>
           </div>
         </div>
