@@ -225,7 +225,7 @@ export const Circle = forwardRef<
       }}
       ref={ref}
       className={cn(
-        "z-10 flex items-center justify-center border border-btn bg-secondary rounded-xl w-96 p-5 shadow  hover:shadow-btn hover:shadow-lg transition-colors text-white",
+        "z-10 flex items-center justify-center border border-btn rounded-xl w-96 p-5 shadow  hover:shadow-btn hover:shadow-lg transition-colors text-black bg-white",
         className
       )}
     >
