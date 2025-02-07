@@ -19,7 +19,7 @@ const Interested = () => {
                 className="focus:outline-hidden border border-gray-400 h-11 rounded-lg lg:w-80 w-full px-5"
                 placeholder="Email address"
               />
-              <button className="bg-btn flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] hover:shadow-none h-11 lg:px-14 px-32 active:shadow-none lg:w-auto w-full lg:mt-0 mt-4 rounded">
+              <button className="bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] hover:shadow-none h-11 lg:px-14 px-32 active:shadow-none lg:w-auto w-full lg:mt-0 mt-4 rounded">
                 Subscribe
               </button>
             </div>
@@ -29,19 +29,19 @@ const Interested = () => {
         <div className="flex lg:mt-10 mt-14 gap-x-14">
           <Link
             to="/"
-            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-facebook"
+            className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-facebook"
           ></Link>
           <Link
             to="/"
-            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-instagram"
+            className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-instagram"
           ></Link>
           <Link
             to="/"
-            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-linkedin"
+            className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-linkedin"
           ></Link>
           <Link
             to="/"
-            className="text-3xl h-10 text-gray-500 hover:text-amber-500 transition-colors duration-150 bi-twitter-x"
+            className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-twitter-x"
           ></Link>
         </div>
       </div>
