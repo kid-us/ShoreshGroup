@@ -47,7 +47,7 @@ const Assets = () => {
   const filteredAssets = assets.filter(
     (asset) => asset.category === activeCategory
   );
-  const ITEMS_PER_PAGE = 8;
+  const ITEMS_PER_PAGE = 9;
 
   // Calculate total pages
   const totalPages = Math.ceil(filteredAssets.length / ITEMS_PER_PAGE);
