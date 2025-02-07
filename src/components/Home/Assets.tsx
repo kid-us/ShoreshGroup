@@ -33,7 +33,10 @@ const Assets = () => {
           Our Assets
         </h1>
         <p className="text-gray-500 mb-5">Categories</p>
-        <motion.div layout className="flex gap-x-12">
+        <motion.div
+          layout
+          className="lg:flex grid grid-cols-2 gap-y-3 lg:gap-x-12 gap-x-4"
+        >
           {categories.map((c) => (
             <motion.button
               layout
@@ -41,8 +44,8 @@ const Assets = () => {
               onClick={() => setActiveCategory(c)}
               className={`font-normal ${
                 activeCategory === c
-                  ? "bg-secondary text-white px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"
-                  : "text-gray-600"
+                  ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"
+                  : "text-gray-600 border border-btn py-3 rounded"
               } `}
             >
               {c} Assets
@@ -50,7 +53,7 @@ const Assets = () => {
           ))}
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 my-12 gap-x-5 lg:gap-y-7 gap-y-5">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:my-12 my-8 gap-x-5 lg:gap-y-7 gap-y-5">
           {assets.map(
             (asset) =>
               asset.category === activeCategory && (
