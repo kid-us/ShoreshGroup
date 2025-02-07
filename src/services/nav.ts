@@ -18,18 +18,18 @@ export const assets: Nav[] = [
     id: 1,
     name: "Our Assets",
     icon: "bi-building",
-    path: "/assets?our-assets",
+    path: "/assets?asset=our-assets",
   },
   {
     id: 2,
     name: "For Sale",
     icon: "bi-door-open-fill",
-    path: "/assets?for-sale",
+    path: "/assets?asset=for-sale",
   },
   {
     id: 3,
     name: "Recently Sold",
     icon: "bi-buildings-fill",
-    path: "/assets?sold",
+    path: "/assets?asset=sold",
   },
 ];

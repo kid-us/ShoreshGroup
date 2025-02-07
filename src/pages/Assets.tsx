@@ -1,22 +1,45 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
 import { assets } from "../services/assets";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import useDocumentTitle from "../hooks/useDocumentTitle";
+
+const categories = ["Current", "For Sale", "Sold"];
 
 const Assets = () => {
   const [modal, setModal] = useState<boolean>(false);
-
-  const categories = ["Current", "For Sale", "Sold"];
-
   const [activeCategory, setActiveCategory] = useState<string>("Current");
+  const navigate = useNavigate();
+
+  const [title] = useState<string>("Shoresh Group Assets");
+  useDocumentTitle(title);
 
   const handleAssetClicked = () => {
     setModal(true);
     document.body.style.overflow = "hidden";
   };
+
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const queryParam = searchParams.get("asset");
+
+    if (queryParam === "our-assets") {
+      setActiveCategory("Current");
+    } else if (queryParam === "for-sale") {
+      setActiveCategory("For Sale");
+    } else if (queryParam === "sold") {
+      setActiveCategory("Sold");
+    } else {
+      navigate("/");
+    }
+  }, [searchParams]);
 
   return (
     <>
@@ -52,7 +75,7 @@ const Assets = () => {
                 className={`font-normal ${
                   activeCategory === c
                     ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"
-                    : "text-gray-600 lg:border-none border border-btn py-3 rounded"
+                    : "text-gray-600 border border-btn py-2 px-10 "
                 } `}
               >
                 {c} Assets
