@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Container from "../Container/Container";
 import { motion } from "motion/react";
-import { aim } from "../../assets";
 
 export interface Mission {
   id: number;
@@ -64,14 +63,14 @@ const Mission = () => {
             <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-6 lg:mx-10 lg:mt-0 mt-8">
               {mission.map((m, index) => (
                 <>
-                  {m.id === missionId && (
+                  {/* {m.id === missionId && (
                     <motion.div
                       layoutId="lol"
-                      className="lg:block hidden h-full"
+                      className="lg:flex justify-center items-center hidden h-full"
                     >
                       <img src={aim} alt="target" />
                     </motion.div>
-                  )}
+                  )} */}
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
@@ -82,9 +81,11 @@ const Mission = () => {
                     onClick={() => setMissionId(m.id)}
                     className={`${
                       m.id === missionId
-                        ? "lg:col-span-3 col-span-4"
+                        ? "col-span-4"
                         : "col-span-4 border border-black/20 rounded"
-                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded`}
+                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded ${
+                      m.id % 2 === 0 ? "lg:-rotate-1" : "lg:rotate-1"
+                    } `}
                   >
                     <p className={``}>{m.name}</p>
                   </motion.div>
