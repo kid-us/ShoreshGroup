@@ -10,7 +10,11 @@ import {
 import Menu from "./Menu";
 import { logo } from "../../assets";
 
-const Navbar = () => {
+interface Props {
+  bg: boolean;
+}
+
+const Navbar = ({ bg }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [animationClass, setAnimationClass] = useState<string>(
@@ -41,13 +45,13 @@ const Navbar = () => {
     <AnimatePresence>
       <nav
         className={`fixed z-20 w-full lg:py-4 py-3 ${
-          hidden ? "bg-white" : "nav"
+          bg ? "bg-white" : hidden ? "bg-white" : "nav"
         }`}
       >
         <div className="container mx-auto">
           <div
             className={`flex justify-between ${
-              hidden ? "text-black" : "text-white"
+              bg ? "text-black" : hidden ? "text-black" : "text-white"
             }`}
           >
             <motion.a
@@ -65,7 +69,7 @@ const Navbar = () => {
             </motion.a>
             {/* Large device */}
             <div className="lg:flex hidden gap-x-14">
-              <div className="mt-2">
+              <div className="mt-3">
                 <motion.button
                   whileHover={{
                     y: -1,
@@ -93,7 +97,7 @@ const Navbar = () => {
                         <Link
                           key={asset.id}
                           className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
-                          to="/our-assets"
+                          to={asset.path}
                         >
                           <span className={`${asset.icon} me-2`}></span>
                           {asset.name}
@@ -120,7 +124,7 @@ const Navbar = () => {
                   className={`relative transition-colors poppins-medium ${
                     n.name === "Login"
                       ? "bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
-                      : "mt-2"
+                      : "mt-3"
                   }`}
                 >
                   {n.name}
