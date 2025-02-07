@@ -1,10 +1,11 @@
+import Button from "../Button/Button";
 import Container from "../Container/Container";
 import { Link } from "react-router-dom";
 
 const Interested = () => {
   return (
     <Container>
-      <div className="lg:flex justify-between mb-16">
+      <div className="lg:flex justify-between my-16 border-t border-secondary">
         <div className="mt-10">
           <form onSubmit={(e) => e.preventDefault()}>
             <h1 className="lg:text-2xl text-xl poppins-bold mb-10">
@@ -19,9 +20,7 @@ const Interested = () => {
                 className="focus:outline-hidden border border-gray-400 h-11 rounded-lg lg:w-80 w-full px-5"
                 placeholder="Email address"
               />
-              <button className="bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] hover:shadow-none h-11 lg:px-14 px-32 active:shadow-none lg:w-auto w-full lg:mt-0 mt-4 rounded">
-                Subscribe
-              </button>
+              <Button name={"Subscribe"} />
             </div>
           </form>
         </div>

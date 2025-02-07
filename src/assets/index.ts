@@ -7,6 +7,10 @@ import hero4 from "./hero4.jpg";
 import hero5 from "./hero5.jpg";
 import hero6 from "./hero6.jpg";
 import hero7 from "./hero7.jpg";
+import hero8 from "./hero8.jpg";
+import hero9 from "./hero9.jpg";
+import hero10 from "./hero10.jpg";
+import hero11 from "./hero11.jpg";
 
 import we1 from "./we/1.jpg";
 import we2 from "./we/2.jpg";
@@ -45,6 +49,10 @@ export {
   hero5,
   hero6,
   hero7,
+  hero8,
+  hero9,
+  hero10,
+  hero11,
 
   // Team
   we1,
