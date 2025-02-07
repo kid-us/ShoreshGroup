@@ -13,7 +13,7 @@ const Mission = () => {
   const mission: Mission[] = [
     {
       id: 1,
-      name: "Empower Investors:Provide transparent opportunities and deliver exceptional returns to our investors. We build lasting trust by offering clear insights into our strategies and performance, ensuring every investor feels confident and valued.",
+      name: "Empower Investors: Provide transparent opportunities and deliver exceptional returns to our investors. We build lasting trust by offering clear insights into our strategies and performance, ensuring every investor feels confident and valued.",
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ const Mission = () => {
   return (
     <div className="overflow-hidden lg:mb-10">
       <div className="relative lg:h-[85vh] h-auto w-full">
-        <div className="absolute lg:-top-20 -left-96 bg-secondary w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
+        <div className="absolute lg:-top-20 -left-96 border border-btn w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
         <Container>
           <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
             <div className="flex items-center">
@@ -47,7 +47,7 @@ const Mission = () => {
                 <h1 className="lg:text-3xl text-2xl poppins-bold text-white">
                   Mission
                 </h1>
-                <p className="mt-5 lg:text-lg text-white">
+                <p className="mt-5 lg:text-lg text-black">
                   At Shoresh Group, our mission is to empower our investors,
                   partners, and communities by delivering innovative and
                   transparent real estate solutions. We strive to create
@@ -83,9 +83,10 @@ const Mission = () => {
                       m.id === missionId
                         ? "col-span-4"
                         : "col-span-4 border border-black/20 rounded"
-                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-white rounded ${
-                      m.id % 2 === 0 ? "lg:-rotate-1" : "lg:rotate-1"
-                    } `}
+                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-secondary text-white rounded 
+                      
+                      
+                    `}
                   >
                     <p className={``}>{m.name}</p>
                   </motion.div>
