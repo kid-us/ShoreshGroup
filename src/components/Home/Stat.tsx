@@ -39,8 +39,8 @@ const Stat = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center my-28">
-      <div className="grid grid-cols-4 gap-x-16">
+    <div className="flex flex-col items-center justify-center lg:my-28 my-16">
+      <div className="grid lg:grid-cols-4 gap-x-16 gap-y-10">
         {stats.map((stat, index) => (
           <div className="text-center" key={index}>
             <div className="flex justify-center mb-3">
