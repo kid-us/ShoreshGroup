@@ -36,7 +36,7 @@ const Mission = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden lg:mb-28 lg:mt-10">
+    <div className="overflow-hidden lg:mb-10">
       <div className="relative lg:h-[85vh] h-auto w-full">
         <div className="absolute lg:-top-20 -left-96 bg-secondary w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
         <Container>
