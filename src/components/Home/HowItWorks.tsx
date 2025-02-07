@@ -36,7 +36,7 @@ const HowItWorks = () => {
         <h1 className="lg:text-3xl text-2xl poppins-bold text-center lg:mb-5 mb-3">
           How it works
         </h1>
-        <p className="text-center text-gray-500 lg:mb-20 mb-10">
+        <p className="text-center text-gray-500 lg:mb-10 mb-10">
           Seamless Property Transactions with Transparent Profit Sharing
         </p>
 
