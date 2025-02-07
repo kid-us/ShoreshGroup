@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { buy, sale, invest } from "../../assets";
 import Container from "../Container/Container";
 
@@ -43,19 +42,7 @@ const HowItWorks = () => {
 
         <div className="grid lg:grid-cols-3 lg:gap-x-10 gap-y-5 lg:mx-20">
           {steps.map((s) => (
-            <motion.div
-              initial={{ scale: 0, opacity: 0, y: 20 }}
-              whileHover={{
-                scale: 1.03,
-                transition: { delay: 0.1, duration: 1 },
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: 1,
-                y: 0,
-                transition: { duration: 0.5 },
-              }}
-              viewport={{ once: true }}
+            <div
               key={s.id}
               className="shadow p-8 rounded-2xl border border-btn"
             >
@@ -72,7 +59,7 @@ const HowItWorks = () => {
               <p className="text-sm pt-8 border-t-2 border-gray-400 mt-4">
                 {s.info}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
