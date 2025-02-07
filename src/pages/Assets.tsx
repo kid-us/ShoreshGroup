@@ -79,9 +79,9 @@ const Assets = () => {
       <Navbar bg />
 
       <Container>
-        <div className="lg:mb-8 mb-3 pt-32">
+        <div className="lg:mb-8 mb-3 lg:pt-32 pt-28">
           <h1 className="lg:text-3xl text-2xl poppins-bold ">Our Properties</h1>
-          <p className="mt-3 w-[60%]">
+          <p className="mt-3 lg:w-[60%]">
             Discover our premium real estate assets, carefully selected for
             long-term growth, stability, and exceptional returns.
           </p>
@@ -98,7 +98,7 @@ const Assets = () => {
                 className={`font-normal ${
                   activeCategory === c
                     ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"
-                    : "text-gray-600 border border-btn py-2 px-10 "
+                    : "text-gray-600 border border-btn lg:py-2 py-3 lg:px-10"
                 } `}
               >
                 {c} Assets
