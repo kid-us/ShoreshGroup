@@ -10,7 +10,9 @@ module.exports = {
           200: "var(--color-link-200)",
         },
         background: "var(--color-bg)",
-        btn: "oklch(0.769 0.188 70.08);",
+        btn: "#E0B84D;",
+        icon: "#E0B84D",
+        secondary: "#00674f",
       },
       screen: {
         sm: "640px", // Small devices (landscape phones)

@@ -39,7 +39,7 @@ const Mission = () => {
   return (
     <div className="overflow-hidden lg:mb-28 lg:mt-10">
       <div className="relative lg:h-[85vh] h-auto w-full">
-        <div className="absolute lg:-top-20 -left-96 bg-amber-400 w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
+        <div className="absolute lg:-top-20 -left-96 bg-secondary w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
         <Container>
           <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
             <div className="flex items-center">
@@ -79,7 +79,7 @@ const Mission = () => {
                       opacity: 1,
                       transition: { delay: 0.05 * index, duration: 0.5 },
                     }}
-                  onClick={() => setMissionId(m.id)}
+                    onClick={() => setMissionId(m.id)}
                     className={`${
                       m.id === missionId
                         ? "lg:col-span-3 col-span-4 border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded"

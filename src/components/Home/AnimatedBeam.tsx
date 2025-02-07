@@ -36,7 +36,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   duration = Math.random() * 3 + 4,
   delay = 0,
   pathColor = "black",
-  pathWidth = 2,
+  pathWidth = 1,
   pathOpacity = 0.2,
   gradientStartColor = "#4d40ff",
   gradientStopColor = "#4043ff",
@@ -45,7 +45,7 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   endXOffset = 0,
   endYOffset = 0,
   dotted = false,
-  dotSpacing = 6,
+  dotSpacing = 5,
 }) => {
   const id = useId();
   const [pathD, setPathD] = useState("");
@@ -225,7 +225,7 @@ export const Circle = forwardRef<
       }}
       ref={ref}
       className={cn(
-        "z-10 flex items-center justify-center border border-amber-400 rounded-xl bg-white w-96 p-3 shadow hover:bg-black hover:text-white hover:shadow-amber-500 hover:shadow-lg transition-colors",
+        "z-10 flex items-center justify-center border border-btn bg-secondary rounded-xl w-96 p-5 shadow  hover:shadow-btn hover:shadow-lg transition-colors text-white",
         className
       )}
     >

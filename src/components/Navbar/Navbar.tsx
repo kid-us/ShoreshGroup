@@ -106,17 +106,25 @@ const Navbar = () => {
 
               {/* Links */}
               {navs.map((n, index) => (
-                <Link
-                  to={n.path}
+                <motion.a
+                  whileHover={{
+                    y: -1,
+                    scale: 1.05,
+                    transition: { duration: 0.5 },
+                  }}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.2 }}
+                  href={n.path}
                   key={n.id || index}
                   className={`relative transition-colors poppins-medium ${
                     n.name === "Login"
-                      ? "bg-btn flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_black] h-10 px-14 hover:shadow-none rounded"
+                      ? "bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
                       : "mt-2"
                   }`}
                 >
                   {n.name}
-                </Link>
+                </motion.a>
               ))}
             </div>
 
