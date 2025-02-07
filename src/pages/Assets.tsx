@@ -41,6 +41,29 @@ const Assets = () => {
     }
   }, [searchParams]);
 
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Filter assets based on active category
+  const filteredAssets = assets.filter(
+    (asset) => asset.category === activeCategory
+  );
+  const ITEMS_PER_PAGE = 8;
+
+  // Calculate total pages
+  const totalPages = Math.ceil(filteredAssets.length / ITEMS_PER_PAGE);
+
+  // Get items for the current page
+  const currentAssets = filteredAssets.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      setCurrentPage(newPage);
+    }
+  };
+
   return (
     <>
       {/* Modal */}
@@ -83,35 +106,64 @@ const Assets = () => {
             ))}
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:my-12 my-8 gap-x-5 lg:gap-y-7 gap-y-5">
-            {assets.map(
-              (asset) =>
-                asset.category === activeCategory && (
-                  <div
-                    key={asset.id}
-                    onClick={() => handleAssetClicked()}
-                    className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
-                  >
-                    <img
-                      src={asset.img}
-                      alt={"asset" + asset.id}
-                      className="lg:h-72 md:72 h-60 w-full rounded-xl object-cover object-bottom"
-                    />
-                    <div className="px-4 py-5">
-                      <p className="font-semibold text-xl mb-2">{asset.name}</p>
-                      <div className="flex justify-between">
-                        <p className="text-gray-500 text-sm font-semibold">
-                          <span className="bi-geo-alt-fill text-secondary me-2"></span>
-                          {asset.location}
-                        </p>
-                        <p className="text-gray-500 text-sm font-semibold">
-                          <span className="bi-calendar-check-fill me-2 text-secondary"></span>
-                          Purchased {asset.purchased}
-                        </p>
-                      </div>
+          <div className="lg:my-12 my-8">
+            {/* Asset Grid */}
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 lg:gap-y-7 gap-y-5 mb-6">
+              {currentAssets.map((asset) => (
+                <div
+                  key={asset.id}
+                  onClick={() => handleAssetClicked()}
+                  className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
+                >
+                  <img
+                    src={asset.img}
+                    alt={"asset" + asset.id}
+                    className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom"
+                  />
+                  <div className="px-4 py-5">
+                    <p className="font-semibold text-xl mb-2">{asset.name}</p>
+                    <div className="flex justify-between">
+                      <p className="text-gray-500 text-sm font-semibold">
+                        <span className="bi-geo-alt-fill text-secondary me-2"></span>
+                        {asset.location}
+                      </p>
+                      <p className="text-gray-500 text-sm font-semibold">
+                        <span className="bi-calendar-check-fill me-2 text-secondary"></span>
+                        Purchased {asset.purchased}
+                      </p>
                     </div>
                   </div>
-                )
+                </div>
+              ))}
+            </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className={`px-3 py-1 border rounded ${
+                    currentPage === 1
+                      ? "opacity-50 cursor-not-allowed bg-gray-600"
+                      : "bg-secondary text-white"
+                  } bi-chevron-left`}
+                ></button>
+
+                <span className="text-sm font-semibold text-gray-600">
+                  {currentPage} of {totalPages}
+                </span>
+
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className={`px-3 py-1 border rounded ${
+                    currentPage === totalPages
+                      ? "opacity-50 cursor-not-allowed"
+                      : "bg-secondary text-white"
+                  } bi-chevron-right`}
+                ></button>
+              </div>
             )}
           </div>
         </div>
