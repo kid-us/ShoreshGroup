@@ -11,7 +11,7 @@ import Menu from "./Menu";
 import { logo } from "../../assets";
 
 interface Props {
-  bg: boolean;
+  bg?: boolean;
 }
 
 const Navbar = ({ bg }: Props) => {

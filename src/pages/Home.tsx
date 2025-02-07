@@ -1,5 +1,5 @@
 import Footer from "../components/Footer/Footer";
-import Assets from "../components/Home/Assets";
+// import Assets from "../components/Home/Assets";
 import CoreValues from "../components/Home/CoreValues";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
@@ -20,7 +20,7 @@ const Home = () => {
       <HowItWorks />
       <Mission />
       <CoreValues />
-      <Assets />
+      {/* <Assets /> */}
       <Testimony />
       <Interested />
       <Footer />
