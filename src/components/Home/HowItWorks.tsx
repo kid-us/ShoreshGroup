@@ -57,10 +57,10 @@ const HowItWorks = () => {
               }}
               viewport={{ once: true }}
               key={s.id}
-              className="shadow p-8 rounded-2xl border border-amber-400"
+              className="shadow p-8 rounded-2xl border border-btn"
             >
               <p>
-                <span className="text-xs bg-gray-500 rounded text-white px-5 py-1">
+                <span className="text-xs bg-secondary rounded text-white px-5 py-1">
                   Step {s.id}
                 </span>
               </p>
