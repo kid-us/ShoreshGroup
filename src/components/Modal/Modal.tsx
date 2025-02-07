@@ -87,7 +87,7 @@ const Modal = ({ onClose }: Props) => {
                 Purchased-2035
               </p>
               {/* Image */}
-              <div className="my-5">
+              <div className="relative my-5 lg:h-96 h-80">
                 <img
                   src={images[currentIndex]}
                   alt={`Slide ${currentIndex + 1}`}
@@ -97,13 +97,13 @@ const Modal = ({ onClose }: Props) => {
                 {/* Prev Button */}
                 <button
                   onClick={prevImage}
-                  className="absolute lg:left-12 left-1 top-1/2 transform -translate-y-1/2 bg-secondary p-2 bi-chevron-left text-white rounded"
+                  className="absolute lg:-left-4 -left-3 top-1/2 transform -translate-y-1/2 bg-secondary p-2 bi-chevron-left text-white rounded"
                 ></button>
 
                 {/* Next Button */}
                 <button
                   onClick={nextImage}
-                  className="absolute lg:right-12 right-1 top-1/2 transform -translate-y-1/2 bg-secondary p-2 bi-chevron-right text-white rounded"
+                  className="absolute lg:-right-4 -right-3 top-1/2 transform -translate-y-1/2 bg-secondary p-2 bi-chevron-right text-white rounded"
                 ></button>
               </div>
               {/* Description */}
