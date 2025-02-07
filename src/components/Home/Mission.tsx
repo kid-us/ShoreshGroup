@@ -44,7 +44,7 @@ const Mission = () => {
             <div className="flex items-center">
               <div className="mt-20">
                 <h1 className="lg:text-3xl text-2xl poppins-bold">Our</h1>
-                <h1 className="lg:text-3xl text-2xl poppins-bold text-white">
+                <h1 className="lg:text-3xl text-2xl poppins-bold text-btn">
                   Mission
                 </h1>
                 <p className="mt-5 lg:text-lg text-black">

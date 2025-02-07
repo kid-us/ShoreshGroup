@@ -45,7 +45,7 @@ const Assets = () => {
               className={`font-normal ${
                 activeCategory === c
                   ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"
-                  : "text-gray-600 border border-btn py-3 rounded"
+                  : "text-gray-600 lg:border-none border border-btn py-3 rounded"
               } `}
             >
               {c} Assets
