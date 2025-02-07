@@ -56,7 +56,7 @@
 
 .slide-track-right {
   display: flex;
-  animation: scrollRight 50s linear infinite;
+  animation: scrollRight 100s linear infinite;
   width: calc(950px * var(--quantity));
 }
 
@@ -67,13 +67,13 @@
 
 .slider .slide-track-right {
   display: flex;
-  animation: scrollRight 50s linear infinite;
+  animation: scrollRight 100s linear infinite;
   will-change: transform;
 }
 
 .slide-track-right {
   display: flex;
-  animation: scrollRight 50s linear infinite;
+  animation: scrollRight 100s linear infinite;
   width: calc(450px * var(--quantity) * 2);
 }
 
@@ -85,7 +85,7 @@
 /* To Left */
 .slide-track-left {
   display: flex;
-  animation: scrollLeft 50s linear infinite;
+  animation: scrollLeft 100s linear infinite;
   width: calc(950px * var(--quantity));
 }
 
@@ -96,13 +96,13 @@
 
 .slider .slide-track-left {
   display: flex;
-  animation: scrollLeft 50s linear infinite;
+  animation: scrollLeft 100s linear infinite;
   will-change: transform;
 }
 
 .slide-track-left {
   display: flex;
-  animation: scrollLeft 50s linear infinite;
+  animation: scrollLeft 100s linear infinite;
   width: calc(450px * var(--quantity) * 2);
 }
 
