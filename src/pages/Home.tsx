@@ -4,6 +4,7 @@ import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import Interested from "../components/Home/Interested";
 import Mission from "../components/Home/Mission";
+import Stat from "../components/Home/Stat";
 import Testimony from "../components/Home/Testimony";
 import WhoWeAre from "../components/Home/WhoWeAre";
 import Navbar from "../components/Navbar/Navbar";
@@ -13,6 +14,7 @@ const Home = () => {
     <main>
       <Navbar />
       <Hero />
+      <Stat />
       <WhoWeAre />
       <HowItWorks />
       <Mission />

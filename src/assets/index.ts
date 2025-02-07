@@ -28,6 +28,11 @@ import invest from "./investment.png";
 import buy from "./buy.png";
 import sale from "./sale.png";
 
+import net from "./net.png";
+import transaction from "./transaction.png";
+import asset from "./loan.png";
+import managed from "./allocation.png";
+
 export {
   // Hero vid
   heroVid,
@@ -63,4 +68,10 @@ export {
   buy,
   invest,
   sale,
+
+  // Stat
+  managed,
+  net,
+  transaction,
+  asset,
 };
