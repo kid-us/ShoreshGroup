@@ -4,9 +4,15 @@ import Container from "../Container/Container";
 
 const WhoWeAre = () => {
   const heading =
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est provident voluptatum aut sequi harum assumenda. In fugit et neque quam itaque? Nobis corrupti magni eius doloribus ducimus facilis nulla veniam impedit hic. Illum dolore itaque architecto quaerat aperiam aliquid repellat dicta sint. Magnam delectus nisi similique eos ea sit voluptatibus, asperiores saepe suscipit sapiente excepturi molestiae, inventore quibusdam natus laborum minima ipsum quos voluptatem expedita distinctio consectetur? Quis quaerat nesciunt, optio laboriosam illo at commodi deleniti quo est incidunt. Aperiam sapiente qui.";
+    "At Shores Group, we are a premier real estate investment firm dedicated to creating long-term value through strategic acquisitions, asset management, and innovative financial solutions. Our expertise spans across multifamily, commercial, and mixed-use properties, delivering exceptional returns for our investors while enhancing the communities we serve. ";
+  const heading2 =
+    "With a commitment to integrity, transparency, and performance, we leverage deep market insights and data-driven strategies to identify high-potential opportunities. Whether you are an investor seeking stable growth or a property owner looking for a trusted partner, Shores Group is your pathway to success in real estate.";
+  const heading3 =
+    "Would you like me to refine it further based on your company's specific focus?";
 
   const words = heading.split(" ");
+  const words2 = heading2.split(" ");
+  const words3 = heading3.split(" ");
 
   return (
     <Container>
@@ -14,8 +20,36 @@ const WhoWeAre = () => {
         <div className="flex items-center">
           <div>
             <h1 className="lg:text-3xl text-2xl poppins-bold">Who We Are</h1>
-            <p className="text-xl leading-9 mt-5">
+            <p className="text-lg leading-8 mt-5">
               {words.map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ x: -30 }}
+                  whileInView={{ x: 0 }}
+                  transition={{ type: "spring", delay: index * 0.001 }}
+                  className="inline-block mr-2"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </p>
+
+            <p className="text-lg leading-8 mt-2">
+              {words2.map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ x: -30 }}
+                  whileInView={{ x: 0 }}
+                  transition={{ type: "spring", delay: index * 0.001 }}
+                  className="inline-block mr-2"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </p>
+
+            <p className="text-lg leading-8 mt-2">
+              {words3.map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{ x: -30 }}
