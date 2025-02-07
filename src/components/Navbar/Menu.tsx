@@ -38,9 +38,10 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
           <div className="space-y-5">
             {assets.map((asset) => (
               <Link
+                onClick={onClose}
                 key={asset.id}
                 className="block py-1 text-lg text-white poppins-semibold"
-                to="/our-assets"
+                to={asset.path}
               >
                 <span className={`${asset.icon} me-2 font-light`}></span>
                 {asset.name}
