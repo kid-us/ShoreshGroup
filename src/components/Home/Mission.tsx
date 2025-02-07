@@ -83,7 +83,7 @@ const Mission = () => {
                       m.id === missionId
                         ? "col-span-4"
                         : "col-span-4 border border-black/20 rounded"
-                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[8px_10px_3px_0px_black] shadow-[4px_6px_3px_0px_black] bg-white rounded ${
+                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-white rounded ${
                       m.id % 2 === 0 ? "lg:-rotate-1" : "lg:rotate-1"
                     } `}
                   >
