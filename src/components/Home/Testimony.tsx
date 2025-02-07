@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { we1 } from "../../assets";
+import { we1, we2, we3, we4, we5, we6 } from "../../assets";
 // import Container from "../Container/Container";
 import "./slider.css";
 
@@ -16,50 +16,50 @@ const Testimony = () => {
     {
       id: 1,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
+        "Investing with Shoresh Group has been one of the best financial decisions I’ve made. Their deep industry knowledge and strategic approach to real estate assets have consistently delivered strong returns. I appreciate their transparency and commitment to investor success.",
       img: we1,
       name: "Marta",
-      title: "CEO",
+      title: "Private Investor",
     },
     {
       id: 2,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
-      img: we1,
-      name: "Marta",
-      title: "CEO",
+        "Shoresh Group’s expertise in identifying high-potential properties is unmatched. They manage every aspect with precision, ensuring not only financial growth but also long-term sustainability. I highly recommend them to anyone looking for a trustworthy investment partner.",
+      img: we3,
+      name: "Michael E. ",
+      title: "Private Investor",
     },
     {
       id: 3,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
-      img: we1,
-      name: "Marta",
-      title: "CEO",
+        "Shoresh Group has built an impressive portfolio that speaks for itself. Their data-driven approach and market foresight have given me confidence in every investment. Their team is professional, responsive, and truly dedicated to maximizing value for investors.",
+      img: we2,
+      name: "Sarah L, ",
+      title: "Real Estate Partner",
     },
     {
       id: 4,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
-      img: we1,
-      name: "Marta",
-      title: "CEO",
+        "Shoresh Group has exceeded my expectations in every way. Their ability to identify lucrative real estate opportunities while maintaining a risk-conscious approach is truly commendable. I feel confident knowing my investments are in capable hands.",
+      img: we4,
+      name: "Emilt T.",
+      title: "High-Net-Worth Investor",
     },
     {
       id: 5,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
-      img: we1,
-      name: "Marta",
-      title: "CEO",
+        "What sets Shoresh Group apart is their commitment to both financial success and ethical investment practices. Their team is always transparent, keeping me informed every step of the way. I’ve seen consistent growth and look forward to future opportunities with them.",
+      img: we5,
+      name: "James P.",
+      title: "Long-Term Investor",
     },
     {
       id: 6,
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloribus obcaecati quas alias ipsa placeat consequatur ratione non voluptatibus! Quisquam! Lorem ipsum dolor sit amet.",
-      img: we1,
-      name: "Marta",
-      title: "CEO",
+        "Investing in real estate can be complex, but Shoresh Group makes it simple and rewarding. Their deep market insights and strong management strategies ensure optimal returns. I highly recommend them to serious investors.",
+      img: we6,
+      name: "Robert D.",
+      title: "Commercial Real Estate Investor",
     },
   ];
 
