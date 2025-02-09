@@ -46,13 +46,13 @@ const Hero = () => {
               real estate fund and deals.
             </motion.p>
 
-            <div className="mt-10 mb-10">
+            <div className="mt-16 mb-10">
               <Link
                 to={"/contact"}
-                className="bg-white px-10 py-3 rounded-lg border border-secondary"
+                className="bg-white text-black font-semibold px-12 py-3 text-sm rounded-full uppercase group hover:text-gray-700"
               >
-                Invest with US
-                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+                Invest with Us
+                <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
               </Link>
             </div>
 
@@ -62,10 +62,10 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="flex text-white mt-14 gap-x-10"
             >
-              <Link to="/" className="text-xl bi-facebook"></Link>
-              <Link to="/" className="text-xl bi-instagram"></Link>
-              <Link to="/" className="text-xl bi-linkedin"></Link>
-              <Link to="/" className="text-xl bi-twitter-x"></Link>
+              <Link to="/" className="text-btn text-xl bi-facebook"></Link>
+              <Link to="/" className="text-btn text-xl bi-instagram"></Link>
+              <Link to="/" className="text-btn text-xl bi-linkedin"></Link>
+              <Link to="/" className="text-btn text-xl bi-twitter-x"></Link>
             </motion.div>
           </div>
         </div>
