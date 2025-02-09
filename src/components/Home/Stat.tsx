@@ -1,6 +1,8 @@
 import { motion, useMotionValue, useSpring } from "motion/react";
 import { useEffect, useState } from "react";
 import { asset, managed, net, transaction } from "../../assets";
+import Container from "../Container/Container";
+import { Link } from "react-router-dom";
 
 type AnimatedStatProps = {
   target: number;
@@ -23,7 +25,7 @@ const AnimatedStat = ({ target }: AnimatedStatProps) => {
     <motion.span
       onViewportEnter={() => count.set(target)}
       viewport={{ once: true }}
-      className="text-3xl font-semibold mb-1"
+      className="text-2xl font-semibold mb-1"
     >
       {displayCount.toLocaleString()}
     </motion.span>
@@ -39,19 +41,55 @@ const Stat = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center lg:my-28 my-16">
-      <div className="grid lg:grid-cols-4 gap-x-16 gap-y-10">
-        {stats.map((stat, index) => (
-          <div className="text-center" key={index}>
-            <div className="flex justify-center mb-3">
-              <img src={stat.icon} alt={stat.title} className="w-14" />
+    <Container>
+      <div className="flex flex-col items-center justify-center lg:my-28 my-16">
+        <div className="grid lg:grid-cols-2 lg:gap-x-40">
+          <div>
+            <p className="text-sm uppercase text-gray-600">
+              About Shoresh Group
+            </p>
+            <h1 className="font-semibold text-4xl mt-16 mb-10">
+              Shoresh Group: Building Wealth, Creating Legacies
+            </h1>
+            <p>
+              Shoresh Group is a family-founded real estate venture focused on
+              generational wealth. Investing in distressed homes, multifamily
+              properties, and large-scale developments. The mission is to create
+              financial security through short-term and long-term real estate
+              projects. Core values include integrity, collaboration,
+              excellence, and building a lasting legacy.
+            </p>
+            <div className="mt-16 mb-10">
+              <Link
+                to={"/about-us"}
+                className="bg-secondary text-white font-semibold px-12 py-3 text-sm rounded-full uppercase group hover:text-gray-200"
+              >
+                Learn More
+                <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
+              </Link>
             </div>
-            <AnimatedStat target={stat.target} />
-            <p className="font-medium uppercase text-gray-700">{stat.title}</p>
           </div>
-        ))}
+          <div className="grid grid-cols-2 lg:gap-x-16 gap-y-10 mt-10">
+            {stats.map((stat, index) => (
+              <div
+                className={`text-center ${
+                  index % 2 === 0 ? "" : "lg:mt-24 mt-10"
+                }`}
+                key={index}
+              >
+                <div className="flex justify-center mb-3">
+                  <img src={stat.icon} alt={stat.title} className="w-12" />
+                </div>
+                <AnimatedStat target={stat.target} />
+                <p className="font-medium uppercase text-gray-700">
+                  {stat.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
