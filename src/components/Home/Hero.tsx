@@ -46,11 +46,21 @@ const Hero = () => {
               real estate fund and deals.
             </motion.p>
 
+            <div className="mt-10 mb-10">
+              <Link
+                to={"/contact"}
+                className="bg-white px-10 py-3 rounded-lg border border-secondary"
+              >
+                Invest with US
+                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+              </Link>
+            </div>
+
             <motion.div
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex text-white mt-10 gap-x-10"
+              className="flex text-white mt-14 gap-x-10"
             >
               <Link to="/" className="text-xl bi-facebook"></Link>
               <Link to="/" className="text-xl bi-instagram"></Link>
