@@ -1,9 +1,9 @@
 import { Nav } from "./nav";
 
 export const footer: Nav[] = [
-  { id: 1, name: "About", path: "/about-us", icon: "" },
-
-  { id: 2, name: "Invest with US", path: "/contact" },
+  { id: 1, name: "About US", path: "/about-us" },
+  { id: 2, name: "Contact", path: "/contact" },
+  // { id: 4, name: "Investor's Login", path: "/" },
   {
     id: 3,
     name: "Our Assets",
