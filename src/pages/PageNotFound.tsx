@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
 import { notFound } from "../assets";
 import LinkButton from "../components/Button/LinkButton";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const PageNotFound = () => {
+  const [title] = useState<string>("Page not Found");
+  useDocumentTitle(title);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar bg />

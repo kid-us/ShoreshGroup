@@ -1,10 +1,19 @@
+import { useEffect, useState } from "react";
 import CoreValues from "../components/About/CoreValues";
 import Mission from "../components/About/Mission";
 import WhoWeAre from "../components/About/WhoWeAre";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const About = () => {
+  const [title] = useState<string>("About US");
+  useDocumentTitle(title);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar bg />

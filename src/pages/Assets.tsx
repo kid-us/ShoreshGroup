@@ -77,7 +77,7 @@ const Assets = () => {
 
       <Navbar bg />
 
-      <div className="lg:pt-20 pt-28">
+      <div className="lg:pt-20 pt-40">
         <Container>
           <div className="lg:mb-8 mb-3">
             <h1 className="lg:text-3xl text-2xl poppins-bold ">

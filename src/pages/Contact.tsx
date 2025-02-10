@@ -5,6 +5,8 @@ import { FieldValues, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Footer from "../components/Footer/Footer";
 import { contact } from "../assets";
+import useDocumentTitle from "../hooks/useDocumentTitle";
+import { useEffect, useState } from "react";
 
 const schema = z.object({
   email: z.string().email({ message: "Email address required" }),
@@ -16,6 +18,13 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const Contact = () => {
+  const [title] = useState<string>("Contact US");
+  useDocumentTitle(title);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const {
     register,
     handleSubmit,

@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Privacy Policy and service Small device */}
-          <div className="lg:hidden flex gap-x-10">
+          <div className="lg:hidden flex gap-x-10 mt-3">
             <Link
               to={"/"}
               className="text-gray-300 lg:text-sm hover:text-white transition-colors"
