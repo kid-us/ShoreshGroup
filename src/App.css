@@ -10,7 +10,7 @@
   display: none;
 }
 
-.hero::before {
+.hero-before-hide::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -19,6 +19,15 @@
   height: 108.5dvh;
 }
 
+.hero-after-hide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 17, 0.509);
+  z-index: -1;
+  height: 100dvh;
+}
+/* 
 video {
   position: absolute;
   top: 4em;
@@ -27,7 +36,7 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-}
+} */
 
 .cover {
   position: absolute;

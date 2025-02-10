@@ -2,6 +2,7 @@ import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
+import useToggleStore from "../../store/store";
 
 interface Props {
   bg?: boolean;
@@ -11,6 +12,8 @@ const Navbar = ({ bg }: Props) => {
   const [hidden, setHidden] = useState<boolean>(false);
   const [hideHeader, setHideHeader] = useState<boolean>(false);
   const [hideAlways, setHideAlways] = useState<boolean>(false);
+
+  const { toggle } = useToggleStore();
 
   const { scrollY } = useScroll();
 
@@ -45,7 +48,12 @@ const Navbar = ({ bg }: Props) => {
       <header className={`fixed z-20 w-full`}>
         {/* Header */}
         {!hideAlways && !hideHeader && (
-          <Header onClose={() => setHideAlways(true)} />
+          <Header
+            onClose={() => {
+              toggle();
+              setHideAlways(true);
+            }}
+          />
         )}
 
         {/*Navbar */}

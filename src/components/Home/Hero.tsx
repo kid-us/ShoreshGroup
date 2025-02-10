@@ -11,13 +11,40 @@ import {
 import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
 import LinkButton from "../Button/LinkButton";
+import useToggleStore from "../../store/store";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const { isToggled } = useToggleStore();
+
   const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
+
+  useEffect(() => {
+    console.log(isToggled);
+  });
+
   return (
-    <div className="hero h-[100dvh] relative">
+    <div
+      className={` ${
+        isToggled ? "hero-after-hide" : "hero-before-hide"
+      } h-[100dvh] relative`}
+    >
       <div className="lg:block hidden">
-        <video src={heroVid} autoPlay muted loop></video>
+        <video
+          style={{
+            position: "absolute",
+            top: isToggled ? 0 : "4em",
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: -2,
+          }}
+          src={heroVid}
+          autoPlay
+          muted
+          loop
+        ></video>
       </div>
       <div className="lg:hidden block">
         <ImageFromFrames frames={frames} fps={0.4} />
