@@ -32,27 +32,27 @@ const Footer = () => {
               <Link
                 key={nav.id}
                 to={nav.path}
-                className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
+                className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
               >
                 {nav.name}
-                <span className="bi-arrow-up-right ms-1 text-xs"></span>
+                <span className="bi-arrow-up-right ms-1 text-xs group-hover:rotate-45"></span>
               </Link>
             ))}
             {/* Terms and Service Large device */}
             <div className="lg:flex hidden space-x-20 mt-9 ">
               <Link
                 to={"/"}
-                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
               >
                 Privacy Policy
-                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+                <span className="bi-arrow-up-right ms-2 text-xs group-hover:rotate-45"></span>
               </Link>
               <Link
                 to={"/"}
-                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
               >
                 Terms of Service
-                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+                <span className="bi-arrow-up-right ms-2 text-xs group-hover:rotate-45"></span>
               </Link>
             </div>
             {/* Large Device Social Media */}
@@ -80,17 +80,17 @@ const Footer = () => {
           <div className="lg:hidden flex gap-x-10 mt-3">
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
             >
               Privacy Policy
-              <span className="bi-arrow-up-right ms-2 text-xs"></span>
+              <span className="bi-arrow-up-right ms-2 text-xs group-hover:rotate-45"></span>
             </Link>
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
             >
               Terms of Service
-              <span className="bi-arrow-up-right ms-2 text-xs"></span>
+              <span className="bi-arrow-up-right ms-2 text-xs group-hover:rotate-45"></span>
             </Link>
           </div>
 
