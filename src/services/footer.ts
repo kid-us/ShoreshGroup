@@ -2,7 +2,7 @@ import { Nav } from "./nav";
 
 export const footer: Nav[] = [
   { id: 1, name: "About US", path: "/about-us" },
-  { id: 2, name: "Contact", path: "/contact" },
+  { id: 2, name: "Contact us", path: "/contact" },
   // { id: 4, name: "Investor's Login", path: "/" },
   {
     id: 3,

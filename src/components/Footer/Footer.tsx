@@ -32,7 +32,7 @@ const Footer = () => {
               <Link
                 key={nav.id}
                 to={nav.path}
-                className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors"
+                className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
               >
                 {nav.name}
                 <span className="bi-arrow-up-right ms-1 text-xs"></span>
@@ -42,14 +42,14 @@ const Footer = () => {
             <div className="lg:flex hidden space-x-20 mt-9 ">
               <Link
                 to={"/"}
-                className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
               >
                 Privacy Policy
                 <span className="bi-arrow-up-right ms-2 text-xs"></span>
               </Link>
               <Link
                 to={"/"}
-                className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
               >
                 Terms of Service
                 <span className="bi-arrow-up-right ms-2 text-xs"></span>
@@ -80,14 +80,14 @@ const Footer = () => {
           <div className="lg:hidden flex gap-x-10 mt-3">
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
             >
               Privacy Policy
               <span className="bi-arrow-up-right ms-2 text-xs"></span>
             </Link>
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase"
             >
               Terms of Service
               <span className="bi-arrow-up-right ms-2 text-xs"></span>
