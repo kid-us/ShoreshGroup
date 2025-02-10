@@ -125,7 +125,7 @@ const Navbar = ({ bg }: Props) => {
                     n.name === "Login"
                       ? "bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
                       : n.name === "Invest with US"
-                      ? "border flex justify-center items-center rounded-full h-9 mt-1 px-5 hover:bg-secondary hover:border-none group hover:text-gray-200 hover:text-sm"
+                      ? "border border-gray-400 flex justify-center items-center rounded-full h-9 mt-1 px-5 hover:bg-secondary hover:border-none group hover:text-gray-200 hover:text-sm"
                       : "mt-3"
                   }`}
                 >

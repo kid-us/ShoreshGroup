@@ -1,6 +1,6 @@
-import CoreValues from "../components/Home/CoreValues";
-import Mission from "../components/Home/Mission";
-import WhoWeAre from "../components/Home/WhoWeAre";
+import CoreValues from "../components/About/CoreValues";
+import Mission from "../components/About/Mission";
+import WhoWeAre from "../components/About/WhoWeAre";
 
 const About = () => {
   return (

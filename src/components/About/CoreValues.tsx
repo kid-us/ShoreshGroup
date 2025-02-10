@@ -6,7 +6,7 @@ import {
   transparency,
 } from "../../assets";
 import Container from "../Container/Container";
-import { AnimatedBeam, Circle } from "./AnimatedBeam";
+import { AnimatedBeam, Circle } from "../Home/AnimatedBeam";
 import { useRef } from "react";
 import { Mission } from "./Mission";
 import { motion } from "motion/react";
