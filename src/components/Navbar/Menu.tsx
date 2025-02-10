@@ -63,7 +63,7 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
           </div>
 
           <div className="absolute bottom-4 w-full">
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-amber-300">
               &copy;2025 SHORESH GROUP. All right reserved.
             </p>
           </div>
