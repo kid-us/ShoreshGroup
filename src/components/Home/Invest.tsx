@@ -5,7 +5,7 @@ import Container from "../Container/Container";
 const Invest = () => {
   return (
     <Container>
-      <div className="bg-secondary rounded-2xl p-10">
+      <div className="bg-secondary rounded-2xl lg:p-10 px-4 py-8 ">
         <motion.h1
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
