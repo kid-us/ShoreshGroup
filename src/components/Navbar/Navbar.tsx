@@ -10,6 +10,7 @@ interface Props {
 const Navbar = ({ bg }: Props) => {
   const [hidden, setHidden] = useState<boolean>(false);
   const [hideHeader, setHideHeader] = useState<boolean>(false);
+  const [hideAlways, setHideAlways] = useState<boolean>(false);
 
   const { scrollY } = useScroll();
 
@@ -26,13 +27,15 @@ const Navbar = ({ bg }: Props) => {
 
   // Header Scrolling
   useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
+    if (!hideAlways) {
+      const previous = scrollY.getPrevious();
 
-    if (previous !== undefined) {
-      if (latest > previous) {
-        setHideHeader(true);
-      } else {
-        setHideHeader(false);
+      if (previous !== undefined) {
+        if (latest > previous) {
+          setHideHeader(true);
+        } else {
+          setHideHeader(false);
+        }
       }
     }
   });
@@ -41,7 +44,9 @@ const Navbar = ({ bg }: Props) => {
     <>
       <header className={`fixed z-20 w-full`}>
         {/* Header */}
-        {!hideHeader && <Header onClose={() => setHideHeader(true)} />}
+        {!hideAlways && !hideHeader && (
+          <Header onClose={() => setHideAlways(true)} />
+        )}
 
         {/*Navbar */}
         <div

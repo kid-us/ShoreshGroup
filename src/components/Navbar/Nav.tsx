@@ -134,7 +134,7 @@ const Nav = ({ bg, onMenu }: Props) => {
         <div className="flex lg:hidden gap-x-5">
           <button
             onClick={() => {
-              onMenu();
+              onMenu;
               setMenu(true);
             }}
             className="bi-list text-2xl"
