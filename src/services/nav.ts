@@ -10,7 +10,7 @@ export const navs: Nav[] = [
   { id: 1, name: "About", path: "/about-us" },
   // { id: 2, name: "Contact", path: "/" },
   { id: 3, name: "Invest with US", path: "/contact" },
-  { id: 4, name: "Login", path: "/" },
+  // { id: 4, name: "Login", path: "/" },
 ];
 
 export const assets: Nav[] = [

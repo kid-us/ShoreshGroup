@@ -59,11 +59,15 @@ const Navbar = ({ bg }: Props) => {
         {/*Navbar */}
         <div
           className={`w-full  ${
-            bg ? "bg-white" : hidden ? "bg-white" : "nav"
-          } py-2`}
+            bg
+              ? "bg-white border-b border-gray-300"
+              : hidden
+              ? "bg-white"
+              : "nav"
+          } py-2 `}
         >
           <div className="container mx-auto">
-            <Nav bg onMenu={() => setHideHeader(true)} />
+            <Nav bg={bg ? true : false} onMenu={() => setHideHeader(true)} />
           </div>
         </div>
       </header>
