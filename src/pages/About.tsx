@@ -12,7 +12,7 @@ const About = () => {
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">About US</p>
 
-          <p className="text-4xl mt-10 w-[80%] text-white font-medium">
+          <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium">
             Shoresh Group began as a family venture focused on creating
             generational wealth through real estate. As we experienced growth
             and success, we saw the opportunity to share our journey and open
