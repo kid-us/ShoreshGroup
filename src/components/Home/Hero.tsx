@@ -8,7 +8,6 @@ import {
   hero6,
   hero7,
 } from "../../assets";
-import Container from "../Container/Container";
 import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
 
@@ -23,7 +22,7 @@ const Hero = () => {
         <ImageFromFrames frames={frames} fps={0.4} />
       </div>
 
-      <Container>
+      <div className="container mx-auto px-5">
         <div className="flex items-center h-screen">
           <div className="mt-40">
             <motion.h1
@@ -69,7 +68,7 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

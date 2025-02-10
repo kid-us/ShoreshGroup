@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import { logo } from "../../assets";
-import Container from "../Container/Container";
 import { footer } from "../../services/footer";
 
 const Footer = () => {
   return (
     <div className="bg-black/90">
-      <Container>
+      <div className="container mx-auto px-5 lg:px-5">
         <div className="lg:flex justify-between pt-14 lg:pb-0 pb-5">
           <div className="lg:flex items-center">
             <div className="lg:block grid grid-cols-2 lg:gap-x-20 lg:space-x-20 gap-x-5 gap-y-3">
@@ -68,7 +67,7 @@ const Footer = () => {
             &copy;2025 SHORESH GROUP. All right reserved.
           </p>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

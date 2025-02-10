@@ -2,7 +2,7 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 import { useEffect, useState } from "react";
 import { asset, managed, net, transaction } from "../../assets";
 import Container from "../Container/Container";
-import { Link } from "react-router-dom";
+import LinkButton from "../Button/LinkButton";
 
 type AnimatedStatProps = {
   target: number;
@@ -42,7 +42,7 @@ const Stat = () => {
 
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center lg:my-28 my-16">
+      <div className="flex flex-col items-center justify-center">
         <div className="grid lg:grid-cols-2 lg:gap-x-40">
           <div>
             <p className="text-sm uppercase text-gray-600">
@@ -59,14 +59,9 @@ const Stat = () => {
               projects. Core values include integrity, collaboration,
               excellence, and building a lasting legacy.
             </p>
+
             <div className="mt-16 mb-10">
-              <Link
-                to={"/about-us"}
-                className="bg-secondary text-white font-semibold px-12 py-3 text-sm rounded-full uppercase group hover:text-gray-200"
-              >
-                Learn More
-                <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
-              </Link>
+              <LinkButton name="Learn More" path="/about-us" />
             </div>
           </div>
           <div className="grid grid-cols-2 lg:gap-x-16 gap-y-10 mt-10">

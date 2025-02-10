@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { we1, we2, we4, we5 } from "../../assets";
 import Container from "../Container/Container";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import LinkButton from "../Button/LinkButton";
 
 interface Team {
   id: number;
@@ -91,13 +91,7 @@ const Team = () => {
             We invite you to invest passively alongside us.
           </p>
           <div className="lg:mt-16 mt-10 mb-10">
-            <Link
-              to={"/about-us"}
-              className="bg-secondary text-white font-semibold px-12 py-3 text-sm rounded-full uppercase group hover:text-gray-200"
-            >
-              Meet OUr Team
-              <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
-            </Link>
+            <LinkButton name=" Meet OUr Team" path="/about-us" />
           </div>
         </div>
 
