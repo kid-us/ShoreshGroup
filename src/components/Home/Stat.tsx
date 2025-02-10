@@ -42,46 +42,42 @@ const Stat = () => {
 
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center">
-        <div className="grid lg:grid-cols-2 lg:gap-x-40">
-          <div>
-            <p className="text-sm uppercase text-gray-600">
-              About Shoresh Group
-            </p>
-            <h1 className="font-semibold lg:text-4xl text-3xl lg:mt-16 my-8 lg:mb-10">
-              Shoresh Group: Building Wealth, Creating Legacies
-            </h1>
-            <p>
-              Shoresh Group is a family-founded real estate venture focused on
-              generational wealth. Investing in distressed homes, multifamily
-              properties, and large-scale developments. The mission is to create
-              financial security through short-term and long-term real estate
-              projects. Core values include integrity, collaboration,
-              excellence, and building a lasting legacy.
-            </p>
+      <div className="grid lg:grid-cols-2 lg:gap-x-40 lg:mt-0 mt-14">
+        <div>
+          <p className="text-sm uppercase text-gray-600">About Shoresh Group</p>
+          <h1 className="font-semibold lg:text-4xl text-3xl lg:mt-16 my-8 lg:mb-10">
+            Shoresh Group: Building Wealth, Creating Legacies
+          </h1>
+          <p>
+            Shoresh Group is a family-founded real estate venture focused on
+            generational wealth. Investing in distressed homes, multifamily
+            properties, and large-scale developments. The mission is to create
+            financial security through short-term and long-term real estate
+            projects. Core values include integrity, collaboration, excellence,
+            and building a lasting legacy.
+          </p>
 
-            <div className="lg:mt-16 mt-8 mb-10">
-              <LinkButton name="Learn More" path="/about-us" />
-            </div>
+          <div className="lg:mt-16 mt-8 mb-10">
+            <LinkButton name="Learn More" path="/about-us" />
           </div>
-          <div className="grid grid-cols-2 lg:gap-x-16 gap-y-10 mt-10">
-            {stats.map((stat, index) => (
-              <div
-                className={`text-center ${
-                  index % 2 === 0 ? "" : "lg:mt-24 mt-10"
-                }`}
-                key={index}
-              >
-                <div className="flex justify-center mb-3">
-                  <img src={stat.icon} alt={stat.title} className="w-12" />
-                </div>
-                <AnimatedStat target={stat.target} />
-                <p className="font-medium uppercase text-gray-700">
-                  {stat.title}
-                </p>
+        </div>
+        <div className="grid grid-cols-2 lg:gap-x-16 gap-y-10 mt-10">
+          {stats.map((stat, index) => (
+            <div
+              className={`text-center ${
+                index % 2 === 0 ? "" : "lg:mt-24 mt-10"
+              }`}
+              key={index}
+            >
+              <div className="flex justify-center mb-3">
+                <img src={stat.icon} alt={stat.title} className="w-12" />
               </div>
-            ))}
-          </div>
+              <AnimatedStat target={stat.target} />
+              <p className="font-medium uppercase text-gray-700">
+                {stat.title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </Container>

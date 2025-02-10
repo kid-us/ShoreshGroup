@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import useToggleStore from "../../store/store";
 
 type VideoFromFramesProps = {
   frames: string[];
@@ -10,6 +11,7 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
   fps = 24,
 }) => {
   const [currentFrameIndex, setCurrentFrameIndex] = useState(0);
+  const { isToggled } = useToggleStore();
 
   useEffect(() => {
     // Calculate the interval duration in milliseconds
@@ -29,7 +31,15 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
       <img
         src={frames[currentFrameIndex]}
         alt={`Frame ${currentFrameIndex}`}
-        className="cover"
+        style={{
+          position: "absolute",
+          top: isToggled ? 0 : "4em",
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -2,
+        }}
       />
     </div>
   );

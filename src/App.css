@@ -25,7 +25,6 @@
   inset: 0;
   background: rgba(8, 11, 17, 0.509);
   z-index: -1;
-  height: 100dvh;
 }
 /* 
 video {
@@ -38,7 +37,7 @@ video {
   z-index: -2;
 } */
 
-.cover {
+/* .cover {
   position: absolute;
   top: 4em;
   left: 0;
@@ -46,7 +45,7 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-}
+} */
 
 .text-shadow {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);

@@ -12,16 +12,11 @@ import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
 import LinkButton from "../Button/LinkButton";
 import useToggleStore from "../../store/store";
-import { useEffect } from "react";
 
 const Hero = () => {
   const { isToggled } = useToggleStore();
 
   const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
-
-  useEffect(() => {
-    console.log(isToggled);
-  });
 
   return (
     <div
