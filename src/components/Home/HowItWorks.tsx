@@ -1,6 +1,7 @@
 import { buy, sale, invest } from "../../assets";
 import Container from "../Container/Container";
 import { howItWork } from "../../assets";
+import { motion } from "motion/react";
 
 interface HowItWork {
   id: number;
@@ -62,12 +63,17 @@ const HowItWorks = () => {
 
           {steps.map((s) => (
             <div key={s.id} className="grid grid-cols-1 mb-6">
-              <div className="col-span-7">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2, duration: 0.4 }}
+                className="col-span-7"
+              >
                 <img src={s.icon} alt={s.title} className="w-11 mb-5" />
                 <p className="font-bold text-xl text-secondary">{s.title}</p>
 
                 <p className="text-sm mt-4">{s.info}</p>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
