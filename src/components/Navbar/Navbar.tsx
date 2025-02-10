@@ -1,38 +1,42 @@
-import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
 import useToggleStore from "../../store/store";
 
 interface Props {
-  bg?: boolean; // Optional prop
+  bg?: boolean;
 }
 
-const Navbar = ({ bg = false }: Props) => {
-  // Default to false if undefined
-  const [hidden, setHidden] = useState(false);
-  const [hideHeader, setHideHeader] = useState(false);
-  const [hideAlways, setHideAlways] = useState(false);
+const Navbar = ({ bg }: Props) => {
+  const [hidden, setHidden] = useState<boolean>(false);
+  const [hideHeader, setHideHeader] = useState<boolean>(false);
+  const [hideAlways, setHideAlways] = useState<boolean>(false);
 
   const { toggle } = useToggleStore();
+
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
 
-    if (previous !== undefined) {
-      // Navbar Logic
-      if (latest > previous && latest > 900) {
-        setHidden(true);
-      } else if (latest < previous && latest < 700) {
-        setHidden(false);
-      }
+    // Navbar
+    if (previous && latest > previous && latest > 900) {
+      setHidden(true);
+    } else if (previous && latest < previous && latest < 700) {
+      setHidden(false);
+    }
+  });
 
-      // Header Logic
-      if (!hideAlways) {
+  // Header Scrolling
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (!hideAlways) {
+      const previous = scrollY.getPrevious();
+
+      if (previous !== undefined) {
         if (latest > previous) {
           setHideHeader(true);
-        } else if (latest < 100) {
+        } else {
           setHideHeader(false);
         }
       }
@@ -40,32 +44,37 @@ const Navbar = ({ bg = false }: Props) => {
   });
 
   return (
-    <header className="fixed z-20 w-full">
-      {/* Header */}
-      {!hideAlways && !hideHeader && (
-        <Header
-          onClose={() => {
-            toggle();
-            setHideAlways(true);
-          }}
-        />
-      )}
+    <>
+      <header className={`fixed z-20 w-full`}>
+        {/* Header */}
+        {!hideAlways && !hideHeader && (
+          <Header
+            onClose={() => {
+              toggle();
+              setHideAlways(true);
+            }}
+          />
+        )}
 
-      {/* Navbar */}
-      <div
-        className={`w-full transition-all duration-300 ${
-          bg
-            ? "bg-white border-b border-gray-300"
-            : hidden
-            ? "bg-white opacity-0 pointer-events-none"
-            : "nav"
-        } py-2`}
-      >
-        <div className="container mx-auto">
-          <Nav bg={bg} onMenuOpen={() => setHideHeader(true)} />
+        {/*Navbar */}
+        <div
+          className={`w-full  ${
+            bg
+              ? "bg-white border-b border-gray-300"
+              : hidden
+              ? "bg-white"
+              : "nav"
+          } py-2`}
+        >
+          <div className="container mx-auto">
+            <Nav
+              bg={bg ? true : false}
+              onMenuOpen={() => setHideHeader(true)}
+            />
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 
