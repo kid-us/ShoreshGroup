@@ -12,9 +12,10 @@ import { logo } from "../../assets";
 
 interface Props {
   bg?: boolean;
+  onMenu?: () => void;
 }
 
-const Nav = ({ bg }: Props) => {
+const Nav = ({ bg, onMenu }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [animationClass, setAnimationClass] = useState<string>(
@@ -132,7 +133,10 @@ const Nav = ({ bg }: Props) => {
         {/* Small device */}
         <div className="flex lg:hidden gap-x-5">
           <button
-            onClick={() => setMenu(true)}
+            onClick={() => {
+              onMenu();
+              setMenu(true);
+            }}
             className="bi-list text-2xl"
           ></button>
         </div>

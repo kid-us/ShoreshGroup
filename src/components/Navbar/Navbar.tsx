@@ -1,7 +1,3 @@
-// import { useState } from "react";
-// import Header from "./Header";
-// import Nav from "./Nav";
-// import SubHeader from "./SubHeader";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import Nav from "./Nav";
@@ -44,21 +40,8 @@ const Navbar = ({ bg }: Props) => {
   return (
     <>
       <header className={`fixed z-20 w-full`}>
+        {/* Header */}
         {!hideHeader && <Header onClose={() => setHideHeader(true)} />}
-
-        {/* SubHeader */}
-        {/* <div className={`bg-white`}>
-          <div className="container mx-auto">
-            <p>
-              Shoresh Group is a family office unlocking opportunities in both
-              short-term and long-term real estate projects, from distressed
-              homes to mismanaged multifamily properties and large-scale
-              developments. We strategically partner with investors to deliver
-              sustainable growth and impactful returns, across a
-              diverse portfolio.
-            </p>
-          </div>
-        </div> */}
 
         {/*Navbar */}
         <div
@@ -67,7 +50,7 @@ const Navbar = ({ bg }: Props) => {
           } py-2`}
         >
           <div className="container mx-auto">
-            <Nav />
+            <Nav onMenu={() => setHideHeader(true)} />
           </div>
         </div>
       </header>
