@@ -48,7 +48,7 @@ const Stat = () => {
             <p className="text-sm uppercase text-gray-600">
               About Shoresh Group
             </p>
-            <h1 className="font-semibold text-4xl mt-16 mb-10">
+            <h1 className="font-semibold lg:text-4xl text-3xl mt-16 mb-10">
               Shoresh Group: Building Wealth, Creating Legacies
             </h1>
             <p>

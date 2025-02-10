@@ -1,7 +1,7 @@
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
-// import Interested from "../components/Home/Interested";
+import Invest from "../components/Home/Invest";
 import Portfolio from "../components/Home/Portfolio";
 import Stat from "../components/Home/Stat";
 import Team from "../components/Home/Team";
@@ -14,11 +14,11 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Stat />
+      <Invest />
       <HowItWorks />
       <Testimony />
       <Team />
       <Portfolio />
-      {/* <Interested /> */}
       <Footer />
     </main>
   );
