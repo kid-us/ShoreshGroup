@@ -41,6 +41,8 @@ import managed from "./allocation.png";
 
 import howItWork from "./how_it_work.jpeg";
 
+import contact from "./contact.jpeg";
+
 export {
   // Hero vid
   heroVid,
@@ -91,4 +93,5 @@ export {
 
   //
   howItWork,
+  contact,
 };
