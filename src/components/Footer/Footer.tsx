@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-5 gap-y-3 mt-10">
+          <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-2 gap-y-3 mt-10">
             {footer.map((nav) => (
               <Link
                 key={nav.id}
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Privacy Policy and service Small device */}
-          <div className="lg:hidden flex gap-x-10 mt-3">
+          <div className="lg:hidden flex gap-x-7 mt-3">
             <Link
               to={"/"}
               className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
