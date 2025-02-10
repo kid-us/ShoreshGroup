@@ -3,6 +3,7 @@ import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import Interested from "../components/Home/Interested";
 import Stat from "../components/Home/Stat";
+import Team from "../components/Home/Team";
 import Testimony from "../components/Home/Testimony";
 import Navbar from "../components/Navbar/Navbar";
 
@@ -12,9 +13,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Stat />
-      {/* <Assets /> */}
-      <Testimony />
       <HowItWorks />
+      <Testimony />
+      <Team />
       <Interested />
       <Footer />
     </main>
