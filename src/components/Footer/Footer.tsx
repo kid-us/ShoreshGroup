@@ -6,35 +6,8 @@ const Footer = () => {
   return (
     <div className="bg-black/90">
       <div className="container mx-auto px-5 lg:px-5">
-        <div className="lg:flex justify-between pt-14 lg:pb-0 pb-5">
-          <div className="lg:flex items-center">
-            <div className="lg:block grid grid-cols-2 lg:gap-x-20 lg:space-x-20 gap-x-5 gap-y-3">
-              {footer.map((nav) => (
-                <Link
-                  to={nav.path}
-                  className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white hover:text-[15px] transition-colors"
-                >
-                  {nav.name}
-                </Link>
-              ))}
-              <div className="lg:flex hidden space-x-20 mt-5 ">
-                <Link
-                  to={"/"}
-                  className="text-gray-300 lg:text-sm hover:text-white hover:text-[15px] transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-                <Link
-                  to={"/"}
-                  className="text-gray-300 lg:text-sm hover:text-white hover:text-[15px] transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center lg:mt-0 my-8">
+        <div className="lg:flex justify-between pt-14 pb-5">
+          <div className="flex items-center">
             <div>
               <div className="flex gap-x-3">
                 <img src={logo} alt="Logo" className="w-16 h-16" />
@@ -42,28 +15,105 @@ const Footer = () => {
                   SHORESH GROUP
                 </p>
               </div>
+              <p className="lg:text-xs text-sm mt-4 text-zinc-300 lg:w-96">
+                A family-founded real estate venture focused on generational
+                wealth. Investing in distressed homes, multifamily properties,
+                and large-scale developments.
+              </p>
               <p className="lg:block hidden text-xs text-btn mt-6">
                 &copy;2025 SHORESH GROUP. All right reserved.
               </p>
             </div>
           </div>
 
+          {/* Footer links */}
+          <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-5 gap-y-3 mt-10">
+            {footer.map((nav) => (
+              <Link
+                to={nav.path}
+                className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors"
+              >
+                {nav.name}
+                <span className="bi-arrow-up-right ms-1 text-xs"></span>
+              </Link>
+            ))}
+            {/* Terms and Service Large device */}
+            <div className="lg:flex hidden space-x-20 mt-9 ">
+              <Link
+                to={"/"}
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+              >
+                Privacy Policy
+                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+              </Link>
+              <Link
+                to={"/"}
+                className="text-gray-300 lg:text-sm hover:text-white transition-colors"
+              >
+                Terms of Service
+                <span className="bi-arrow-up-right ms-2 text-xs"></span>
+              </Link>
+            </div>
+            {/* Large Device Social Media */}
+            <div className="lg:flex hidden lg:mt-10 mt-14 gap-x-14">
+              <Link
+                to="/"
+                className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-facebook"
+              ></Link>
+              <Link
+                to="/"
+                className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-instagram"
+              ></Link>
+              <Link
+                to="/"
+                className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-linkedin"
+              ></Link>
+              <Link
+                to="/"
+                className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-twitter-x"
+              ></Link>
+            </div>
+          </div>
+
+          {/* Privacy Policy and service Small device */}
           <div className="lg:hidden flex gap-x-10">
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white hover:text-[15px] transition-colors"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors"
             >
               Privacy Policy
+              <span className="bi-arrow-up-right ms-2 text-xs"></span>
             </Link>
             <Link
               to={"/"}
-              className="text-gray-300 lg:text-sm hover:text-white hover:text-[15px] transition-colors"
+              className="text-gray-300 lg:text-sm hover:text-white transition-colors"
             >
               Terms of Service
+              <span className="bi-arrow-up-right ms-2 text-xs"></span>
             </Link>
           </div>
 
-          <p className="lg:hidden block text-xs text-btn mt-10">
+          {/* Small device Social Media */}
+          <div className="lg:hidden flex mt-10 gap-x-12">
+            <Link
+              to="/"
+              className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-facebook"
+            ></Link>
+            <Link
+              to="/"
+              className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-instagram"
+            ></Link>
+            <Link
+              to="/"
+              className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-linkedin"
+            ></Link>
+            <Link
+              to="/"
+              className="text-3xl h-10 text-gray-500 hover:text-btn transition-colors duration-150 bi-twitter-x"
+            ></Link>
+          </div>
+
+          <p className="lg:hidden block text-xs text-btn mt-8">
             &copy;2025 SHORESH GROUP. All right reserved.
           </p>
         </div>
