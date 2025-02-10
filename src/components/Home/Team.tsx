@@ -97,7 +97,7 @@ const Team = () => {
 
         <div className="lg:col-span-3">
           <div className="grid lg:grid-cols-9">
-            <div className="lg:col-span-4 lg:col-start-2">
+            <div className="lg:col-span-4 lg:col-start-2 overflow-hidden shadow-[7px_3px_3px_0px_#E0B84D] lg:rounded-full rounded-xl">
               <motion.img
                 key={teams[index].id}
                 src={teams[index].img}
@@ -106,7 +106,7 @@ const Team = () => {
                 animate={{ opacity: 1, x: 0 }} // End animation
                 exit={{ opacity: 0, x: -20 }} // Exit animation
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="w-full object-cover lg:h-[70vh] h-[50vh] lg:rounded-full rounded-xl shadow-[7px_3px_3px_0px_#E0B84D]"
+                className="w-full object-cover lg:h-[70vh] h-[50vh] lg:rounded-full rounded-xl"
               />
             </div>
 
