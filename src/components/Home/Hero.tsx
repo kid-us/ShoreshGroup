@@ -10,6 +10,7 @@ import {
 } from "../../assets";
 import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
+import LinkButton from "../Button/LinkButton";
 
 const Hero = () => {
   const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
@@ -46,13 +47,11 @@ const Hero = () => {
             </motion.p>
 
             <div className="mt-16 mb-10">
-              <Link
-                to={"/contact"}
-                className="bg-white text-black font-semibold px-12 py-3 text-sm rounded-full uppercase group hover:text-gray-700"
-              >
-                Invest with Us
-                <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
-              </Link>
+              <LinkButton
+                name="Invest With Us"
+                path="/contact"
+                style="bg-[white] hover:text-gray-700"
+              />
             </div>
 
             <motion.div
