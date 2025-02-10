@@ -43,6 +43,8 @@ import howItWork from "./how_it_work.jpeg";
 
 import contact from "./contact.jpeg";
 
+import notFound from "./404.gif";
+
 export {
   // Hero vid
   heroVid,
@@ -91,7 +93,12 @@ export {
   transaction,
   asset,
 
-  //
+  // How it work
   howItWork,
+
+  // Contact
   contact,
+
+  // 404
+  notFound,
 };
