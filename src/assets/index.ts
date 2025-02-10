@@ -39,6 +39,8 @@ import transaction from "./transaction.png";
 import asset from "./loan.png";
 import managed from "./allocation.png";
 
+import howItWork from "./how_it_work.jpeg";
+
 export {
   // Hero vid
   heroVid,
@@ -86,4 +88,7 @@ export {
   net,
   transaction,
   asset,
+
+  //
+  howItWork,
 };

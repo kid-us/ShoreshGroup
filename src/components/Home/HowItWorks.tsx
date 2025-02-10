@@ -1,5 +1,6 @@
 import { buy, sale, invest } from "../../assets";
 import Container from "../Container/Container";
+import { howItWork } from "../../assets";
 
 interface HowItWork {
   id: number;
@@ -33,34 +34,44 @@ const HowItWorks = () => {
   return (
     <Container>
       <div className="lg:mt-32">
-        <h1 className="lg:text-3xl text-2xl poppins-bold text-center lg:mb-5 mb-3">
-          How it works
-        </h1>
-        <p className="text-center text-gray-500 lg:mb-10 mb-10">
-          Seamless Property Transactions with Transparent Profit Sharing
-        </p>
+        <div className="lg:hidden block">
+          <h1 className="lg:text-3xl text-2xl poppins-bold lg:mb-5 mb-3">
+            How it works
+          </h1>
+          <p className="text-gray-500 lg:mb-10 mb-10">
+            Seamless Property Transactions with Transparent Profit Sharing
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-7 gap-x-12 h-full">
+          <div className="lg:col-span-3 flex items-center h-full">
+            <img
+              src={howItWork}
+              alt="How it work"
+              className="lg:h-[80dvh] h-80 w-full object-cover object-right rounded-tr-[180px] rounded-xl"
+            />
+          </div>
 
-        <div className="grid lg:grid-cols-3 lg:gap-x-10 gap-y-5 lg:mx-20">
-          {steps.map((s) => (
-            <div
-              key={s.id}
-              className="shadow p-8 rounded-2xl border border-btn"
-            >
-              <p>
-                <span className="text-xs bg-secondary rounded text-white px-5 py-1">
-                  Step {s.id}
-                </span>
-              </p>
-              <div className="flex justify-end">
-                <img src={s.icon} alt={s.title} className="w-16" />
-              </div>
-              <p className="font-bold text-xl w-32">{s.title}</p>
-
-              <p className="text-sm pt-8 border-t-2 border-gray-400 mt-4">
-                {s.info}
+          <div className="lg:col-span-4 lg:mt-0 mt-10">
+            <div className="lg:block hidden">
+              <h1 className="lg:text-3xl text-2xl poppins-bold lg:mb-5 mb-3">
+                How it works
+              </h1>
+              <p className="text-gray-500 lg:mb-10 mb-10">
+                Seamless Property Transactions with Transparent Profit Sharing
               </p>
             </div>
-          ))}
+
+            {steps.map((s) => (
+              <div key={s.id} className="grid grid-cols-1 mb-6">
+                <div className="col-span-7">
+                  <img src={s.icon} alt={s.title} className="w-11 mb-5" />
+                  <p className="font-bold text-xl text-secondary">{s.title}</p>
+
+                  <p className="text-sm mt-4">{s.info}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Container>
