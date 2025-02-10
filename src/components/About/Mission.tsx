@@ -48,14 +48,13 @@ const Mission = () => {
                   Mission
                 </h1>
                 <p className="mt-5 lg:text-lg text-black">
-                  At Shoresh Group, our mission is to empower our investors,
-                  partners, and communities by delivering innovative and
-                  transparent real estate solutions. We strive to create
-                  sustainable value through strategic property acquisitions,
-                  active asset management, and a commitment to excellence. By
-                  leveraging industry expertise and a forward-thinking approach,
-                  we aim to build vibrant communities, generate competitive
-                  returns, and secure the financial futures of all stakeholders.
+                  Our commitment is to empower each generation of our family to
+                  thrive by building a legacy of financial security. We unlock
+                  value in both short-term fix-and-flip projects and long-term
+                  investments, ensuring lasting growth and success for our
+                  family, partners, investors, and like-minded families. We aim
+                  to pass on this legacy of opportunity, fostering prosperity
+                  and success for all who join us on this journey.
                 </p>
               </div>
             </div>

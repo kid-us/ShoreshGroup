@@ -1,5 +1,5 @@
 import {
-  accountability,
+  // accountability,
   community,
   excellence,
   innovation,
@@ -19,29 +19,35 @@ interface Value extends Mission {
 const values: Value[] = [
   {
     id: 1,
-    name: "Integrity & Transparency:",
+    name: "Integrity:",
     icon: transparency,
-    desc: "We conduct our business ethically, ensuring honesty and clear communication with investors, partners, and residents.",
+    desc: "Transparent and honest dealings in every project.",
+  },
+  {
+    id: 2,
+    name: "Excellence:",
+    icon: excellence,
+    desc: "Delivering high-quality results with a focus on growth.",
   },
 
-  {
-    id: 3,
-    name: "Stewardship & Accountability:",
-    icon: accountability,
-    desc: "We are committed to responsible management of assets and resources, holding ourselves accountable for sustainable growth and long-term success.",
-  },
+  // {
+  //   id: 3,
+  //   name: "Stewardship & Accountability:",
+  //   icon: accountability,
+  //   desc: "We are committed to responsible management of assets and resources, holding ourselves accountable for sustainable growth and long-term success.",
+  // },
 
   {
     id: 4,
-    name: "Community Impact & Partnership:",
+    name: "Collaboration:",
     icon: community,
-    desc: "We invest in more than properties; we invest in communities. By fostering positive relationships and engaging in meaningful partnerships, we work to create thriving neighborhoods where residents and investors can flourish.",
+    desc: "Working together to achieve mutual success.",
   },
   {
     id: 5,
-    name: "Value Creation & Innovation:",
+    name: "Legacy:",
     icon: innovation,
-    desc: "We continuously seek opportunities to enhance property value through creative, forward-thinking strategies and innovative improvements that benefit both our stakeholders and the communities we serve.",
+    desc: "Building generational wealth that empowers the future.",
   },
 ];
 
@@ -50,38 +56,30 @@ const CoreValues = () => {
   const div3Ref = useRef<HTMLDivElement>(null);
   const div4Ref = useRef<HTMLDivElement>(null);
   const div5Ref = useRef<HTMLDivElement>(null);
-  const div7Ref = useRef<HTMLDivElement>(null);
+  // const div7Ref = useRef<HTMLDivElement>(null);
   const div8Ref = useRef<HTMLDivElement>(null);
   const div9Ref = useRef<HTMLDivElement>(null);
   return (
     <Container>
       {/* Only on Large device */}
       <div
-        className="relative lg:flex hidden w-full lg:max-w-[100%] mx-auto items-center justify-center mt-2 mb-6 overflow-hidden pb-10"
+        className="relative lg:flex hidden w-full lg:max-w-[90%] mx-auto items-center justify-center mt-2 mb-6 overflow-hidden pb-10"
         ref={containerRef}
       >
         <div className="flex h-full w-full flex-col items-stretch justify-between lg:gap-8">
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div8Ref}>
               <img src={transparency} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">
-                Integrity & Transparency:
-              </p>
+              <p className="poppins-semibold text-lg mt-3">Integrity:</p>
               <p className="text-xs mt-2">
-                We conduct our business ethically, ensuring honesty and clear
-                communication with investors, partners, and residents
+                Transparent and honest dealings in every project.
               </p>
             </Circle>
             <Circle ref={div5Ref}>
               <img src={excellence} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">
-                Excellence & Operational Efficiency:
-              </p>
+              <p className="poppins-semibold text-lg mt-3">Excellence:</p>
               <p className="text-xs mt-2">
-                We continuously seek opportunities to enhance property value
-                through creative, forward-thinking strategies and innovative
-                improvements that benefit both our stakeholders and the
-                communities we serve.
+                Delivering high-quality results with a focus on growth.
               </p>
             </Circle>
           </div>
@@ -98,17 +96,12 @@ const CoreValues = () => {
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div3Ref}>
               <img src={community} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">
-                Community Impact & Partnership:
-              </p>
+              <p className="poppins-semibold text-lg mt-3">Collaboration:</p>
               <p className="text-xs mt-2">
-                We invest in more than properties; we invest in communities. By
-                fostering positive relationships and engaging in meaningful
-                partnerships, we work to create thriving neighborhoods where
-                residents and investors can flourish.
+                Working together to achieve mutual success.
               </p>
             </Circle>
-            <Circle ref={div7Ref} className="mt-60">
+            {/* <Circle ref={div7Ref} className="mt-60">
               <img src={innovation} alt="logo" />
               <p className="poppins-semibold text-lg mt-3">
                 Value Creation & Innovation:
@@ -119,16 +112,12 @@ const CoreValues = () => {
                 improvements that benefit both our stakeholders and the
                 communities we serve.
               </p>
-            </Circle>
+            </Circle> */}
             <Circle ref={div9Ref}>
-              <img src={accountability} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">
-                Stewardship & Accountability:
-              </p>
+              <img src={innovation} alt="logo" />
+              <p className="poppins-semibold text-lg mt-3">Legacy:</p>
               <p className="text-xs mt-2">
-                We are committed to responsible management of assets and
-                resources, holding ourselves accountable for sustainable growth
-                and long-term success.
+                Building generational wealth that empowers the future.
               </p>
             </Circle>
           </div>
@@ -153,7 +142,7 @@ const CoreValues = () => {
           gradientStopColor="#00a651"
           dotted
         />
-        <AnimatedBeam
+        {/* <AnimatedBeam
           containerRef={containerRef}
           fromRef={div7Ref}
           toRef={div4Ref}
@@ -163,7 +152,7 @@ const CoreValues = () => {
           dotted
           gradientStartColor="#00adee"
           gradientStopColor="#00a651"
-        />
+        /> */}
         <AnimatedBeam
           containerRef={containerRef}
           fromRef={div9Ref}

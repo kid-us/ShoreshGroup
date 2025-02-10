@@ -63,7 +63,7 @@ const Navbar = ({ bg }: Props) => {
           } py-2`}
         >
           <div className="container mx-auto">
-            <Nav onMenu={() => setHideHeader(true)} />
+            <Nav bg onMenu={() => setHideHeader(true)} />
           </div>
         </div>
       </header>
