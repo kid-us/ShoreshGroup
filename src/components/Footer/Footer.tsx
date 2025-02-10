@@ -30,6 +30,7 @@ const Footer = () => {
           <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-5 gap-y-3 mt-10">
             {footer.map((nav) => (
               <Link
+                key={nav.id}
                 to={nav.path}
                 className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors"
               >

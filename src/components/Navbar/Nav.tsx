@@ -12,10 +12,10 @@ import { logo } from "../../assets";
 
 interface Props {
   bg?: boolean;
-  onMenu?: () => void;
+  onMenuOpen?: () => void;
 }
 
-const Nav = ({ bg, onMenu }: Props) => {
+const Nav = ({ bg, onMenuOpen }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [animationClass, setAnimationClass] = useState<string>(
@@ -104,6 +104,7 @@ const Nav = ({ bg, onMenu }: Props) => {
           {/* Links */}
           {navs.map((n, index) => (
             <motion.a
+              key={`${n.name}-${index}`}
               whileHover={{
                 y: -1,
                 scale: 1.05,
@@ -113,7 +114,6 @@ const Nav = ({ bg, onMenu }: Props) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
               href={n.path}
-              key={n.id || index}
               className={`relative transition-colors poppins-medium ${
                 n.name === "Login"
                   ? "bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
@@ -134,7 +134,7 @@ const Nav = ({ bg, onMenu }: Props) => {
         <div className="flex lg:hidden gap-x-5">
           <button
             onClick={() => {
-              onMenu;
+              if (onMenuOpen) onMenuOpen();
               setMenu(true);
             }}
             className="bi-list text-2xl"
