@@ -1,4 +1,5 @@
 import Footer from "../components/Footer/Footer";
+import Advantage from "../components/Home/Advantage";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import Invest from "../components/Home/Invest";
@@ -14,6 +15,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Stat />
+      <Advantage />
       <Invest />
       <HowItWorks />
       <Testimony />
