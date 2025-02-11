@@ -70,15 +70,19 @@ const CoreValues = () => {
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div8Ref}>
               <img src={transparency} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">Integrity:</p>
-              <p className="text-xs mt-2">
+              <p className="poppins-semibold text-lg mt-3 text-white">
+                Integrity:
+              </p>
+              <p className="text-xs mt-2 text-gray-100">
                 Transparent and honest dealings in every project.
               </p>
             </Circle>
             <Circle ref={div5Ref}>
               <img src={excellence} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">Excellence:</p>
-              <p className="text-xs mt-2">
+              <p className="poppins-semibold text-lg mt-3 text-white">
+                Excellence:
+              </p>
+              <p className="text-xs mt-2 text-gray-100">
                 Delivering high-quality results with a focus on growth.
               </p>
             </Circle>
@@ -88,7 +92,7 @@ const CoreValues = () => {
               ref={div4Ref}
               className={"z-40 flex justify-center rounded-full"}
             >
-              <div className="border rounded-xl py-3 px-10 bg-secondary text-white font-bold shadow-lg shadow-amber-500">
+              <div className="border rounded-xl py-3 px-10 bg-btn text-black font-bold shadow-lg shadow-amber-500">
                 <p className="uppercase">Our Core Values</p>
               </div>
             </div>
@@ -96,8 +100,10 @@ const CoreValues = () => {
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div3Ref}>
               <img src={community} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">Collaboration:</p>
-              <p className="text-xs mt-2">
+              <p className="poppins-semibold text-lg mt-3 text-white">
+                Collaboration:
+              </p>
+              <p className="text-xs mt-2 text-gray-100">
                 Working together to achieve mutual success.
               </p>
             </Circle>
@@ -115,8 +121,10 @@ const CoreValues = () => {
             </Circle> */}
             <Circle ref={div9Ref}>
               <img src={innovation} alt="logo" />
-              <p className="poppins-semibold text-lg mt-3">Legacy:</p>
-              <p className="text-xs mt-2">
+              <p className="poppins-semibold text-lg mt-3 text-white">
+                Legacy:
+              </p>
+              <p className="text-xs mt-2 text-gray-100">
                 Building generational wealth that empowers the future.
               </p>
             </Circle>
@@ -188,11 +196,13 @@ const CoreValues = () => {
               x: 0,
               transition: { delay: index * 0.01, duration: 0.5 },
             }}
-            className="border border-amber-400 rounded-xl bg-white  p-3 shadow hover:bg-black hover:text-white hover:shadow-amber-500 hover:shadow-lg transition-colors"
+            className="border border-amber-400 rounded-xl bg-secondary p-3 shadow hover:shadow-amber-500 hover:shadow-lg transition-colors"
           >
             <img src={value.icon} alt="logo" />
-            <p className="poppins-semibold text-lg mt-3">{value.name}</p>
-            <p className="text-xs mt-2">{value.desc}</p>
+            <p className="poppins-semibold text-lg mt-3 text-white">
+              {value.name}
+            </p>
+            <p className="text-xs mt-2 text-gray-100">{value.desc}</p>
           </motion.div>
         ))}
       </div>
