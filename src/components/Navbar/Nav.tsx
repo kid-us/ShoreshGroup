@@ -49,46 +49,28 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
           bg ? "text-black" : hidden ? "text-black" : "text-white"
         }`}
       >
-        <motion.a
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          href="/"
-          className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
-        >
-          <img src={logo} alt="Logo" className="w-13" />
-
-          <div className="leading-6">
-            <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1">
-              Shoresh Group
-            </p>
-            <p className="items-center flex logo-font logo-font uppercase text-xl text-amber-300">
-              Real Estate
-            </p>
-          </div>
-        </motion.a>
-
-        {/* Large device Links */}
-        <div className="lg:flex hidden gap-x-14">
-          {/* About */}
+        <div className="flex gap-x-20">
           <motion.a
-            whileHover={{
-              y: -1,
-              scale: 1.05,
-              transition: { duration: 0.5 },
-            }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.2 }}
-            href="/about-us"
-            className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            href="/"
+            className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
           >
-            About us
-          </motion.a>
+            <img src={logo} alt="Logo" className="w-13" />
 
-          {/* Assets */}
-          <div className="mt-2">
-            <motion.button
+            <div className="leading-6">
+              <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1">
+                Shoresh Group
+              </p>
+              <p className="items-center flex logo-font logo-font uppercase text-xl text-amber-300">
+                Real Estate
+              </p>
+            </div>
+          </motion.a>
+          <div className="lg:flex gap-x-12 hidden">
+            {/* About */}
+            <motion.a
               whileHover={{
                 y: -1,
                 scale: 1.05,
@@ -96,50 +78,71 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              onClick={() => (hovered ? setHovered(false) : setHovered(true))}
-              className="relative transition-colors font-medium uppercase text-sm"
+              transition={{ delay: 0.5, duration: 0.2 }}
+              href="/about-us"
+              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
             >
-              Assets{" "}
-              <span
-                className={`${
-                  hovered ? "bi-chevron-up" : "bi-chevron-down"
-                } text-sm ms-3`}
-              ></span>
-              {/* Modal shown when hovered */}
-              {hovered && (
-                <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg py-3 ps-5 text-start">
-                  {assets.map((asset) => (
-                    <Link
-                      key={asset.id}
-                      className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
-                      to={asset.path}
-                    >
-                      <span className={`${asset.icon} me-2`}></span>
-                      {asset.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </motion.button>
+              About us
+            </motion.a>
+
+            {/* Assets */}
+            <div className="mt-2">
+              <motion.button
+                whileHover={{
+                  y: -1,
+                  scale: 1.05,
+                  transition: { duration: 0.5 },
+                }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                onClick={() => (hovered ? setHovered(false) : setHovered(true))}
+                className="relative transition-colors font-medium uppercase text-sm"
+              >
+                Assets{" "}
+                <span
+                  className={`${
+                    hovered ? "bi-chevron-up" : "bi-chevron-down"
+                  } text-sm ms-3`}
+                ></span>
+                {/* Modal shown when hovered */}
+                {hovered && (
+                  <div className="absolute top-10 w-60 border border-gray-300 rounded bg-white shadow-lg py-3 ps-5 text-start">
+                    {assets.map((asset) => (
+                      <Link
+                        key={asset.id}
+                        className="block hover:ms-1 transition-all mb-2 text-sm py-1 text-black"
+                        to={asset.path}
+                      >
+                        <span className={`${asset.icon} me-2`}></span>
+                        {asset.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </motion.button>
+            </div>
+
+            {/* Contact */}
+            <motion.a
+              whileHover={{
+                y: -1,
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.2 }}
+              href="/contact"
+              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+            >
+              contact us
+            </motion.a>
           </div>
+        </div>
 
-          {/* Contact */}
-          <motion.a
-            whileHover={{
-              y: -1,
-              scale: 1.05,
-              transition: { duration: 0.5 },
-            }}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.2 }}
-            href="/contact"
-            className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
-          >
-            contact us
-          </motion.a>
-
+        {/* Large device Links */}
+        <div className="lg:flex hidden gap-x-14">
           {/* Login */}
           <div>
             <motion.a
