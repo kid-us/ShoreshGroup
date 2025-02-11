@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { assets, navs } from "../../services/nav";
+import { assets } from "../../services/nav";
 import {
   AnimatePresence,
   motion,
@@ -67,9 +67,27 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
             </p>
           </div>
         </motion.a>
-        {/* Large device */}
+
+        {/* Large device Links */}
         <div className="lg:flex hidden gap-x-14">
-          <div className="mt-3">
+          {/* About */}
+          <motion.a
+            whileHover={{
+              y: -1,
+              scale: 1.05,
+              transition: { duration: 0.5 },
+            }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.2 }}
+            href="/about-us"
+            className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+          >
+            About us
+          </motion.a>
+
+          {/* Assets */}
+          <div className="mt-2">
             <motion.button
               whileHover={{
                 y: -1,
@@ -106,33 +124,34 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
             </motion.button>
           </div>
 
-          {/* Links */}
-          {navs.map((n, index) => (
+          {/* Contact */}
+          <motion.a
+            whileHover={{
+              y: -1,
+              scale: 1.05,
+              transition: { duration: 0.5 },
+            }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.2 }}
+            href="/contact"
+            className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+          >
+            contact us
+          </motion.a>
+
+          {/* Login */}
+          <div>
             <motion.a
-              key={`${n.name}-${index}`}
-              whileHover={{
-                y: -1,
-                scale: 1.05,
-                transition: { duration: 0.5 },
-              }}
+              href="/"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
-              href={n.path}
-              className={`relative transition-colors poppins-medium ${
-                n.name === "Investor's Login"
-                  ? "bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
-                  : n.name === "Invest with US"
-                  ? "border border-gray-400 flex justify-center items-center rounded-full h-9 mt-1 px-5 hover:bg-secondary hover:border-none group hover:text-gray-200 hover:text-sm"
-                  : "mt-3"
-              } font-medium uppercase text-sm`}
+              className="bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
             >
-              {n.name}
-              {n.name === "Invest with US" && (
-                <span className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></span>
-              )}
+              Investor's Login
             </motion.a>
-          ))}
+          </div>
         </div>
 
         {/* Small device */}
