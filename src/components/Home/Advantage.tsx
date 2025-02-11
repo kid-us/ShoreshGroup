@@ -37,7 +37,7 @@ const Advantage = () => {
           Shoresh Group Partners Advantage
         </h1>
 
-        <div className="grid lg:grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
           {advantages.map((a, index) => (
             <motion.div
               key={a.id}
