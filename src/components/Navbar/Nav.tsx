@@ -58,7 +58,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
         >
           <img src={logo} alt="Logo" className="w-13" />
 
-          <span className="items-center flex logo-font logo-font uppercase">
+          <span className="items-center flex logo-font logo-font uppercase underline underline-offset-3 decorattion-amber-400">
             Shoresh Group
           </span>
         </motion.a>
