@@ -188,7 +188,7 @@ const CoreValues = () => {
               x: 0,
               transition: { delay: index * 0.01, duration: 0.5 },
             }}
-            className="border border-amber-400 rounded-xl bg-secondary p-3 shadow hover:shadow-amber-500 hover:shadow-lg transition-colors"
+            className="border border-amber-400 rounded-xl bg p-3 shadow hover:shadow-amber-500 hover:shadow-lg transition-colors"
           >
             <img src={value.icon} alt="logo" />
             <p className="text-lg mt-3 text-white">{value.name}</p>
