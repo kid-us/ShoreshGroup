@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "../Container/Container";
 import { motion } from "motion/react";
 
@@ -21,6 +22,8 @@ const Mission = () => {
       name: "Community Impact: We believe in enhancing the communities where we invest. Through sustainable, thoughtful renovations and developments, we improve properties while positively contributing to the neighborhoods and families we serve.",
     },
   ];
+
+  const [onHover, setOnHover] = useState<number>(0);
 
   return (
     <div className="overflow-hidden lg:mb-10">
@@ -56,7 +59,11 @@ const Mission = () => {
                       opacity: 1,
                       transition: { delay: 0.05 * index, duration: 0.5 },
                     }}
-                    className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium   lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
+                    onMouseEnter={() => setOnHover(m.id)}
+                    onMouseLeave={() => setOnHover(0)}
+                    className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium   lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] ${
+                      onHover === m.id ? "bg-white" : "bg"
+                    } text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
                   >
                     <p className={``}>{m.name}</p>
                   </motion.div>
