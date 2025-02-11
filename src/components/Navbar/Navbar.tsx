@@ -62,9 +62,9 @@ const Navbar = ({ bg }: Props) => {
             bg
               ? "bg-white border-b border-gray-300"
               : hidden
-              ? "bg-white"
-              : "nav"
-          } py-2`}
+              ? "bg-white border-b border-gray-300"
+              : "nav border-b border-gray-600"
+          } py-3`}
         >
           <div className="container mx-auto">
             <Nav

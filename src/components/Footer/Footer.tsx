@@ -11,9 +11,17 @@ const Footer = () => {
             <div>
               <div className="flex gap-x-3">
                 <img src={logo} alt="Logo" className="w-16 h-16" />
-                <p className="flex items-center text-2xl font-extrabold logo-font uppercase text-white underline underline-offset-4  decoration-amber-400 decoration-1">
+                {/* <p className="flex items-center text-2xl font-extrabold logo-font uppercase text-white underline underline-offset-4  decoration-amber-400 decoration-1">
                   SHORESH GROUP
-                </p>
+                </p> */}
+                <div className="leading-6">
+                  <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-white text-2xl">
+                    Shoresh Group
+                  </p>
+                  <p className="items-center flex logo-font logo-font uppercase text-xl text-amber-300">
+                    Real Estate
+                  </p>
+                </div>
               </div>
               <p className="lg:text-xs text-sm mt-4 text-zinc-300 lg:w-96">
                 A family-founded real estate venture focused on generational

@@ -14,7 +14,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(8, 11, 17, 0.509);
+  background: rgba(8, 11, 17, 0.584);
   z-index: -1;
   height: 108.5dvh;
 }
@@ -23,7 +23,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(8, 11, 17, 0.509);
+  /* background: rgba(8, 11, 17, 0.509); old */
+  background: rgba(8, 11, 17, 0.584);
   z-index: -1;
 }
 /* 
