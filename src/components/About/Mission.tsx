@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Container from "../Container/Container";
 import { motion } from "motion/react";
 
@@ -8,32 +7,20 @@ export interface Mission {
 }
 
 const Mission = () => {
-  const [missionId, setMissionId] = useState<number>(1);
-
   const mission: Mission[] = [
     {
       id: 1,
-      name: "Empower Investors: Provide transparent opportunities and deliver exceptional returns to our investors. We build lasting trust by offering clear insights into our strategies and performance, ensuring every investor feels confident and valued.",
+      name: "Long-Term Value Creation: Our focus is on investments that create lasting wealth. By aligning with family values and long-term growth, we help ensure that every investment continues to appreciate and benefit future generations.",
     },
     {
       id: 2,
-      name: "Innovate Sustainably: Implement cutting-edge, responsible strategies for lasting growth. By integrating advanced technologies with sustainable practices, we ensure our growth not only benefits our stakeholders but also contributes positively to the environment and society.",
+      name: "Expertise & Insight: With years of experience in real estate, we leverage market research, data-driven insights, and an expert team to identify high-potential investment opportunities that maximize returns for our partners",
     },
     {
       id: 3,
-      name: "Build Communities: Create vibrant neighborhoods through thoughtful, community-focused development. Our developments are designed to enhance local quality of life, fostering safe and thriving",
+      name: "Community Impact: We believe in enhancing the communities where we invest. Through sustainable, thoughtful renovations and developments, we improve properties while positively contributing to the neighborhoods and families we serve.",
     },
   ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setMissionId((prevMissionId) =>
-        prevMissionId === 3 ? 1 : prevMissionId + 1
-      );
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="overflow-hidden lg:mb-10">
@@ -48,13 +35,15 @@ const Mission = () => {
                   Mission
                 </h1>
                 <p className="mt-5 lg:text-lg text-black">
-                  Our commitment is to empower each generation of our family to
-                  thrive by building a legacy of financial security. We unlock
-                  value in both short-term fix-and-flip projects and long-term
-                  investments, ensuring lasting growth and success for our
-                  family, partners, investors, and like-minded families. We aim
-                  to pass on this legacy of opportunity, fostering prosperity
-                  and success for all who join us on this journey.
+                  At Shoresh Group, our mission is simple: to build generational
+                  wealth for families and investors through strategic real
+                  estate investments. We are committed to creating lasting value
+                  by identifying opportunities with high growth potential,
+                  transforming properties, and delivering exceptional returns.
+                  Through a foundation of integrity, transparency, and
+                  innovation, we empower our partners to achieve financial
+                  success while making a positive impact on the
+                  communities we serve.
                 </p>
               </div>
             </div>
@@ -62,14 +51,6 @@ const Mission = () => {
             <div className="lg:col-span-2 grid lg:grid-cols-4 gap-x-10 gap-y-6 lg:mx-10 lg:mt-0 mt-8">
               {mission.map((m, index) => (
                 <>
-                  {/* {m.id === missionId && (
-                    <motion.div
-                      layoutId="lol"
-                      className="lg:flex justify-center items-center hidden h-full"
-                    >
-                      <img src={aim} alt="target" />
-                    </motion.div>
-                  )} */}
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
@@ -77,15 +58,7 @@ const Mission = () => {
                       opacity: 1,
                       transition: { delay: 0.05 * index, duration: 0.5 },
                     }}
-                    onClick={() => setMissionId(m.id)}
-                    className={`${
-                      m.id === missionId
-                        ? "col-span-4"
-                        : "col-span-4 border border-black/20 rounded"
-                    }  flex justify-center items-center p-5 font-medium border border-amber-300 lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-secondary text-white rounded 
-                      
-                      
-                    `}
+                    className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium   lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-secondary text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
                   >
                     <p className={``}>{m.name}</p>
                   </motion.div>
