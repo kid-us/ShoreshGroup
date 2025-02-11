@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <Navbar bg />
-      <div className="hero h-[100dvh] pt-48 bg-secondary">
+      <div className="hero h-[100dvh] pt-48 bg">
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">About US</p>
 
