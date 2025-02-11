@@ -135,6 +135,22 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
+              href="/"
+              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+            >
+              investor portal
+            </motion.a>
+
+            {/* Contact */}
+            <motion.a
+              whileHover={{
+                y: -1,
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.2 }}
               href="/contact"
               className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
             >
