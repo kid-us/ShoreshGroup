@@ -12,7 +12,8 @@ module.exports = {
         background: "var(--color-bg)",
         btn: "#E0B84D;",
         icon: "#E0B84D",
-        secondary: "#00674f",
+        // secondary: "#00674f",
+        secondary: "#06402B",
       },
       screen: {
         sm: "640px", // Small devices (landscape phones)
