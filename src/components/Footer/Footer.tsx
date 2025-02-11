@@ -11,11 +11,14 @@ const Footer = () => {
             <div>
               <div className="flex gap-x-3">
                 <img src={logo} alt="Logo" className="w-16 h-16" />
+
                 <div className="leading-6">
-                  <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-white text-2xl">
+                  <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-2xl text-white">
                     Shoresh Group
                   </p>
-                  <p className="items-center flex logo-font logo-font uppercase text-xl text-amber-300">
+                  <p
+                    className={`items-center flex logo-font logo-font uppercase text-xl text-amber-400 justify-center`}
+                  >
                     Real Estate
                   </p>
                 </div>
