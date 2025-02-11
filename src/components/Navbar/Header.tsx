@@ -15,7 +15,7 @@ const Header = ({ onClose }: Props) => {
     >
       <div className="container mx-auto lg:py-5 py-4">
         <div className="lg:flex justify-between">
-          <p className="text-white font-[500] font-mono uppercase lg:text-md text-sm lora">
+          <p className="text-white font-[500] font-mono uppercase lg:text-md text-sm font-logo">
             Building Generational Wealth Through Real Estate Investment
           </p>
 

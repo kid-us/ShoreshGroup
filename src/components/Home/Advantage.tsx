@@ -51,7 +51,7 @@ const Advantage = () => {
             >
               <p className="font-medium text-xl">0{a.id}</p>
               <p className="font-medium text-xl">{a.title}</p>
-              <p className="text-gray-600 mt-5 text-sm">{a.desc}</p>
+              <p className="text-gray-700 mt-5 text-sm">{a.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -75,11 +75,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
+  font-family: "Playfair Display", serif;
 }
 
-.lora {
-  font-family: "Lora", serif;
+.font-logo {
+  /* font-family: "Lora", serif; */
+  font-family: "Playfair Display", serif;
 }
 
 @layer base {
