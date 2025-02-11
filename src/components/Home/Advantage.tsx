@@ -11,23 +11,23 @@ const Advantage = () => {
   const advantages: Advantage[] = [
     {
       id: 1,
-      title: "Family Heritage",
-      desc: "Entrepreneurial mindset, investment flexibility, and focus on long-term alignment to maximize value creation",
+      title: "Family Heritage:",
+      desc: "With a strong entrepreneurial mindset and a commitment to long-term alignment, we focus on creating lasting value. Our family-driven approach ensures flexibility and an unwavering dedication to maximizing opportunities for our partners.",
     },
     {
       id: 2,
-      title: "Expertise",
-      desc: "Experienced investment team with sub-sector expertise supported by an institutional investment management infrastructure",
+      title: "Expertise:",
+      desc: " Our experienced investment team brings specialized knowledge across multifamily, commercial, and residential real estate. Supported by robust market research and a strategic investment infrastructure, we consistently identify high-potential opportunities.",
     },
     {
       id: 3,
-      title: "Access",
-      desc: "Global network of entrepreneurs executive relationships and senior capital markets participants.",
+      title: "Global Network :",
+      desc: "Leveraging an extensive network of entrepreneurs, industry executives, and capital market leaders, we access unique opportunities and strengthen our partners’ investment positions.",
     },
     {
       id: 4,
-      title: "Partnership",
-      desc: "Prioritize reputation and integrity and build lasting relationships with founders, family owners, management teams, and co-investors ",
+      title: "Partnership:",
+      desc: "At Shoresh Group, reputation and integrity are paramount. We focus on building lasting relationships with founders, family-owned businesses, management teams, and co-investors, ensuring long-term success for all involved.",
     },
   ];
   return (
