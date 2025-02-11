@@ -11,7 +11,7 @@ const Header = ({ onClose }: Props) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className={`bg-secondary border-b border-gray-700`}
+      className={`bg border-b border-gray-700`}
     >
       <div className="container mx-auto lg:py-5 py-4">
         <div className="lg:flex justify-between">

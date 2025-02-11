@@ -7,8 +7,9 @@ export interface Nav {
 
 export const navs: Nav[] = [
   { id: 1, name: "About US", path: "/about-us" },
+  { id: 2, name: "Investor Portal", path: "/" },
   { id: 2, name: "Contact us", path: "/contact" },
-  { id: 4, name: "Investor's Login", path: "/" },
+  // { id: 4, name: "Investor's Login", path: "/" },
 ];
 
 export const assets: Nav[] = [

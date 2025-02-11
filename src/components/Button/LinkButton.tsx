@@ -11,7 +11,7 @@ const LinkButton = ({ name, path, style }: Props) => {
     <Link
       to={path}
       className={`${
-        style ? style : "bg-secondary text-white hover:text-gray-200"
+        style ? style : "bg text-white hover:text-gray-200"
       }  font-semibold px-12 py-3 text-sm rounded-full uppercase group`}
     >
       {name}

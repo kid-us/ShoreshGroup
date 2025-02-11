@@ -48,8 +48,8 @@ body {
 }
 
 .bg {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   background-color: #00674f;
   background-image: linear-gradient(
       90deg,

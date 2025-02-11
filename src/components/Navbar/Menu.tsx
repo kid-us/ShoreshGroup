@@ -13,21 +13,20 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
       {/* Overlay */}
       <div className="bg-neutral-700/50 fixed z-10 top-0 left-0 w-full h-[100dvh]"></div>
       <div
-        className={`fixed z-50 top-0 left-0 w-[95%] h-screen bg-secondary animate__animated ${menuAnimation}`}
+        className={`fixed z-50 top-0 left-0 w-[95%] h-screen bg animate__animated ${menuAnimation}`}
       >
         <div className="py-7 px-5">
-          <div className="flex justify-between text-xl mb-10">
-            <a
-              href="/"
-              className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
-            >
+          <div className="flex justify-between text-xl mb-10 border-b border-gray-600 pb-5">
+            <a href="/" className="text-2xl uppercase flex lg:gap-x-5 gap-x-2">
               <img src={logo} alt="Logo" className="w-13" />
 
-              <div className="leading-6">
+              <div className="leading-6 w-full">
                 <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-white">
                   Shoresh Group
                 </p>
-                <p className="items-center flex logo-font logo-font uppercase text-xl text-amber-300">
+                <p
+                  className={`items-center flex logo-font logo-font uppercase text-xl text-amber-400 justify-center`}
+                >
                   Real Estate
                 </p>
               </div>
@@ -45,7 +44,7 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
               <Link
                 onClick={onClose}
                 key={asset.id}
-                className="block py-1 text-lg text-white poppins-semibold"
+                className="block py-1 text-lg text-white uppercase"
                 to={asset.path}
               >
                 <span className={`${asset.icon} me-2 font-light`}></span>
@@ -57,17 +56,23 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
               <Link
                 key={n.id || index}
                 to={n.path}
-                className={`block text-lg poppins-semibold text-white ${
-                  n.name === "Login" &&
-                  "px-14 text-center poppins-semibold bg-btn flex justify-center items-center h-13 text-white transition-all duration-200 shadow-[3px_3px_0px_black] mt-10 rounded"
-                }`}
+                className="block py-1 text-lg text-white uppercase"
               >
                 {n.name}
               </Link>
             ))}
+
+            <div>
+              <a
+                href="/"
+                className="flex items-center justify-center font-semibold uppercase transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded bg-white"
+              >
+                Investor's Login
+              </a>
+            </div>
           </div>
 
-          <div className="absolute bottom-4 w-full">
+          <div className="absolute bottom-10 w-full">
             <p className="text-sm text-amber-300">
               &copy;2025 SHORESH GROUP. All right reserved.
             </p>

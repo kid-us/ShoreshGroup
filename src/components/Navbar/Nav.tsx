@@ -168,7 +168,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
-              className="bg-secondary flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-10 px-14 hover:shadow-none rounded"
+              className="bg flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded"
             >
               Investor's Login
             </motion.a>
