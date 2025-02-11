@@ -11,7 +11,7 @@ const Footer = () => {
             <div>
               <div className="flex gap-x-3">
                 <img src={logo} alt="Logo" className="w-16 h-16" />
-                <p className="flex items-center text-2xl font-extrabold logo-font uppercase text-white">
+                <p className="flex items-center text-2xl font-extrabold logo-font uppercase text-white underline underline-offset-4  decoration-amber-400 decoration-1">
                   SHORESH GROUP
                 </p>
               </div>
