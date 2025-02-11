@@ -80,9 +80,7 @@ const Assets = () => {
       <div className="lg:pt-20 pt-40">
         <Container>
           <div className="lg:mb-8 mb-3">
-            <h1 className="lg:text-3xl text-2xl poppins-bold ">
-              Our Properties
-            </h1>
+            <h1 className="lg:text-3xl text-2xl">Our Properties</h1>
             <p className="mt-3 lg:w-[60%]">
               Discover our premium real estate assets, carefully selected for
               long-term growth, stability, and exceptional returns.

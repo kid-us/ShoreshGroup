@@ -19,7 +19,7 @@ const WhoWeAre = () => {
       <div className="grid lg:grid-cols-2 gap-x-10 my-20">
         <div className="flex items-center">
           <div>
-            <h1 className="lg:text-3xl text-2xl poppins-bold lg:text-left text-center">
+            <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
               Who We Are
             </h1>
             <p className="lg:text-lg lg:leading-7 mt-5 ">

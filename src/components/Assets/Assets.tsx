@@ -29,7 +29,7 @@ const Assets = () => {
       )}
 
       <Container>
-        <h1 className="lg:text-3xl text-2xl poppins-bold lg:mb-8 mb-3 mt-20">
+        <h1 className="lg:text-3xl text-2xl lg:mb-8 mb-3 mt-20">
           Our Assets
         </h1>
         <p className="text-gray-500 mb-5">Categories</p>

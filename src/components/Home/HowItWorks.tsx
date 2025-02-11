@@ -35,9 +35,7 @@ const HowItWorks = () => {
   return (
     <Container>
       <div className="lg:hidden block">
-        <h1 className="lg:text-3xl text-2xl poppins-bold lg:mb-5 mb-3">
-          How it works
-        </h1>
+        <h1 className="lg:text-3xl text-2xl lg:mb-5 mb-3">How it works</h1>
         <p className="text-gray-500 lg:mb-10 mb-10">
           Seamless Property Transactions with Transparent Profit Sharing
         </p>
@@ -53,9 +51,7 @@ const HowItWorks = () => {
 
         <div className="lg:col-span-4 lg:mt-0 mt-10">
           <div className="lg:block hidden">
-            <h1 className="lg:text-3xl text-2xl poppins-bold lg:mb-5 mb-3">
-              How it works
-            </h1>
+            <h1 className="lg:text-3xl text-2xl lg:mb-5 mb-3">How it works</h1>
             <p className="text-gray-500 lg:mb-10 mb-10">
               Seamless Property Transactions with Transparent Profit Sharing
             </p>

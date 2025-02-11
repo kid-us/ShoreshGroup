@@ -65,7 +65,7 @@ const Testimony = () => {
 
   return (
     <div className="lg:my-28 mt-20 mb-20">
-      <h1 className="lg:text-3xl text-2xl poppins-bold mb-4 text-center">
+      <h1 className="lg:text-3xl text-2xl mb-4 text-center">
         Hear What Our Investors Are Saying
       </h1>
       <p className="text-center mb-20 text-gray-500">

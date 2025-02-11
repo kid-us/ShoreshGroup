@@ -30,10 +30,8 @@ const Mission = () => {
           <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
             <div className="flex items-center">
               <div className="mt-20">
-                <h1 className="lg:text-3xl text-2xl poppins-bold">Our</h1>
-                <h1 className="lg:text-3xl text-2xl poppins-bold text-btn">
-                  Mission
-                </h1>
+                <h1 className="lg:text-3xl text-2xl">Our</h1>
+                <h1 className="lg:text-3xl text-2xl text-btn">Mission</h1>
                 <p className="mt-5 lg:text-lg text-black">
                   At Shoresh Group, our mission is simple: to build generational
                   wealth for families and investors through strategic real
@@ -58,7 +56,7 @@ const Mission = () => {
                       opacity: 1,
                       transition: { delay: 0.05 * index, duration: 0.5 },
                     }}
-                    className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium   lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg-secondary text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
+                    className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium   lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] bg text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
                   >
                     <p className={``}>{m.name}</p>
                   </motion.div>

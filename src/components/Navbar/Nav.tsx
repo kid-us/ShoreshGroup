@@ -55,7 +55,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
             href="/"
-            className="text-2xl uppercase poppins-bold flex lg:gap-x-5 gap-x-2"
+            className="text-2xl uppercase flex lg:gap-x-5 gap-x-2"
           >
             <img src={logo} alt="Logo" className="w-13" />
 
@@ -82,7 +82,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
               href="/about-us"
-              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+              className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
               About us
             </motion.a>
@@ -136,7 +136,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
               href="/"
-              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+              className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
               investor portal
             </motion.a>
@@ -152,7 +152,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
               href="/contact"
-              className={`relative transition-colors poppins-medium font-medium uppercase text-sm mt-3`}
+              className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
               contact us
             </motion.a>
