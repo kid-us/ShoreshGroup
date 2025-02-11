@@ -11,9 +11,6 @@ const Footer = () => {
             <div>
               <div className="flex gap-x-3">
                 <img src={logo} alt="Logo" className="w-16 h-16" />
-                {/* <p className="flex items-center text-2xl font-extrabold logo-font uppercase text-white underline underline-offset-4  decoration-amber-400 decoration-1">
-                  SHORESH GROUP
-                </p> */}
                 <div className="leading-6">
                   <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-white text-2xl">
                     Shoresh Group
@@ -35,10 +32,10 @@ const Footer = () => {
           </div>
 
           {/* Footer links */}
-          <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-2 gap-y-3 mt-10">
-            {footer.map((nav) => (
+          <div className="lg:block grid grid-cols-2 lg:gap-x-10 lg:space-x-16 gap-x-2 gap-y-3 mt-">
+            {footer.map((nav, index) => (
               <Link
-                key={nav.id}
+                key={nav.id || index} // Ensure uniqueness
                 to={nav.path}
                 className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
               >
@@ -46,8 +43,9 @@ const Footer = () => {
                 <span className="bi-arrow-up-right ms-1 text-xs group-hover:rotate-45"></span>
               </Link>
             ))}
+
             {/* Terms and Service Large device */}
-            <div className="lg:flex hidden space-x-20 mt-9 ">
+            <div className="lg:flex hidden space-x-20 mt-9">
               <Link
                 to={"/"}
                 className="text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
