@@ -20,10 +20,23 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <p className="lg:text-xs text-sm mt-4 text-zinc-300 lg:w-96">
+              <p className="lg:text-xs text-sm mt-5 text-zinc-300 lg:w-96">
                 A family-founded real estate venture focused on generational
                 wealth. Investing in distressed homes, multifamily properties,
                 and large-scale developments.
+              </p>
+
+              <p className="lg:text-xs text-sm mt-2 text-zinc-300 lg:w-96">
+                Address : 1230 E.Kiowa Street Colorado Springs, CO 80909
+              </p>
+              <p className="lg:text-xs text-sm mt-1 text-zinc-300 lg:w-96">
+                Office #:(248)-450-4836
+              </p>
+              <p className="lg:text-xs text-sm mt-1 text-zinc-300 lg:w-96 lg:mb-0 mb-7">
+                Email :{" "}
+                <a href="mailto:@shoresh-group.com" className="text-blue-500">
+                  @shoresh-group.com
+                </a>
               </p>
               <p className="lg:block hidden text-xs text-btn mt-6">
                 &copy;2025 SHORESH GROUP. All right reserved.
