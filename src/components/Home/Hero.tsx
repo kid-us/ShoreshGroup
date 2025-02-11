@@ -52,7 +52,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-white lg:text-5xl md:text-5xl text-4xl lg:w-[43%] font-bold text-shadow"
+              className="text-white lg:text-6xl md:text-5xl text-4xl lg:w-[50%] font-bold text-shadow"
             >
               Building Generational
               <span className="text-btn"> Wealth</span>, Through Real Estate 
@@ -64,12 +64,8 @@ const Hero = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-white mt-5 lg:text-md lg:w-[53%] text-shadow"
             >
-              Shoresh Group is a family office unlocking opportunities in both
-              short-term and long-term real estate projects, from distressed
-              homes to mismanaged multifamily properties and large-scale
-              developments. We strategically partner with investors to deliver
-              sustainable growth and impactful returns, across a diverse
-              portfolio
+              Turning real estat opportuniteis into generational
+              prosperity for families
             </motion.p>
 
             {/* <div className="mt-16 mb-10">

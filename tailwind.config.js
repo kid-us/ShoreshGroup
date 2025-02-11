@@ -1,9 +1,9 @@
 module.exports = {
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
+      // fontFamily: {
+      //   poppins: ["Poppins", "sans-serif"],
+      // },
       colors: {
         link: {
           100: "var(--color-link-100)",
