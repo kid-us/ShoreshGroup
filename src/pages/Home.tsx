@@ -16,11 +16,11 @@ const Home = () => {
       <Hero />
       <Stat />
       <Advantage />
+      <Portfolio />
       <Invest />
       <HowItWorks />
-      <Testimony />
       <Team />
-      <Portfolio />
+      <Testimony />
       <Footer />
     </main>
   );
