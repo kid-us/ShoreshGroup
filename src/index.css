@@ -2,7 +2,7 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 /* @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"); */
 
@@ -17,10 +17,10 @@
 @config "../tailwind.config.js";
 
 .logo-font {
-  font-family: "helvetica", serif;
-  font-family: "Playfair", serif;
+  /* font-family: "helvetica", serif; */
+  /* font-family: "Playfair", serif; */
   font-family: "Playfair Display", serif;
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
 
   font-optical-sizing: auto;
   font-weight: 300;
@@ -75,6 +75,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Lora", serif;
+}
+
+.lora {
   font-family: "Lora", serif;
 }
 

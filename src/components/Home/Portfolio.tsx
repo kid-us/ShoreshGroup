@@ -5,8 +5,8 @@ import Container from "../Container/Container";
 const Portfolio = () => {
   return (
     <Container>
-      <h1 className="lg:text-3xl text-2xl poppins-bold ">Portfolio</h1>
-      <p className="mt-3 text-gray-600 text-sm">
+      <h1 className="font-semibold lg:text-4xl text-3xl ">Portfolio</h1>
+      <p className="mt-3 text-gray-700 text-sm">
         Discover our premium real estate assets, carefully selected for
         long-term growth, stability, and exceptional returns.
       </p>
@@ -24,11 +24,11 @@ const Portfolio = () => {
             <div className="px-4 py-5">
               <p className="font-semibold text-xl mb-2">{asset.name}</p>
               <div className="flex justify-between">
-                <p className="text-gray-500 text-sm font-semibold">
+                <p className="text-gray-700 text-sm font-semibold">
                   <span className="bi-geo-alt-fill text-secondary me-2"></span>
                   {asset.location}
                 </p>
-                <p className="text-gray-500 text-sm font-semibold">
+                <p className="text-gray-700 text-sm font-semibold">
                   <span className="bi-calendar-check-fill me-2 text-secondary"></span>
                   Purchased {asset.purchased}
                 </p>
