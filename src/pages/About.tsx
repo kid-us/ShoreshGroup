@@ -5,6 +5,7 @@ import WhoWeAre from "../components/About/WhoWeAre";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import LinkButton from "../components/Button/LinkButton";
 
 const About = () => {
   const [title] = useState<string>("About Shoresh Group");
@@ -35,6 +36,17 @@ const About = () => {
       <WhoWeAre />
       <Mission />
       <CoreValues />
+
+      <div className="container mx-auto px-5 mt-10">
+        <div className="border-2 border-btn rounded-xl p-8 mb-10 text-center">
+          <p className="lg:text-lg mb-5 lg:font-semibold">
+            Want to be a part of something bigger? Get in touch today and
+            discover how you can join our growing legacy.
+          </p>
+          <LinkButton name="Join Our Journey" path="/contact" />
+        </div>
+      </div>
+
       <Footer />
     </>
   );
