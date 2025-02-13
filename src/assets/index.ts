@@ -47,6 +47,8 @@ import contact from "./contact.jpeg";
 import notFound from "./404.gif";
 import who from "./who.png";
 
+import why from "./why.jpg";
+
 export {
   // Hero vid
   heroVid,
@@ -104,5 +106,6 @@ export {
 
   // 404
   notFound,
+  why,
   who,
 };
