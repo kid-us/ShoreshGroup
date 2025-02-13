@@ -1,8 +1,6 @@
 import Footer from "../components/Footer/Footer";
 import Advantage from "../components/Home/Advantage";
 import Hero from "../components/Home/Hero";
-import HowItWorks from "../components/Home/HowItWorks";
-import Invest from "../components/Home/Invest";
 import Portfolio from "../components/Home/Portfolio";
 import Stat from "../components/Home/Stat";
 import Team from "../components/Home/Team";
@@ -17,8 +15,6 @@ const Home = () => {
       <Stat />
       <Advantage />
       <Portfolio />
-      <Invest />
-      <HowItWorks />
       <Team />
       <Testimony />
       <Footer />

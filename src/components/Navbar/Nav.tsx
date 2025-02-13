@@ -135,10 +135,10 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.2 }}
-              href="/"
+              href="/investor-portal"
               className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
-              investor portal
+              Investor Portal
             </motion.a>
 
             {/* Contact */}
