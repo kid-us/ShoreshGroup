@@ -14,7 +14,7 @@ const Assets = () => {
   const [modal, setModal] = useState<boolean>(false);
   const [activeCategory, setActiveCategory] = useState<string>("Current");
 
-  const [title] = useState<string>("Shoresh Group Assets");
+  const [title] = useState<string>("Our Assets");
   useDocumentTitle(title);
 
   const handleAssetClicked = () => {

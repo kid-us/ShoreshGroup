@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const About = () => {
-  const [title] = useState<string>("About US");
+  const [title] = useState<string>("About Shoresh Group");
   useDocumentTitle(title);
 
   useEffect(() => {
