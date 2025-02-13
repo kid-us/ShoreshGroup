@@ -55,7 +55,7 @@ const Hero = () => {
               className="text-white lg:text-6xl md:text-5xl text-4xl lg:w-[50%] font-bold text-shadow"
             >
               Building Generational
-              <span className="text-btn"> Wealth</span>, Through Real Estate 
+              <span className="text-btn"> Wealth</span> Through Real Estate 
               <span className="text-btn"> Investment.</span>
             </motion.h1>
             <motion.p
@@ -64,8 +64,7 @@ const Hero = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-white mt-5 lg:text-md lg:w-[53%] text-shadow"
             >
-              Turning real estat opportuniteis into generational
-              prosperity for families
+              Turning real estate opportunities into generational prosperity.
             </motion.p>
 
             {/* <div className="mt-16 mb-10">
