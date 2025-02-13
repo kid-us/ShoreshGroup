@@ -52,7 +52,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-white lg:text-6xl md:text-5xl text-4xl lg:w-[50%] font-bold text-shadow"
+              className="text-white lg:text-6xl md:text-5xl text-4xl lg:w-[50%] font-bold text-shadow "
             >
               Building Generational
               <span className="text-btn"> Wealth</span> Through Real Estate 

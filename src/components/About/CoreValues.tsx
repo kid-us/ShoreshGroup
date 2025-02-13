@@ -1,5 +1,4 @@
 import {
-  // accountability,
   community,
   excellence,
   innovation,
@@ -53,12 +52,16 @@ const values: Value[] = [
 
 const CoreValues = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  // const div1Ref = useRef<HTMLDivElement>(null);
+  const div2Ref = useRef<HTMLDivElement>(null);
   const div3Ref = useRef<HTMLDivElement>(null);
   const div4Ref = useRef<HTMLDivElement>(null);
   const div5Ref = useRef<HTMLDivElement>(null);
-  const div7Ref = useRef<HTMLDivElement>(null);
+  const div6Ref = useRef<HTMLDivElement>(null);
+  // const div7Ref = useRef<HTMLDivElement>(null);
   const div8Ref = useRef<HTMLDivElement>(null);
   const div9Ref = useRef<HTMLDivElement>(null);
+
   return (
     <div className="container mx-auto">
       {/* Only on Large device */}
@@ -104,18 +107,8 @@ const CoreValues = () => {
               </div>
             </Circle>
           </div>
-          <div className="items-center justify-between">
-            <div
-              ref={div4Ref}
-              className={"z-40 flex justify-center rounded-full"}
-            >
-              <div className="border rounded-xl py-3 px-10 bg-btn text-black font-bold shadow-lg shadow-amber-500">
-                <p className="uppercase">Our Core Values</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row items-center justify-between">
-            <Circle ref={div3Ref}>
+          <div className="flex items-center justify-between">
+            <Circle ref={div2Ref}>
               <div className="grid grid-cols-5 gap-x-3">
                 <div className="col-span-1 flex justify-center items-center">
                   <img src={community} alt="logo" className="h-12 w-12" />
@@ -132,20 +125,46 @@ const CoreValues = () => {
               </div>
             </Circle>
 
-            <Circle ref={div7Ref} className="mt-60">
+            <div
+              ref={div4Ref}
+              className={"z-40 flex justify-center rounded-full"}
+            >
+              <div className="border rounded-xl py-3 px-10 bg-btn text-black font-bold shadow-lg shadow-amber-500">
+                <p className="uppercase">Our Core Values</p>
+              </div>
+            </div>
+
+            <Circle ref={div6Ref}>
               <div className="grid grid-cols-5 gap-x-3">
                 <div className="col-span-1 flex justify-center items-center">
-                  <img src={plan} alt="logo" className="h-12 w-12" />
+                  <img src={community} alt="logo" className="h-12 w-12" />
                 </div>
                 <div className="col-span-4">
-                  <p className="text-lg mt-3 text-white">
-                    Vision for the Future:
-                  </p>
+                  <p className="text-lg mt-3 text-white">Collaboration:</p>
                   <p className="text-sm mt-2 text-gray-100">
-                    Planning and investing with the future in mind. Shoresh
-                    Group is driven by a forward-thinking mindset, focusing on
-                    creating sustainable wealth and opportunities that benefit
-                    generations to come.
+                    Working together to achieve mutual success. We believe that
+                    success is built through strong relationships and
+                    partnerships, whether within our family or with our
+                    investors.
+                  </p>
+                </div>
+              </div>
+            </Circle>
+          </div>
+
+          <div className="flex flex-row items-center justify-between">
+            <Circle ref={div3Ref}>
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={community} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">Collaboration:</p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Working together to achieve mutual success. We believe that
+                    success is built through strong relationships and
+                    partnerships, whether within our family or with our
+                    investors.
                   </p>
                 </div>
               </div>
@@ -171,9 +190,17 @@ const CoreValues = () => {
 
         <AnimatedBeam
           containerRef={containerRef}
+          fromRef={div2Ref}
+          toRef={div4Ref}
+          dotted
+          gradientStartColor="#d948ae"
+          gradientStopColor="#5b60ff"
+        />
+        <AnimatedBeam
+          containerRef={containerRef}
           fromRef={div3Ref}
           toRef={div4Ref}
-          curvature={-75}
+          curvature={75}
           endYOffset={10}
           dotted
         />
@@ -181,8 +208,8 @@ const CoreValues = () => {
           containerRef={containerRef}
           fromRef={div5Ref}
           toRef={div4Ref}
-          curvature={70}
-          endYOffset={10}
+          curvature={-75}
+          endYOffset={-10}
           reverse
           gradientStartColor="#00adee"
           gradientStopColor="#00a651"
@@ -190,20 +217,18 @@ const CoreValues = () => {
         />
         <AnimatedBeam
           containerRef={containerRef}
-          fromRef={div7Ref}
+          fromRef={div6Ref}
           toRef={div4Ref}
-          curvature={75}
-          endYOffset={20}
           reverse
           dotted
-          gradientStartColor="#00adee"
-          gradientStopColor="#00a651"
+          gradientStartColor="#00ac47"
+          gradientStopColor="#4fcc5d"
         />
         <AnimatedBeam
           containerRef={containerRef}
           fromRef={div9Ref}
           toRef={div4Ref}
-          curvature={-75}
+          curvature={75}
           endYOffset={10}
           reverse
           dotted
@@ -214,7 +239,7 @@ const CoreValues = () => {
           containerRef={containerRef}
           fromRef={div8Ref}
           toRef={div4Ref}
-          curvature={70}
+          curvature={-80}
           endYOffset={10}
           reverse
           dotted

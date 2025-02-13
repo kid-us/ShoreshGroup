@@ -27,9 +27,6 @@
   font-style: normal;
 }
 
-/* #00674f  Emerald Green */
-/* #E0B84D  Golden */
-
 body {
   /* font-family: "Open Sans", serif; */
   /* font-family: "Lato", serif; */
@@ -75,7 +72,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Lora", serif; */
   font-family: "Playfair Display", serif;
 }
 
