@@ -156,15 +156,17 @@ const CoreValues = () => {
             <Circle ref={div3Ref}>
               <div className="grid grid-cols-5 gap-x-3">
                 <div className="col-span-1 flex justify-center items-center">
-                  <img src={community} alt="logo" className="h-12 w-12" />
+                  <img src={plan} alt="logo" className="h-12 w-12" />
                 </div>
                 <div className="col-span-4">
-                  <p className="text-lg mt-3 text-white">Collaboration:</p>
+                  <p className="text-lg mt-3 text-white">
+                    Vision for the Future:
+                  </p>
                   <p className="text-sm mt-2 text-gray-100">
-                    Working together to achieve mutual success. We believe that
-                    success is built through strong relationships and
-                    partnerships, whether within our family or with our
-                    investors.
+                    Planning and investing with the future in mind. Shoresh
+                    Group is driven by a forward-thinking mindset, focusing on
+                    creating sustainable wealth and opportunities that benefit
+                    generations to come.
                   </p>
                 </div>
               </div>
