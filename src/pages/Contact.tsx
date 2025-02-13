@@ -54,11 +54,34 @@ const Contact = () => {
                 Shoresh Group, we’d love to hear from you.
               </p>
 
-              <img
-                src={contact}
-                alt="Contact"
-                className="lg:mt-10 mt-5 rounded-xl"
-              />
+              <div className="mt-5">
+                <p className="mb-1">
+                  <span className="font-semibold text-lg bi-geo-alt-fill">
+                    Address :
+                  </span>{" "}
+                  1230 E.Kiowa Street Colorado Springs, CO 80909
+                </p>
+                <p className="mb-1">
+                  <span className="font-semibold text-lg bi-building-fill">
+                    {" "}
+                    Office :
+                  </span>{" "}
+                  #:(248)-450-4836
+                </p>
+                <p className="mb-1">
+                  <span className="font-semibold text-lg bi-envelope-fill">
+                    {" "}
+                    Email :
+                  </span>{" "}
+                  @shoresh-group.com
+                </p>
+
+                <img
+                  src={contact}
+                  alt="Contact"
+                  className="lg:mt-10 mt-5 rounded-xl"
+                />
+              </div>
             </div>
 
             <div className="lg:col-span-2 lg:mt-0 mt-8">
