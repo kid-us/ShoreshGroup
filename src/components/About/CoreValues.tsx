@@ -3,9 +3,9 @@ import {
   community,
   excellence,
   innovation,
+  plan,
   transparency,
 } from "../../assets";
-import Container from "../Container/Container";
 import { AnimatedBeam, Circle } from "./AnimatedBeam";
 import { useRef } from "react";
 import { Mission } from "./Mission";
@@ -21,33 +21,33 @@ const values: Value[] = [
     id: 1,
     name: "Integrity:",
     icon: transparency,
-    desc: "Transparent and honest dealings in every project.",
+    desc: "Transparent and honest dealings in every project. We uphold the highest ethical standards, ensuring trust and reliability in every decision we make.",
   },
   {
     id: 2,
     name: "Excellence:",
     icon: excellence,
-    desc: "Delivering high-quality results with a focus on growth.",
+    desc: "Delivering high-quality results with a focus on growth. We are committed to excellence in every aspect of our business, striving for continuous improvement and long-term success.",
   },
 
-  // {
-  //   id: 3,
-  //   name: "Stewardship & Accountability:",
-  //   icon: accountability,
-  //   desc: "We are committed to responsible management of assets and resources, holding ourselves accountable for sustainable growth and long-term success.",
-  // },
+  {
+    id: 3,
+    name: "Vision for the Future:",
+    icon: plan,
+    desc: "Planning and investing with the future in mind. Shoresh Group is driven by a forward-thinking mindset, focusing on creating sustainable wealth and opportunities that benefit generations to come.",
+  },
 
   {
     id: 4,
     name: "Collaboration:",
     icon: community,
-    desc: "Working together to achieve mutual success.",
+    desc: "Working together to achieve mutual success. We believe that success is built through strong relationships and partnerships, whether within our family or with our investors.",
   },
   {
     id: 5,
     name: "Legacy:",
     icon: innovation,
-    desc: "Building generational wealth that empowers the future.",
+    desc: "Building generational wealth that empowers future generations. Shoresh Group is focused on creating lasting value for both our family and the broader community.",
   },
 ];
 
@@ -56,31 +56,52 @@ const CoreValues = () => {
   const div3Ref = useRef<HTMLDivElement>(null);
   const div4Ref = useRef<HTMLDivElement>(null);
   const div5Ref = useRef<HTMLDivElement>(null);
-  // const div7Ref = useRef<HTMLDivElement>(null);
+  const div7Ref = useRef<HTMLDivElement>(null);
   const div8Ref = useRef<HTMLDivElement>(null);
   const div9Ref = useRef<HTMLDivElement>(null);
   return (
-    <Container>
+    <div className="container mx-auto">
       {/* Only on Large device */}
       <div
         className="relative lg:flex hidden w-full lg:max-w-[90%] mx-auto items-center justify-center mt-2 mb-6 overflow-hidden pb-10"
         ref={containerRef}
       >
         <div className="flex h-full w-full flex-col items-stretch justify-between lg:gap-8">
+          <p className="text-center text-2xl mb-10">
+            At Shoresh Group, our core values are the foundation of everything
+            we do. They guide our decision-making, shape our company culture,
+            and help us stay focused on building lasting value.
+          </p>
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div8Ref}>
-              <img src={transparency} alt="logo" />
-              <p className="text-lg mt-3 text-white">Integrity:</p>
-              <p className="text-xs mt-2 text-gray-100">
-                Transparent and honest dealings in every project.
-              </p>
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={transparency} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">Integrity:</p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Transparent and honest dealings in every project. We uphold
+                    the highest ethical standards, ensuring trust and
+                    reliability in every decision we make.
+                  </p>
+                </div>
+              </div>
             </Circle>
             <Circle ref={div5Ref}>
-              <img src={excellence} alt="logo" />
-              <p className="text-lg mt-3 text-white">Excellence:</p>
-              <p className="text-xs mt-2 text-gray-100">
-                Delivering high-quality results with a focus on growth.
-              </p>
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={excellence} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">Excellence:</p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Delivering high-quality results with a focus on growth. We
+                    are committed to excellence in every aspect of our business,
+                    striving for continuous improvement and long-term success.
+                  </p>
+                </div>
+              </div>
             </Circle>
           </div>
           <div className="items-center justify-between">
@@ -95,30 +116,55 @@ const CoreValues = () => {
           </div>
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div3Ref}>
-              <img src={community} alt="logo" />
-              <p className="text-lg mt-3 text-white">Collaboration:</p>
-              <p className="text-xs mt-2 text-gray-100">
-                Working together to achieve mutual success.
-              </p>
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={community} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">Collaboration:</p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Working together to achieve mutual success. We believe that
+                    success is built through strong relationships and
+                    partnerships, whether within our family or with our
+                    investors.
+                  </p>
+                </div>
+              </div>
             </Circle>
-            {/* <Circle ref={div7Ref} className="mt-60">
-              <img src={innovation} alt="logo" />
-              <p className="text-lg mt-3">
-                Value Creation & Innovation:
-              </p>
-              <p className="text-xs mt-2">
-                We continuously seek opportunities to enhance property value
-                through creative, forward-thinking strategies and innovative
-                improvements that benefit both our stakeholders and the
-                communities we serve.
-              </p>
-            </Circle> */}
+
+            <Circle ref={div7Ref} className="mt-60">
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={plan} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">
+                    Vision for the Future:
+                  </p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Planning and investing with the future in mind. Shoresh
+                    Group is driven by a forward-thinking mindset, focusing on
+                    creating sustainable wealth and opportunities that benefit
+                    generations to come.
+                  </p>
+                </div>
+              </div>
+            </Circle>
+
             <Circle ref={div9Ref}>
-              <img src={innovation} alt="logo" />
-              <p className="text-lg mt-3 text-white">Legacy:</p>
-              <p className="text-xs mt-2 text-gray-100">
-                Building generational wealth that empowers the future.
-              </p>
+              <div className="grid grid-cols-5 gap-x-3">
+                <div className="col-span-1 flex justify-center items-center">
+                  <img src={innovation} alt="logo" className="h-12 w-12" />
+                </div>
+                <div className="col-span-4">
+                  <p className="text-lg mt-3 text-white">Legacy:</p>
+                  <p className="text-sm mt-2 text-gray-100">
+                    Building generational wealth that empowers future
+                    generations. Shoresh Group is focused on creating lasting
+                    value for both our family and the broader community.
+                  </p>
+                </div>
+              </div>
             </Circle>
           </div>
         </div>
@@ -142,7 +188,7 @@ const CoreValues = () => {
           gradientStopColor="#00a651"
           dotted
         />
-        {/* <AnimatedBeam
+        <AnimatedBeam
           containerRef={containerRef}
           fromRef={div7Ref}
           toRef={div4Ref}
@@ -152,7 +198,7 @@ const CoreValues = () => {
           dotted
           gradientStartColor="#00adee"
           gradientStopColor="#00a651"
-        /> */}
+        />
         <AnimatedBeam
           containerRef={containerRef}
           fromRef={div9Ref}
@@ -192,11 +238,11 @@ const CoreValues = () => {
           >
             <img src={value.icon} alt="logo" />
             <p className="text-lg mt-3 text-white">{value.name}</p>
-            <p className="text-xs mt-2 text-gray-100">{value.desc}</p>
+            <p className="text-sm mt-2 text-gray-100">{value.desc}</p>
           </motion.div>
         ))}
       </div>
-    </Container>
+    </div>
   );
 };
 

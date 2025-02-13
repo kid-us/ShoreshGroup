@@ -29,6 +29,7 @@ import accountability from "./value/accountability.png";
 import innovation from "./value/innovation.png";
 import community from "./value/community.png";
 import transparency from "./value/transparency.png";
+import plan from "./value/plan.png";
 
 import invest from "./investment.png";
 import buy from "./buy.png";
@@ -79,6 +80,7 @@ export {
   excellence,
   innovation,
   transparency,
+  plan,
 
   // Logo
   logo,
