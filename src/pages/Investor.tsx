@@ -58,7 +58,7 @@ const Investor = () => {
       </div>
 
       <Container>
-        <p className="text-sm uppercase text-gray-500">Why choose us</p>
+        <p className="text-sm uppercase text-gray-600">Why choose us</p>
         <div className="grid lg:grid-cols-2 mt-10 gap-x-10">
           <div className="">
             {choose.map((c) => (
@@ -67,7 +67,7 @@ const Investor = () => {
                   <h1 className="font-bold mb-2 text-xl uppercase">
                     {c.title}
                   </h1>
-                  <p className="text-gray-500 group-hover:text-gray-200 text-sm">
+                  <p className="text-gray-700 group-hover:text-gray-200 text-sm">
                     {c.desc}
                   </p>
                 </div>
