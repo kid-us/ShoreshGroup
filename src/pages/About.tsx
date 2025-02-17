@@ -34,7 +34,7 @@ const About = () => {
       <Navbar bg />
       <div className="hero pt-48 pb-16 bg">
         <div className="container mx-auto">
-          {/* <p className="text-sm uppercase text-gray-200">About US</p> */}
+          <p className="text-sm uppercase text-gray-200">About US</p>
 
           <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium font-logo">
             Shoresh Group began as a family venture focused on creating
@@ -75,8 +75,8 @@ const About = () => {
       <CoreValues />
 
       <div className="container mx-auto px-5 mt-10">
-        <div className="border-2 border-btn rounded-xl p-8 mb-10 text-center">
-          <p className="lg:text-lg mb-5 lg:font-semibold">
+        <div className="p-5 mb-10 text-center">
+          <p className="lg:text-lg mb-5 lg:font-semibold text-gray-700">
             Want to be a part of something bigger? Get in touch today and
             discover how you can join our growing legacy.
           </p>
