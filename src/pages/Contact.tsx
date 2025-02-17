@@ -40,7 +40,7 @@ const Contact = () => {
 
       <div className="pt-20">
         <Container>
-          <p className="text-sm uppercase text-gray-500">Contact us</p>
+          <p className="text-sm uppercase text-gray-500 pt-8">Contact us</p>
           <div className="grid lg:grid-cols-5 mt-10 gap-x-20">
             <div className="lg:col-span-3">
               <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-10">

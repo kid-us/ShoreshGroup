@@ -50,26 +50,26 @@ const About = () => {
 
       {/* <WhoWeAre /> */}
 
-      <div className="bg-[#502b11]">
-        <div className="container mx-auto py-20 text-white">
-          <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
-            Our Story
-          </h1>
+      {/* <div className="bg-[#502b11]"> */}
+      <div className="container mx-auto py-20 text-white">
+        <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
+          Our Story
+        </h1>
 
-          <div className="mt-5">
-            {showMore
-              ? long.map((l) => <p className="text-lg">{l}</p>)
-              : short.map((s) => <p className="text-lg">{s}</p>)}
-          </div>
-
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-          >
-            {showMore ? "Read Less" : "Read More"}
-          </button>
+        <div className="mt-5">
+          {showMore
+            ? long.map((l) => <p className="text-lg">{l}</p>)
+            : short.map((s) => <p className="text-lg">{s}</p>)}
         </div>
+
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+        >
+          {showMore ? "Read Less" : "Read More"}
+        </button>
       </div>
+      {/* </div> */}
 
       <Mission />
       <CoreValues />
