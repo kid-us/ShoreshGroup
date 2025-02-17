@@ -85,6 +85,10 @@ const Contact = () => {
             </div>
 
             <div className="lg:col-span-2 lg:mt-0 mt-8">
+              <p className="text-lg mb-5 text-gray-800">
+                Fill out the form below, and we’ll get back to you as
+                soon as possible.
+              </p>
               <form onSubmit={handleSubmit(onSubmit)}>
                 {/* Email */}
                 <div className="mb-3">
