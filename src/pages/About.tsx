@@ -34,9 +34,9 @@ const About = () => {
       <Navbar bg />
       <div className="hero pt-48 pb-16 bg">
         <div className="container mx-auto">
-          <p className="text-sm uppercase text-gray-200">About US</p>
+          {/* <p className="text-sm uppercase text-gray-200">About US</p> */}
 
-          <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium">
+          <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium font-logo">
             Shoresh Group began as a family venture focused on creating
             generational wealth through real estate. As we experienced growth
             and success, we saw the opportunity to share our journey and open
@@ -50,23 +50,25 @@ const About = () => {
 
       {/* <WhoWeAre /> */}
 
-      <div className="container mx-auto mt-20">
-        <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
-          Our Story
-        </h1>
+      <div className="bg-[#502b11]">
+        <div className="container mx-auto py-20 text-white">
+          <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
+            Our Story
+          </h1>
 
-        <div className="mt-5">
-          {showMore
-            ? long.map((l) => <p className="text-lg">{l}</p>)
-            : short.map((s) => <p className="text-lg">{s}</p>)}
+          <div className="mt-5">
+            {showMore
+              ? long.map((l) => <p className="text-lg">{l}</p>)
+              : short.map((s) => <p className="text-lg">{s}</p>)}
+          </div>
+
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+          >
+            {showMore ? "Read Less" : "Read More"}
+          </button>
         </div>
-
-        <button
-          onClick={() => setShowMore(!showMore)}
-          className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-        >
-          {showMore ? "Read Less" : "Read More"}
-        </button>
       </div>
 
       <Mission />
