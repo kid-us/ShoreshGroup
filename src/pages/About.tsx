@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CoreValues from "../components/About/CoreValues";
 import Mission from "../components/About/Mission";
-import WhoWeAre from "../components/About/WhoWeAre";
+// import WhoWeAre from "../components/About/WhoWeAre";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
@@ -47,9 +47,10 @@ const About = () => {
           </p>
         </div>
       </div>
-      <WhoWeAre />
 
-      <div className="container mx-auto">
+      {/* <WhoWeAre /> */}
+
+      <div className="container mx-auto mt-20">
         <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
           Our Story
         </h1>

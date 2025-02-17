@@ -127,7 +127,7 @@ const CoreValues = () => {
 
             <div
               ref={div4Ref}
-              className={"z-40 flex justify-center rounded-full"}
+              className={"z-10 flex justify-center rounded-full"}
             >
               <div className="border rounded-xl py-3 px-10 bg-btn text-black font-bold shadow-lg shadow-amber-500">
                 <p className="uppercase">Our Core Values</p>
