@@ -97,7 +97,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
                 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
+                transition={{ delay: 0.5, duration: 0.2 }}
                 onClick={() => (hovered ? setHovered(false) : setHovered(true))}
                 className="relative transition-colors font-medium uppercase text-sm"
               >

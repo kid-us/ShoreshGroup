@@ -51,7 +51,7 @@ const About = () => {
       {/* <WhoWeAre /> */}
 
       {/* <div className="bg-[#502b11]"> */}
-      <div className="container mx-auto py-20 text-white">
+      <div className="container mx-auto py-20">
         <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
           Our Story
         </h1>
