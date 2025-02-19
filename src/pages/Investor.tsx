@@ -42,7 +42,7 @@ const Investor = () => {
     <>
       <Navbar bg />
 
-      <div className="pt-48 pb-16 bg">
+      <div className="pt-48 pb-16 bg2">
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
