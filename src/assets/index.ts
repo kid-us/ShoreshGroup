@@ -12,6 +12,17 @@ import hero9 from "./hero9.jpg";
 import hero10 from "./hero10.jpg";
 import hero11 from "./hero11.jpg";
 
+import lgHero1 from "./hero/1.jpg";
+import lgHero2 from "./hero/2.jpg";
+import lgHero3 from "./hero/3.jpg";
+import lgHero4 from "./hero/4.jpg";
+import lgHero5 from "./hero/5.jpg";
+import lgHero6 from "./hero/6.jpg";
+import lgHero7 from "./hero/7.jpg";
+import lgHero8 from "./hero/8.jpg";
+import lgHero9 from "./hero/9.jpg";
+import lgHero10 from "./hero/10.jpg";
+
 import we1 from "./we/1.jpg";
 import we2 from "./we/2.jpg";
 import we3 from "./we/3.jpg";
@@ -53,7 +64,7 @@ export {
   // Hero vid
   heroVid,
 
-  // Hero img
+  // Hero img for small device
   hero,
   hero2,
   hero3,
@@ -66,6 +77,17 @@ export {
   hero10,
   hero11,
 
+  // Hero img for large device
+  lgHero1,
+  lgHero2,
+  lgHero3,
+  lgHero4,
+  lgHero5,
+  lgHero6,
+  lgHero7,
+  lgHero8,
+  lgHero9,
+  lgHero10,
   // Team
   we1,
   we2,
