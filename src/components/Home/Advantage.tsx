@@ -14,34 +14,41 @@ const Advantage = () => {
   const advantages: Advantage[] = [
     {
       id: 1,
-      title: "Family Heritage",
-      desc: "With a strong entrepreneurial mindset and a commitment to long-term alignment, we focus on creating lasting value. Our family-driven approach ensures flexibility and an unwavering dedication to maximizing opportunities for our partners.",
+      title: "Heritage",
+      desc: "Emphasizing long-term commitment and family values.",
     },
     {
       id: 2,
       title: "Expertise",
-      desc: " Our experienced investment team brings specialized knowledge across multifamily, commercial, and residential real estate. Supported by robust market research and a strategic investment infrastructure, we consistently identify high-potential opportunities.",
+      desc: "Specialized knowledge in real estate sectors.",
     },
     {
       id: 3,
-      title: "Global Network",
-      desc: "Leveraging an extensive network of entrepreneurs, industry executives, and capital market leaders, we access unique opportunities and strengthen our partners’ investment positions.",
+      title: "Network",
+      desc: "Access to unique opportunities and influential connections.",
     },
     {
       id: 4,
-      title: "Partnership",
-      desc: "At Shoresh Group, reputation and integrity are paramount. We focus on building lasting relationships with founders, family-owned businesses, management teams, and co-investors, ensuring long-term success for all involved.",
+      title: "Integrity",
+      desc: "Building lasting, trust-based partnerships.",
     },
   ];
   return (
     <div className="flex justify-center items-center bg4">
       <Container>
-        <div className="lg:mt-20 lg:mb-40 my-20">
-          <h1 className="text-5xl text-white mb-5 text-center">
+        <div className="">
+          <h1 className="lg:text-5xl text-4xl text-white mb-5 text-center">
             Shoresh Group Partners Advantage
           </h1>
+          <div className="flex justify-center">
+            <p className="text-center text-gray-200 text-xl lg:w-[50%] my-10">
+              Success is built on a foundation of trust, expertise, and vision.
+              At Shoresh Group, we honor our heritage while creating new
+              opportunities for the future.
+            </p>
+          </div>
 
-          <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-5">
+          <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-10">
             {advantages.map((a, index) => (
               <motion.div
                 key={a.id}
@@ -71,7 +78,7 @@ const Advantage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.1, duration: 0.5 }}
-                    className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border text-white text-sm"
+                    className="absolute top-12 lg:w-96 bg2 z-20 p-7 rounded-lg border border-gray-600 text-white text-sm"
                   >
                     {a.desc}
                   </motion.p>
