@@ -42,7 +42,7 @@ const Investor = () => {
     <>
       <Navbar bg />
 
-      <div className="pt-48 pb-16 bg3">
+      <div className="pt-48 pb-16 bg">
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
@@ -57,7 +57,7 @@ const Investor = () => {
         </div>
       </div>
 
-      <Container>
+      <div className="container mx-auto mt-14">
         <p className="text-sm uppercase text-gray-600">Why choose us</p>
         <div className="grid lg:grid-cols-2 mt-10 gap-x-10">
           <div className="">
@@ -80,7 +80,7 @@ const Investor = () => {
             <img src={why} alt="Why Choose us" className="rounded-2xl" />
           </div>
         </div>
-      </Container>
+      </div>
 
       <HowItWorks />
 
