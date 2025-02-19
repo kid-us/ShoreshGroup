@@ -68,12 +68,12 @@ const Advantage = () => {
                 onMouseLeave={() => setHoveredItem(0)}
               >
                 <div
-                  className={`transition-all duration-300 ease-in-out ${
-                    hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
-                  }`}
+                // className={`transition-all duration-300 ease-in-out ${
+                //   hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
+                // }`}
                 >
                   <p className="font-medium text-gray-300">0{a.id}</p>
-                  <p className="font-medium lg:text-4xl text-3xl text-white">
+                  <p className="font-medium lg:text-4xl text-3xl text-white hover:text-gray-400">
                     {a.title}
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const Advantage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.1, duration: 0.5 }}
-                    className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border border-gray-600 text-white text-sm"
+                    className="lg:absolute top-24 lg:w-96 bg z-20 p-7 rounded-lg border border-gray-600 text-white text-sm"
                   >
                     {a.desc}
                   </motion.p>
