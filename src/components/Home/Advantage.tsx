@@ -34,50 +34,54 @@ const Advantage = () => {
     },
   ];
   return (
-    <Container>
-      <div className="lg:mt-20 lg:mb-40 my-20">
-        <h1 className="text-2xl  mb-5 text-center">
-          Shoresh Group Partners Advantage
-        </h1>
+    <div className="flex justify-center items-center bg4">
+      <Container>
+        <div className="lg:mt-20 lg:mb-40 my-20">
+          <h1 className="text-5xl text-white mb-5 text-center">
+            Shoresh Group Partners Advantage
+          </h1>
 
-        <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-5">
-          {advantages.map((a, index) => (
-            <motion.div
-              key={a.id}
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: { delay: index * 0.01, duration: 0.5 },
-              }}
-              className="relative p-5 cursor-pointer hover:text-gray-500"
-              onMouseEnter={() => setHoveredItem(a.id)}
-              onMouseLeave={() => setHoveredItem(0)}
-            >
-              <div
-                className={`transition-all duration-300 ease-in-out ${
-                  hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
-                }`}
+          <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-5">
+            {advantages.map((a, index) => (
+              <motion.div
+                key={a.id}
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: { delay: index * 0.01, duration: 0.5 },
+                }}
+                className="relative p-5 cursor-pointer hover:text-gray-500"
+                onMouseEnter={() => setHoveredItem(a.id)}
+                onMouseLeave={() => setHoveredItem(0)}
               >
-                <p className="font-medium text-gray-400">0{a.id}</p>
-                <p className="font-medium lg:text-4xl text-3xl">{a.title}</p>
-              </div>
-
-              {hoveredItem === a.id && (
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.1, duration: 0.5 }}
-                  className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border text-white text-sm"
+                <div
+                  className={`transition-all duration-300 ease-in-out ${
+                    hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
+                  }`}
                 >
-                  {a.desc}
-                </motion.p>
-              )}
-            </motion.div>
-          ))}
+                  <p className="font-medium text-gray-300">0{a.id}</p>
+                  <p className="font-medium lg:text-4xl text-3xl text-white">
+                    {a.title}
+                  </p>
+                </div>
+
+                {hoveredItem === a.id && (
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border text-white text-sm"
+                  >
+                    {a.desc}
+                  </motion.p>
+                )}
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

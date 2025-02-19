@@ -14,7 +14,7 @@ const About = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   const short = [
@@ -65,6 +65,20 @@ const About = () => {
         <button
           onClick={() => setShowMore(!showMore)}
           className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+        >
+          {showMore ? "Read Less" : "Read More"}
+        </button>
+
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className={`${"bg2 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+        >
+          {showMore ? "Read Less" : "Read More"}
+        </button>
+
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className={`${"bg3 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
         >
           {showMore ? "Read Less" : "Read More"}
         </button>
