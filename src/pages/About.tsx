@@ -32,7 +32,7 @@ const About = () => {
   return (
     <>
       <Navbar bg />
-      <div className="hero pt-48 pb-16 bg2">
+      <div className="hero pt-48 pb-16 bg">
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">About US</p>
 
