@@ -35,7 +35,7 @@ const Advantage = () => {
   ];
   return (
     <Container>
-      <div className="lg:mt-20 mb-40 my-20">
+      <div className="lg:mt-20 lg:mb-40 my-20">
         <h1 className="text-2xl  mb-5 text-center">
           Shoresh Group Partners Advantage
         </h1>
@@ -60,7 +60,7 @@ const Advantage = () => {
                 }`}
               >
                 <p className="font-medium text-gray-400">0{a.id}</p>
-                <p className="font-medium text-4xl text-center">{a.title}</p>
+                <p className="font-medium lg:text-4xl text-3xl">{a.title}</p>
               </div>
 
               {hoveredItem === a.id && (
