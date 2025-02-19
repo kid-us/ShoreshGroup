@@ -35,7 +35,7 @@ const Advantage = () => {
   ];
   return (
     <Container>
-      <div className="lg:my-40 my-20">
+      <div className="lg:mt-20 mb-40 my-20">
         <p className="text-gray-700 lg:my-16 mb-5 text-center">
           Shoresh Group Partners Advantage
         </p>
