@@ -36,11 +36,11 @@ const Advantage = () => {
   return (
     <Container>
       <div className="lg:mt-20 mb-40 my-20">
-        <p className="text-gray-700 lg:my-16 mb-5 text-center">
+        <h1 className="text-2xl  mb-5 text-center">
           Shoresh Group Partners Advantage
-        </p>
+        </h1>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+        <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-5">
           {advantages.map((a, index) => (
             <motion.div
               key={a.id}
@@ -60,8 +60,8 @@ const Advantage = () => {
                   "-translate-y-10 transition-all duration-300"
                 }`}
               >
-                <p className="font-medium">0{a.id}</p>
-                <p className="font-medium text-4xl">{a.title}</p>
+                <p className="font-medium text-gray-400">0{a.id}</p>
+                <p className="font-medium text-4xl text-center">{a.title}</p>
               </div>
 
               {hoveredItem === a.id && (
@@ -69,7 +69,7 @@ const Advantage = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.1, duration: 0.5 }}
-                  className="absolute top-14 lg:w-96 bg z-20 p-7 rounded-lg border text-white text-sm"
+                  className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border text-white text-sm"
                 >
                   {a.desc}
                 </motion.p>
