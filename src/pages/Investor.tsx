@@ -5,7 +5,7 @@ import Invest from "../components/Investor/Invest";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { why } from "../assets";
-import Container from "../components/Container/Container";
+// import Container from "../components/Container/Container";
 
 const Investor = () => {
   const [title] = useState<string>("Investor Portal");

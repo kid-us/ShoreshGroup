@@ -7,7 +7,7 @@ import {
   // hero5,
   // hero6,
   // hero7,
-  lgHero1,
+  // lgHero1,
   lgHero2,
   lgHero3,
   lgHero4,
@@ -28,7 +28,7 @@ const Hero = () => {
 
   // const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
   const lgFrames = [
-    lgHero1,
+    // lgHero1,
     lgHero2,
     lgHero3,
     lgHero4,
