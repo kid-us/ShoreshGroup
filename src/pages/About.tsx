@@ -69,7 +69,7 @@ const About = () => {
           {showMore ? "Read Less" : "Read More"}
         </button>
 
-        <button
+        {/* <button
           onClick={() => setShowMore(!showMore)}
           className={`${"bg2 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
         >
@@ -81,7 +81,7 @@ const About = () => {
           className={`${"bg3 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
         >
           {showMore ? "Read Less" : "Read More"}
-        </button>
+        </button> */}
       </div>
       {/* </div> */}
 
