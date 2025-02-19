@@ -1,12 +1,22 @@
 import { motion } from "motion/react";
 import {
-  heroVid,
-  hero2,
-  hero3,
-  hero4,
-  hero5,
-  hero6,
-  hero7,
+  // heroVid,
+  // hero2,
+  // hero3,
+  // hero4,
+  // hero5,
+  // hero6,
+  // hero7,
+  lgHero1,
+  lgHero2,
+  lgHero3,
+  lgHero4,
+  lgHero5,
+  lgHero6,
+  lgHero7,
+  lgHero8,
+  lgHero9,
+  lgHero10,
 } from "../../assets";
 // import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
@@ -16,16 +26,30 @@ import useToggleStore from "../../store/store";
 const Hero = () => {
   const { isToggled } = useToggleStore();
 
-  const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
+  // const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
+  const lgFrames = [
+    lgHero1,
+    lgHero2,
+    lgHero3,
+    lgHero4,
+    lgHero5,
+    lgHero6,
+    lgHero7,
+    lgHero8,
+    lgHero9,
+    lgHero10,
+  ];
 
   return (
     <div
-      className={` ${
+      className={`${
         isToggled ? "hero-after-hide" : "hero-before-hide"
-      } h-[100dvh] relative`}
+      } relative overflow-hidden lg:h-[108dvh] h-[100dvh]`}
     >
-      <div className="lg:block hidden">
-        <video
+      <div className="">
+        <ImageFromFrames frames={lgFrames} fps={0.1} />
+
+        {/* <video
           style={{
             position: "absolute",
             top: isToggled ? 0 : "4em",
@@ -39,11 +63,12 @@ const Hero = () => {
           autoPlay
           muted
           loop
-        ></video>
+        ></video> */}
       </div>
-      <div className="lg:hidden block">
+
+      {/* <div className="lg:hidden block">
         <ImageFromFrames frames={frames} fps={0.4} />
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-5">
         <div className="flex items-center h-screen">

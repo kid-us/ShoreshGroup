@@ -40,6 +40,7 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
           objectFit: "cover",
           zIndex: -2,
         }}
+        className="hero-img"
       />
     </div>
   );
