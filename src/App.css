@@ -11,7 +11,7 @@
 }
 
 .hero-img {
-  animation: scaleAnimation 5s ease-in-out infinite alternate;
+  animation: scaleAnimation 10s ease-in-out infinite alternate;
 }
 
 @keyframes scaleAnimation {
@@ -22,6 +22,7 @@
     transform: scale(1.05);
   }
 }
+
 .hero-before-hide::before {
   content: "";
   position: absolute;

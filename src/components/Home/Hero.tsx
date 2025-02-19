@@ -72,7 +72,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-5">
         <div className="flex items-center h-screen">
-          <div className="mt-40">
+          <div className="mt-20">
             <motion.h1
               initial={{ opacity: 0, scale: 1.1 }}
               animate={{ opacity: 1, scale: 1 }}
