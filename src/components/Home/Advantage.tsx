@@ -36,16 +36,21 @@ const Advantage = () => {
   return (
     <div className="flex justify-center items-center bg4">
       <Container>
-        <div className="">
+        <div>
           <h1 className="lg:text-5xl text-4xl text-white mb-5 text-center">
             Shoresh Group Partners Advantage
           </h1>
           <div className="flex justify-center">
-            <p className="text-center text-gray-200 text-xl lg:w-[50%] my-10">
-              Success is built on a foundation of trust, expertise, and vision.
-              At Shoresh Group, we honor our heritage while creating new
-              opportunities for the future.
-            </p>
+            <div className="lg:w-[50%] my-10">
+              <p className="text-center text-gray-200 text-xl">
+                "Success is built on a foundation of trust, expertise, and
+                vision.
+              </p>
+              <p className="text-center text-gray-200 text-xl">
+                At Shoresh Group, we honor our heritage while creating new
+                opportunities for the future."
+              </p>
+            </div>
           </div>
 
           <div className="lg:flex lg:justify-center grid md:grid-cols-2 lg:gap-10">
