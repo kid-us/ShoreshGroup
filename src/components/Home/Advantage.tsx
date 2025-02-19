@@ -55,9 +55,8 @@ const Advantage = () => {
               onMouseLeave={() => setHoveredItem(0)}
             >
               <div
-                className={`${
-                  hoveredItem === a.id &&
-                  "-translate-y-10 transition-all duration-300"
+                className={`transition-all duration-300 ease-in-out ${
+                  hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
                 }`}
               >
                 <p className="font-medium text-gray-400">0{a.id}</p>
