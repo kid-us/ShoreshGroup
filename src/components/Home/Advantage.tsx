@@ -83,7 +83,7 @@ const Advantage = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.1, duration: 0.5 }}
-                    className="absolute top-12 lg:w-96 bg2 z-20 p-7 rounded-lg border border-gray-600 text-white text-sm"
+                    className="absolute top-12 lg:w-96 bg z-20 p-7 rounded-lg border border-gray-600 text-white text-sm"
                   >
                     {a.desc}
                   </motion.p>
