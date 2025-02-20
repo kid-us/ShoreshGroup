@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CoreValues from "../components/About/CoreValues";
+// import CoreValues from "../components/About/CoreValues";
 import Mission from "../components/About/Mission";
 // import WhoWeAre from "../components/About/WhoWeAre";
 import Footer from "../components/Footer/Footer";
@@ -34,7 +34,23 @@ const About = () => {
       <Navbar bg />
       <div className="hero pt-48 pb-16 bg">
         <div className="container mx-auto">
-          <p className="text-sm uppercase text-gray-200">About US</p>
+          <h1 className="lg:text-3xl text-2xl lg:text-left text-center text-white">
+            Our Story
+          </h1>
+
+          <div className="mt-5">
+            {showMore
+              ? long.map((l) => <p className="text-lg text-white">{l}</p>)
+              : short.map((s) => <p className="text-lg text-white">{s}</p>)}
+          </div>
+
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+          >
+            {showMore ? "Read Less" : "Read More"}
+          </button>
+          {/* <p className="text-sm uppercase text-gray-200">About US</p>
 
           <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium font-logo">
             Shoresh Group began as a family venture focused on creating
@@ -44,14 +60,14 @@ const About = () => {
             Today, we unlock value through a range of real estate projects, from
             distressed homes and multifamily real estate to large-scale
             developments, creating opportunities for all involved.
-          </p>
+          </p> */}
         </div>
       </div>
 
       {/* <WhoWeAre /> */}
 
       {/* <div className="bg-[#502b11]"> */}
-      <div className="container mx-auto py-20">
+      {/* <div className="container mx-auto py-20">
         <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
           Our Story
         </h1>
@@ -68,8 +84,8 @@ const About = () => {
         >
           {showMore ? "Read Less" : "Read More"}
         </button>
-
-        {/* <button
+      </div> */}
+      {/* <button
           onClick={() => setShowMore(!showMore)}
           className={`${"bg2 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
         >
@@ -82,11 +98,10 @@ const About = () => {
         >
           {showMore ? "Read Less" : "Read More"}
         </button> */}
-      </div>
       {/* </div> */}
 
       <Mission />
-      <CoreValues />
+      {/* <CoreValues /> */}
 
       <div className="container mx-auto px-5 mt-10">
         <div className="p-5 mb-10 text-center">
