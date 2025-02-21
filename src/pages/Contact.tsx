@@ -42,15 +42,9 @@ const Contact = () => {
     <>
       <Navbar bg />
 
-      <div className={`${isToggled ? "pt-10" : "pt-20"}`}>
+      <div className={`${isToggled ? "lg:pt-1 pt-10" : "lg:pt-20 pt-36"}`}>
         <Container>
-          <p
-            className={`text-sm uppercase text-gray-500 ${
-              isToggled ? "" : "lg:pt-8 pt-16"
-            }`}
-          >
-            Contact us
-          </p>
+          <p className={`text-sm uppercase text-gray-500`}>Contact us</p>
           <div className="grid lg:grid-cols-5 lg:mt-10 mt-6 gap-x-20">
             <div className="lg:col-span-3">
               <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-10">

@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
 import { join } from "../assets";
+import useToggleStore from "../store/store";
 
 const About = () => {
   const [title] = useState<string>("About Shoresh Group");
@@ -30,10 +31,16 @@ const About = () => {
     "As Shoresh Group continues to expand, it seeks to share this powerful model with others. By opening its doors to investors and families who share the same values, Shoresh Group is building a community of like-minded individuals committed to growth, success, and long-term prosperity.",
   ];
 
+  const { isToggled } = useToggleStore();
+
   return (
     <>
       <Navbar bg />
-      <div className="hero lg:pt-48 pt-32 lg:pb-16 pb-10 bg">
+      <div
+        className={`hero ${
+          isToggled ? "lg:pt-32 pt-28" : "lg:pt-58 pt-52"
+        } lg:pb-16 pb-10 bg`}
+      >
         <div className="container mx-auto">
           <h1 className="lg:text-3xl text-2xl text-white">Our Story</h1>
 
