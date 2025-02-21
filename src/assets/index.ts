@@ -53,7 +53,7 @@ import managed from "./allocation.png";
 
 import howItWork from "./how_it_work.jpeg";
 
-import contact from "./contact.jpeg";
+import contact from "./contact.jpg";
 
 import notFound from "./404.gif";
 import who from "./who.jpg";
