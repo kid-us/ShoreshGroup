@@ -56,7 +56,7 @@ import howItWork from "./how_it_work.jpeg";
 import contact from "./contact.jpeg";
 
 import notFound from "./404.gif";
-import who from "./who.png";
+import who from "./who.jpg";
 
 import why from "./why.jpg";
 

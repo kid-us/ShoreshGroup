@@ -82,7 +82,7 @@ const Stat = () => {
             </div>
           ))} */}
           <div className="flex justify-center items-center">
-            <img src={who} alt="Who we are" className="lg:h-[40vh]" />
+            <img src={who} alt="Who we are" className="rounded-2xl" />
           </div>
         </div>
       </div>
