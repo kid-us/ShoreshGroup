@@ -40,7 +40,7 @@ const HowItWorks = () => {
           Seamless Property Transactions with Transparent Profit Sharing
         </p>
       </div>
-      <div className="grid lg:grid-cols-7 md:grid-cols-1 gap-x-12 h-full">
+      <div className="grid lg:grid-cols-7 md:grid-cols-1 gap-x-12 h-full mt-40">
         <div className="lg:col-span-3 flex items-center h-full">
           <img
             src={howItWork}
