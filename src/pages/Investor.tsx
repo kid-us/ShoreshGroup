@@ -83,7 +83,7 @@ const Investor = () => {
             <img
               src={why}
               alt="Why Choose us"
-              className="lg:absolute -top-52 rounded-2xl lg:h-[80dvh] object-cover"
+              className="lg:absolute -top-52 rounded-2xl w-[80%] object-cover"
             />
           </div>
         </div>
