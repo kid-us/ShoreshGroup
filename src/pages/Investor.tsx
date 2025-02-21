@@ -5,6 +5,7 @@ import Invest from "../components/Investor/Invest";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { why } from "../assets";
+import useToggleStore from "../store/store";
 // import Container from "../components/Container/Container";
 
 const Investor = () => {
@@ -38,11 +39,13 @@ const Investor = () => {
     },
   ];
 
+  const { isToggled } = useToggleStore();
+
   return (
     <>
       <Navbar bg />
 
-      <div className="pt-48 pb-16 bg">
+      <div className={`${isToggled ? "pt-28" : "pt-52"} pb-16 bg`}>
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
