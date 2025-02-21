@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Container from "../Container/Container";
 import { motion } from "motion/react";
 
 export interface Mission {
@@ -29,10 +28,10 @@ const Mission = () => {
     <div className="overflow-hidden lg:mb-10">
       <div className="relative lg:h-[85vh] h-auto w-full">
         <div className="absolute lg:-top-20 -left-96 border border-btn w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
-        <Container>
+        <div className="container mx-auto">
           <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
             <div className="flex items-center">
-              <div className="mt-20">
+              <div className="lg:mt-20 mt-16">
                 <h1 className="lg:text-3xl text-2xl">Our</h1>
                 <h1 className="lg:text-3xl text-2xl text-btn">Mission</h1>
                 <p className="mt-5 lg:text-lg text-black">
@@ -71,7 +70,7 @@ const Mission = () => {
               ))}
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </div>
   );

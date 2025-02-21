@@ -60,6 +60,8 @@ import who from "./who.jpg";
 
 import why from "./why.jpg";
 
+import join from "./join.jpg";
+
 export {
   // Hero vid
   heroVid,
@@ -130,4 +132,5 @@ export {
   notFound,
   why,
   who,
+  join,
 };

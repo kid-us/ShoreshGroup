@@ -12,10 +12,10 @@ const LinkButton = ({ name, path, style }: Props) => {
       to={path}
       className={`${
         style ? style : "bg text-white hover:text-gray-200"
-      }  font-semibold px-12 py-3 text-sm rounded-full uppercase group`}
+      }  font-semibold px-12 py-3 text-sm rounded-full uppercase group text-center`}
     >
       {name}
-      <button className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></button>
+      <span className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></span>
     </Link>
   );
 };

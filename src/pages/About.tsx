@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
+import { join } from "../assets";
 
 const About = () => {
   const [title] = useState<string>("About Shoresh Group");
@@ -32,11 +33,9 @@ const About = () => {
   return (
     <>
       <Navbar bg />
-      <div className="hero pt-48 pb-16 bg">
+      <div className="hero lg:pt-48 pt-32 lg:pb-16 pb-10 bg">
         <div className="container mx-auto">
-          <h1 className="lg:text-3xl text-2xl lg:text-left text-center text-white">
-            Our Story
-          </h1>
+          <h1 className="lg:text-3xl text-2xl text-white">Our Story</h1>
 
           <div className="mt-5">
             {showMore
@@ -103,13 +102,22 @@ const About = () => {
       <Mission />
       {/* <CoreValues /> */}
 
-      <div className="container mx-auto px-5 mt-10">
-        <div className="p-5 mb-10 text-center">
-          <p className="lg:text-lg mb-5 lg:font-semibold text-gray-700">
-            Want to be a part of something bigger? Get in touch today and
-            discover how you can join our growing legacy.
-          </p>
-          <LinkButton name="Join Our Journey" path="/contact" />
+      <div className="container mx-auto px-5 my-10 lg:w-[70%]">
+        <div className="grid lg:grid-cols-2 gap-x-10 gap-y-5">
+          <div className="flex flex-col justify-center">
+            <p className="lg:text-xl mb-10 lg:font-semibold text-gray-700">
+              Want to be a part of something bigger? Get in touch today and
+              discover how you can join our growing legacy.
+            </p>
+            <LinkButton name="Join Our Journey" path="/contact" />
+          </div>
+          <div>
+            <img
+              src={join}
+              alt="Join Our Journey"
+              className="w-full lg:h-96 lg:object-cover lg:object-right rounded-lg"
+            />
+          </div>
         </div>
       </div>
 
