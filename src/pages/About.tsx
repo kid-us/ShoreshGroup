@@ -16,7 +16,7 @@ const About = () => {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }, []);
 
   const short = [
