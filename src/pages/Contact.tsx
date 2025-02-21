@@ -7,6 +7,7 @@ import Footer from "../components/Footer/Footer";
 import { contact } from "../assets";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useEffect, useState } from "react";
+import useToggleStore from "../store/store";
 
 const schema = z.object({
   email: z.string().email({ message: "Email address required" }),
@@ -34,14 +35,23 @@ const Contact = () => {
   const onSubmit = (data: FieldValues) => {
     console.log(data);
   };
+
+  const { isToggled } = useToggleStore();
+
   return (
     <>
       <Navbar bg />
 
-      <div className="pt-20">
+      <div className={`${isToggled ? "pt-10" : "pt-20"}`}>
         <Container>
-          <p className="text-sm uppercase text-gray-500 pt-8">Contact us</p>
-          <div className="grid lg:grid-cols-5 mt-10 gap-x-20">
+          <p
+            className={`text-sm uppercase text-gray-500 ${
+              isToggled ? "" : "lg:pt-8 pt-16"
+            }`}
+          >
+            Contact us
+          </p>
+          <div className="grid lg:grid-cols-5 lg:mt-10 mt-6 gap-x-20">
             <div className="lg:col-span-3">
               <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-10">
                 Get in Touch with Shoresh Group:
