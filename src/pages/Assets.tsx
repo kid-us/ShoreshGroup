@@ -7,10 +7,13 @@ import { motion } from "motion/react";
 import { assets } from "../services/assets";
 import { useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import useToggleStore from "../store/store";
 
 const categories = ["Current", "For Sale", "Sold"];
 
 const Assets = () => {
+  const { isToggled } = useToggleStore();
+
   const [modal, setModal] = useState<boolean>(false);
   const [activeCategory, setActiveCategory] = useState<string>("Current");
 
@@ -77,7 +80,7 @@ const Assets = () => {
 
       <Navbar bg />
 
-      <div className="lg:pt-20 pt-40">
+      <div className={`${isToggled ? "lg:pt-1 pt-10" : "lg:pt-20 pt-40"}`}>
         <Container>
           <div className="lg:mb-8 mb-3">
             <h1 className="lg:text-3xl text-2xl">Our Properties</h1>
