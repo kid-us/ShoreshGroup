@@ -12,7 +12,7 @@ const Investor = () => {
   useDocumentTitle(title);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   const choose = [
@@ -57,7 +57,7 @@ const Investor = () => {
         </div>
       </div>
 
-      <div className="container mx-auto mt-14">
+      <div className="container mx-auto my-14">
         <p className="text-sm uppercase text-gray-600">Why choose us</p>
         <div className="grid lg:grid-cols-2 mt-10 gap-x-10">
           <div className="">
@@ -76,8 +76,12 @@ const Investor = () => {
           </div>
 
           {/* Image */}
-          <div className="lg:mt-3 mt-5 flex justify-center items-center">
-            <img src={why} alt="Why Choose us" className="rounded-2xl" />
+          <div className="relative lg:mt-3 mt-5 flex justify-center items-center">
+            <img
+              src={why}
+              alt="Why Choose us"
+              className="lg:absolute -top-52 rounded-2xl lg:h-[100dvh] lg:w-[90%] object-cover"
+            />
           </div>
         </div>
       </div>
