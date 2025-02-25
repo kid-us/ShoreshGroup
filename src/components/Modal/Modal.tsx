@@ -125,7 +125,7 @@ const Modal = ({ onClose, name }: Props) => {
               <p className="mt-3 text-sm">Project Cost : {asset?.cost}</p>
               <p className="mt-3 text-sm">Profit : {asset?.profit}</p>
               <p className="mt-3 text-sm">ROI : {asset?.roi}</p>
-              <p className="mt-3 text-sm">COC : {asset?.coc}</p>
+              <p className="mt-3 text-sm">COC Return : {asset?.coc}</p>
             </div>
           </div>
         </div>
