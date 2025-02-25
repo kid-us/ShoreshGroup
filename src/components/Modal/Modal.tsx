@@ -43,7 +43,7 @@ const Modal = ({ onClose, name }: Props) => {
 
   // Automatically change image every 5 seconds (5000ms)
   useEffect(() => {
-    if (!asset || asset.imgs.length === 0) return;
+    if (!asset || asset.imgs.length === 0) return; // ✅ Prevent running when `asset` is undefined
 
     const timer = setInterval(() => {
       nextImage();
@@ -56,19 +56,18 @@ const Modal = ({ onClose, name }: Props) => {
     <>
       <div
         onClick={() => onClose()}
-        className="bg-neutral-800/50 fixed z-30 top-0 left-0 w-full h-[100dvh]"
+        className="bg-neutral-700/60 fixed z-30 top-0 left-0 w-full h-[100dvh]"
       ></div>
 
-      <div className="flex justify-center">
-        <div className="fixed z-40 lg:w-[70%] w-[95%] mt-14">
+      <div className="fixed z-40  rounded-lg shadow-lg top-1/2 left-1/2 lg:w-[70%] w-[95%] -translate-x-1/2 -translate-y-1/2">
+        <div className="flex justify-center items-center">
           <div
-            className={`relative animate__animated ${animationClass} lg:h-[85dvh] h-[95dvh] bg-white rounded-lg lg:p-16 py-7 px-5 overflow-y-scroll`}
+            className={`relative animate__animated ${animationClass} bg-white rounded-lg lg:h-[85dvh] h-[95dvh] lg:p-16 py-7 px-5 overflow-y-scroll overflow-hidden`}
           >
             <button
               onClick={() => handleClose()}
               className="absolute lg:top-10 lg:right-7 top-3 right-5 bi-x-lg text-red-600 lg:text-xl"
             ></button>
-
             <div>
               <p className="font-semibold mb-1 lg:text-lg text-xl">
                 {asset?.name}
@@ -115,36 +114,18 @@ const Modal = ({ onClose, name }: Props) => {
                 <span className="font-bold">{asset?.location}</span>
               </p>
               <p className="mt-3 text-sm">
-                Purchased Date :{" "}
-                <span className="font-bold">{asset?.purchased}</span>
+                Purchased Date : {asset?.purchased}
               </p>
+              <p className="mt-3 text-sm">Sale Date : {asset?.sale}</p>
+              <p className="mt-3 text-sm">Holding Period : {asset?.holding}</p>
               <p className="mt-3 text-sm">
-                Sale Date : <span className="font-bold">{asset?.sale}</span>
+                Purchased Price : {asset?.purchasePrice}
               </p>
-              <p className="mt-3 text-sm">
-                Holding Period :{" "}
-                <span className="font-bold">{asset?.holding}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                Purchased Price :{" "}
-                <span className="font-bold">{asset?.purchasePrice}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                Sale Price :{" "}
-                <span className="font-bold">{asset?.salePrice}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                Project Cost : <span className="font-bold">{asset?.cost}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                Profit : <span className="font-bold">{asset?.profit}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                ROI : <span className="font-bold">{asset?.roi}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                COC : <span className="font-bold">{asset?.coc}</span>
-              </p>
+              <p className="mt-3 text-sm">Sale Price : {asset?.salePrice}</p>
+              <p className="mt-3 text-sm">Project Cost : {asset?.cost}</p>
+              <p className="mt-3 text-sm">Profit : {asset?.profit}</p>
+              <p className="mt-3 text-sm">ROI : {asset?.roi}</p>
+              <p className="mt-3 text-sm">COC : {asset?.coc}</p>
             </div>
           </div>
         </div>

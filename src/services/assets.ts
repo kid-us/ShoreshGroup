@@ -49,7 +49,7 @@ export const assets: Assets[] = [
     salePrice: "$290,000.00",
     profit: "$37,093.88",
     roi: "14.7%",
-    coc: "Return",
+    coc: "",
     imgs: [sold_11, sold_12, sold_13],
   },
 
@@ -68,7 +68,7 @@ export const assets: Assets[] = [
     salePrice: "$270,000",
     profit: "$22,282.35",
     roi: "9%",
-    coc: "Return",
+    coc: "",
     imgs: [sold_21, sold_22, sold_23, sold_24, sold_25, sold_26],
   },
   {
@@ -86,7 +86,7 @@ export const assets: Assets[] = [
     salePrice: "$250,000",
     profit: "$46,263.51",
     roi: "22.7%",
-    coc: "Return",
+    coc: "",
     imgs: [sold3],
   },
   // {
