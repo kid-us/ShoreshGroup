@@ -58,7 +58,7 @@ const Modal = ({ onClose, name }: Props) => {
         onClick={() => handleClose()}
         className="bg-neutral-800/50 fixed z-30 top-0 left-0 w-full h-[100dvh]"
       ></div>
-      <div className="fixed z-40 h-full">
+      <div className="fixed z-40 h-full ">
         <div className="flex justify-center items-center h-full">
           <div
             className={`relative animate__animated ${animationClass} lg:w-[70%] w-[95%] lg:h-[85dvh] h-[95dvh] bg-white rounded-lg lg:p-16 py-7 px-5 overflow-y-scroll overflow-hidden`}
