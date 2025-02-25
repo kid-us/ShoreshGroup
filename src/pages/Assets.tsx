@@ -14,14 +14,15 @@ const categories = ["Current", "For Sale", "Sold"];
 const Assets = () => {
   const { isToggled } = useToggleStore();
 
-  const [modal, setModal] = useState<boolean>(false);
+  const [modal, setModal] = useState<string | null>(null);
+
   const [activeCategory, setActiveCategory] = useState<string>("Current");
 
   const [title] = useState<string>("Our Assets");
   useDocumentTitle(title);
 
-  const handleAssetClicked = () => {
-    setModal(true);
+  const handleAssetClicked = (name: string) => {
+    setModal(name);
     document.body.style.overflow = "hidden";
   };
 
@@ -71,8 +72,9 @@ const Assets = () => {
       {/* Modal */}
       {modal && (
         <Modal
+          name={modal}
           onClose={() => {
-            setModal(false);
+            setModal(null);
             document.body.style.overflow = "auto";
           }}
         />
@@ -115,7 +117,7 @@ const Assets = () => {
                 {currentAssets.map((asset) => (
                   <div
                     key={asset.id}
-                    onClick={() => handleAssetClicked()}
+                    onClick={() => handleAssetClicked(asset.name)}
                     className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
                   >
                     <img

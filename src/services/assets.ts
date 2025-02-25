@@ -12,19 +12,8 @@ import {
   sold_25,
   sold_26,
 } from "../assets";
-import // hero2,
-// hero4,
-// hero5,
-// hero6,
-// hero7,
-// hero8,
-// hero9,
-// hero10,
-// hero11,
 
-"../assets";
-
-interface Assets {
+export interface Assets {
   id: number;
   img: string;
   name: string;
@@ -44,7 +33,7 @@ interface Assets {
 }
 
 export const assets: Assets[] = [
-  // Current Properties
+  // Properties
   {
     id: 1,
     img: sold1,
@@ -86,7 +75,7 @@ export const assets: Assets[] = [
     id: 3,
     img: sold3,
     desc: "This property was purchased on January 24, 2025, and sold on February 19, 2025, with a holding period of 26 days. Originally intended as a full flip, we identified an eager buyer who wanted the property as-is, allowing us to pivot and secure a strong return with minimal renovation.",
-    category: "Current",
+    category: "Sold",
     location: "Maryland",
     name: "2910 Jesterville Rd",
     purchased: "January 24, 2025",
