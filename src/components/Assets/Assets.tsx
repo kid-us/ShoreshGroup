@@ -5,14 +5,14 @@ import { assets } from "../../services/assets";
 import Modal from "../Modal/Modal";
 
 const Assets = () => {
-  const [modal, setModal] = useState<boolean>(false);
+  const [modal, setModal] = useState<string | null>(null);
 
   const categories = ["Current", "For Sale", "Sold"];
 
   const [activeCategory, setActiveCategory] = useState<string>("Current");
 
-  const handleAssetClicked = () => {
-    setModal(true);
+  const handleAssetClicked = (name: string) => {
+    setModal(name);
     document.body.style.overflow = "hidden";
   };
 
@@ -21,17 +21,16 @@ const Assets = () => {
       {/* Modal */}
       {modal && (
         <Modal
+          name={modal}
           onClose={() => {
-            setModal(false);
+            setModal(null);
             document.body.style.overflow = "auto";
           }}
         />
       )}
 
       <Container>
-        <h1 className="lg:text-3xl text-2xl lg:mb-8 mb-3 mt-20">
-          Our Assets
-        </h1>
+        <h1 className="lg:text-3xl text-2xl lg:mb-8 mb-3 mt-20">Our Assets</h1>
         <p className="text-gray-500 mb-5">Categories</p>
         <motion.div
           layout
@@ -59,7 +58,7 @@ const Assets = () => {
               asset.category === activeCategory && (
                 <div
                   key={asset.id}
-                  onClick={() => handleAssetClicked()}
+                  onClick={() => handleAssetClicked(asset.name)}
                   className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
                 >
                   <img
