@@ -114,32 +114,40 @@ const Assets = () => {
             <div className="lg:my-12 my-8">
               {/* Asset Grid */}
               <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 lg:gap-y-7 gap-y-5 mb-6">
-                {currentAssets.map((asset) => (
-                  <div
-                    key={asset.id}
-                    onClick={() => handleAssetClicked(asset.name)}
-                    className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
-                  >
-                    <img
-                      src={asset.img}
-                      alt={"asset" + asset.id}
-                      className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom"
-                    />
-                    <div className="px-4 py-5">
-                      <p className="font-semibold text-xl mb-2">{asset.name}</p>
-                      <div className="flex justify-between">
-                        <p className="text-gray-500 text-sm font-semibold">
-                          <span className="bi-geo-alt-fill text-secondary me-2"></span>
-                          {asset.location}
+                {currentAssets.length > 0 ? (
+                  currentAssets.map((asset) => (
+                    <div
+                      key={asset.id}
+                      onClick={() => handleAssetClicked(asset.name)}
+                      className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
+                    >
+                      <img
+                        src={asset.img}
+                        alt={"asset" + asset.id}
+                        className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom"
+                      />
+                      <div className="px-4 py-5">
+                        <p className="font-semibold text-xl mb-2">
+                          {asset.name}
                         </p>
-                        <p className="text-gray-500 text-sm font-semibold">
-                          <span className="bi-calendar-check-fill me-2 text-secondary"></span>
-                          Purchased {asset.purchased}
-                        </p>
+                        <div className="flex justify-between">
+                          <p className="text-gray-500 text-sm font-semibold">
+                            <span className="bi-geo-alt-fill text-secondary me-2"></span>
+                            {asset.location}
+                          </p>
+                          <p className="text-gray-500 text-sm font-semibold">
+                            <span className="bi-calendar-check-fill me-2 text-secondary"></span>
+                            Purchased {asset.purchased}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))
+                ) : (
+                  <p className="lg:col-span-2 p-2 w-full text-center bg-btn font-semibold text-white">
+                    No assets available right now. Check back later for updates!
+                  </p>
+                )}
               </div>
 
               {/* Pagination Controls */}
