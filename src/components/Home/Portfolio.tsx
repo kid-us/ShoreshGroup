@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { assets } from "../../services/assets";
+import { soldAssets } from "../../services/assets";
 import LinkButton from "../Button/LinkButton";
 import Container from "../Container/Container";
 import Modal from "../Modal/Modal";
@@ -17,6 +17,7 @@ const Portfolio = () => {
       {/* Modal */}
       {modal && (
         <Modal
+          category="Sold"
           name={modal}
           onClose={() => {
             setModal(null);
@@ -32,7 +33,7 @@ const Portfolio = () => {
           long-term growth, stability, and exceptional returns.
         </p>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 lg:gap-y-7 gap-y-5 mb-6 mt-8">
-          {assets.slice(0, 3).map((asset) => (
+          {soldAssets.slice(0, 3).map((asset) => (
             <div
               key={asset.id}
               onClick={() => handleAssetClicked(asset.name)}
