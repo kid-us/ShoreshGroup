@@ -4,7 +4,12 @@ import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
-import { assets } from "../services/assets";
+import {
+  soldAssets,
+  currentAssets,
+  // SoldAssets,
+  // CurrentAssets,
+} from "../services/assets";
 import { useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
@@ -47,16 +52,24 @@ const Assets = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Filter assets based on active category
+  const assets =
+    activeCategory === "Sold"
+      ? soldAssets
+      : activeCategory === "Current"
+      ? currentAssets
+      : [];
+
   const filteredAssets = assets.filter(
     (asset) => asset.category === activeCategory
   );
+
   const ITEMS_PER_PAGE = 9;
 
   // Calculate total pages
   const totalPages = Math.ceil(filteredAssets.length / ITEMS_PER_PAGE);
 
   // Get items for the current page
-  const currentAssets = filteredAssets.slice(
+  const viewingAssets = filteredAssets.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -72,6 +85,7 @@ const Assets = () => {
       {/* Modal */}
       {modal && (
         <Modal
+          category={activeCategory}
           name={modal}
           onClose={() => {
             setModal(null);
@@ -114,8 +128,8 @@ const Assets = () => {
             <div className="lg:my-12 my-8">
               {/* Asset Grid */}
               <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 lg:gap-y-7 gap-y-5 mb-6">
-                {currentAssets.length > 0 ? (
-                  currentAssets.map((asset) => (
+                {viewingAssets.length > 0 ? (
+                  viewingAssets.map((asset) => (
                     <div
                       key={asset.id}
                       onClick={() => handleAssetClicked(asset.name)}

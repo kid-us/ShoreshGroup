@@ -1,21 +1,33 @@
 import { useState, useEffect, useCallback } from "react";
-import { assets, Assets } from "../../services/assets";
+import {
+  currentAssets,
+  CurrentAssets,
+  soldAssets,
+  SoldAssets,
+} from "../../services/assets";
+import SoldDescription from "./SoldDescription";
 
 interface Props {
   onClose: () => void;
   name: string;
+  category: string;
 }
 
-const Modal = ({ onClose, name }: Props) => {
+const Modal = ({ onClose, name, category }: Props) => {
   const [animationClass, setAnimationClass] =
     useState<string>("animate__zoomIn");
-  const [asset, setAsset] = useState<Assets>();
+  const [asset, setAsset] = useState<SoldAssets | CurrentAssets>();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const filtered = assets.filter((asset) => asset.name === name);
-    setAsset(filtered[0]);
-  }, [name, assets]);
+    if (category === "Current") {
+      const filtered = currentAssets.filter((asset) => asset.name === name);
+      setAsset(filtered[0]);
+    } else if (category === "Sold") {
+      const filtered = soldAssets.filter((asset) => asset.name === name);
+      setAsset(filtered[0]);
+    }
+  }, [name, soldAssets, currentAssets]);
 
   // Handle modal close
   const handleClose = () => {
@@ -43,7 +55,7 @@ const Modal = ({ onClose, name }: Props) => {
 
   // Automatically change image every 5 seconds (5000ms)
   useEffect(() => {
-    if (!asset || asset.imgs.length === 0) return; // ✅ Prevent running when `asset` is undefined
+    if (!asset || asset.imgs.length === 0) return;
 
     const timer = setInterval(() => {
       nextImage();
@@ -103,29 +115,11 @@ const Modal = ({ onClose, name }: Props) => {
               <p className="mt-5 font-semibold text-gray-600 uppercase">
                 Description
               </p>
-              <p className="mt-3 font-semibold">{asset?.desc}</p>
 
-              <p className="mt-5 font-semibold text-gray-600 uppercase">
-                Deal Overview
-              </p>
-
-              <p className="mt-3 text-sm text-gray-700">
-                Property Address :{" "}
-                <span className="font-bold">{asset?.location}</span>
-              </p>
-              <p className="mt-3 text-sm">
-                Purchased Date : {asset?.purchased}
-              </p>
-              <p className="mt-3 text-sm">Sale Date : {asset?.sale}</p>
-              <p className="mt-3 text-sm">Holding Period : {asset?.holding}</p>
-              <p className="mt-3 text-sm">
-                Purchased Price : {asset?.purchasePrice}
-              </p>
-              <p className="mt-3 text-sm">Sale Price : {asset?.salePrice}</p>
-              <p className="mt-3 text-sm">Project Cost : {asset?.cost}</p>
-              <p className="mt-3 text-sm">Profit : {asset?.profit}</p>
-              <p className="mt-3 text-sm">ROI : {asset?.roi}</p>
-              <p className="mt-3 text-sm">COC Return : {asset?.coc}</p>
+              {/* Sold Assets Info */}
+              {category === "Sold" && (
+                <SoldDescription asset={asset as SoldAssets} />
+              )}
             </div>
           </div>
         </div>
