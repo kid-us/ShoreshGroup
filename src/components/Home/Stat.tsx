@@ -43,10 +43,10 @@ const Stat = () => {
 
   return (
     <Container>
-      <div className="grid lg:grid-cols-2 lg:gap-x-40 lg:mt-0 mt-24">
+      <div className="grid lg:grid-cols-2 lg:gap-x-40">
         <div>
           {/* <p className="text-sm uppercase text-gray-600">About Shoresh Group</p> */}
-          <h1 className="font-semibold lg:text-4xl text-3xl lg:mt-16 my-6 lg:mb-10">
+          <h1 className="font-semibold lg:text-4xl text-3xl lg:mt-16 mb-6 lg:mb-10">
             Who we are
           </h1>
           <p>
