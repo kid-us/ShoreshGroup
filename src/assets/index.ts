@@ -26,6 +26,23 @@ import sold_24 from "./assets/assets_sold_2_4.jpg";
 import sold_25 from "./assets/assets_sold_2_5.jpg";
 import sold_26 from "./assets/assets_sold_2_6.jpg";
 
+import current1 from "./assets/current_1.jpg";
+import current2 from "./assets/current_2.jpg";
+
+import current_11 from "./assets/current_11.jpg";
+import current_12 from "./assets/current_12.jpg";
+import current_13 from "./assets/current_13.jpg";
+import current_14 from "./assets/current_14.jpg";
+import current_15 from "./assets/current_15.jpg";
+import current_16 from "./assets/current_16.jpg";
+
+import current_21 from "./assets/current_21.jpg";
+import current_22 from "./assets/current_22.jpg";
+import current_23 from "./assets/current_23.jpg";
+import current_24 from "./assets/current_24.jpg";
+import current_25 from "./assets/current_25.jpg";
+import current_26 from "./assets/current_26.jpg";
+
 import lgHero1 from "./hero/1.jpg";
 import lgHero2 from "./hero/2.jpg";
 import lgHero3 from "./hero/3.jpg";
@@ -106,6 +123,22 @@ export {
   sold_24,
   sold_25,
   sold_26,
+
+  // Current
+  current1,
+  current2,
+  current_11,
+  current_12,
+  current_13,
+  current_14,
+  current_15,
+  current_16,
+  current_21,
+  current_22,
+  current_23,
+  current_24,
+  current_25,
+  current_26,
 
   // Hero img for large device
   lgHero1,

@@ -1,4 +1,18 @@
 import {
+  current1,
+  current2,
+  current_11,
+  current_12,
+  current_13,
+  current_14,
+  current_15,
+  current_16,
+  current_21,
+  current_22,
+  current_23,
+  current_24,
+  current_25,
+  current_26,
   sold1,
   sold2,
   sold3,
@@ -13,7 +27,7 @@ import {
   sold_26,
 } from "../assets";
 
-export interface Assets {
+export interface SoldAssets {
   id: number;
   img: string;
   name: string;
@@ -32,7 +46,95 @@ export interface Assets {
   imgs: string[];
 }
 
-export const assets: Assets[] = [
+export interface CurrentAssets {
+  id: number;
+  img: string;
+  name: string;
+  location?: string;
+  category: string;
+  desc: string;
+  desc2: string;
+  desc3: string;
+  desc4: string;
+  desc5: string;
+  bed: number;
+  bath: number;
+  purchased: number;
+  parking: number;
+  volume: string;
+  built: number;
+  price: number;
+  imgs: string[];
+}
+
+// Current Assets
+export const currentAssets: CurrentAssets[] = [
+  {
+    id: 1,
+    img: current1,
+    desc: "Welcome to your dream home in the heart of Greenbriar! This beautifully renovated 3 bedroom, 2 bathroom ranch-style home offers a total of 1,737 square feet between the main level and the full basement. Step inside and be greeted by a recently updated and renovated interior with stylish finishes throughout. The spacious living room is perfect for relaxing or gathering with friends and family. The adjacent dining area is ideal for enjoying meals together, and the updated kitchen boasts sleek countertops, stainless steel appliances and garden window.",
+    desc2:
+      "Down the hall, you'll find two bedrooms including a master suite with attached bathroom. The full basement provides plenty of room for storage, a home gym, or a recreation room – the possibilities are endless! Also in the basement you’ll find the 3rd bedroom, a three quarter bath and the utility / laundry room.",
+    desc3:
+      "Step outside and enjoy your private backyard, perfect for barbecues, outdoor gatherings and space for the dog to roam. This home is situated across the street from the expansive Cottonwood Creek Park, offering walking and running trails, sports complexes, a disc golf course, and the Cottonwood Creek Family Center YMCA.",
+    desc4:
+      "Located in the desirable Greenbriar neighborhood, this home offers the perfect blend of convenience and tranquility. You'll be just minutes from Woodmen Road, with easy access to shopping, entertainment, and amenities, yet tucked away in a quiet and family-friendly community.",
+    desc5:
+      "Don't miss out on this incredible opportunity to own a move-in ready home in a fantastic location. Schedule your showing today!",
+    category: "Current",
+    location: "Colorado springs",
+    name: "6765 Montarbor dr",
+    purchased: 2020,
+    bed: 3,
+    bath: 2,
+    parking: 1,
+    volume: "1737 sq/ft",
+    built: 1985,
+    price: 450_000,
+    imgs: [
+      current_11,
+      current_12,
+      current_13,
+      current_14,
+      current_15,
+      current_16,
+    ],
+  },
+  {
+    id: 2,
+    img: current2,
+    desc: "Welcome to carefree living in this beautifully updated condo! This 3 bedroom, 2.5 bathroom condo offers 1,544 square feet of move-in ready living space in the highly sought-after District 20 school district.",
+    desc2:
+      "Step inside and be impressed by the fresh paint and brand new LVP flooring that flows throughout. The updated kitchen is a chef's dream, featuring sleek granite countertops and a brand new stainless steel appliance package.",
+    desc3:
+      "Upstairs, you'll find two generously sized bedrooms, a full bathroom and a laundry area. The finished basement offers a third bedroom and a full bathroom. With a half bathroom on the main level, there's plenty of space for everyone to get ready in the morning.",
+    desc4:
+      "This condo also features an attached 1-car garage for your convenience. This condo is ideally situated near the intersection of Austin Bluffs and Woodmen, offering easy access to a variety of shopping and dining options. Nature enthusiasts will love that the Briargate Trail runs behind the community, connecting to Cottonwood Creek Park with its expansive green spaces and recreational opportunities.",
+    desc5:
+      "Don't wait! This turn-key condo is ready for its new owner and won't last long. Schedule your showing today!",
+    category: "Current",
+    location: "Colorado springs",
+    name: "7872 Antelope valley point",
+    purchased: 2000,
+    bed: 3,
+    bath: 2.5,
+    parking: 2,
+    volume: "1544 sq/ft",
+    built: 2000,
+    price: 300_000,
+    imgs: [
+      current_21,
+      current_22,
+      current_23,
+      current_24,
+      current_25,
+      current_26,
+    ],
+  },
+];
+
+//Sold Assets
+export const soldAssets: SoldAssets[] = [
   // Properties
   {
     id: 1,
@@ -52,7 +154,6 @@ export const assets: Assets[] = [
     coc: "",
     imgs: [sold_11, sold_12, sold_13],
   },
-
   {
     id: 2,
     img: sold2,
