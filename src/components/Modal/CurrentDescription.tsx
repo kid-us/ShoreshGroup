@@ -24,7 +24,11 @@ const CurrentDescription = ({ asset }: Props) => {
           <p className="mb-2">{asset.desc5}</p>
           <p className="uppercase mt-5 text-gray-700">More Details</p>
 
-          <div className={`grid lg:grid-cols-5 grid-cols-2 gap-2 mt-5`}>
+          <div
+            className={`grid ${
+              asset.lot ? "lg:grid-cols-6" : "lg:grid-cols-5"
+            } grid-cols-2 gap-2 mt-5`}
+          >
             <div className="flex gap-x-2 items-center justify-center border rounded p-3">
               <Tag size={18} />
               <p>${asset.price.toLocaleString()}</p>
