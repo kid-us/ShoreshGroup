@@ -64,6 +64,7 @@ export interface CurrentAssets {
   volume: string;
   built: number;
   price: number;
+  lot?: string;
   imgs: string[];
 }
 
@@ -122,6 +123,7 @@ export const currentAssets: CurrentAssets[] = [
     volume: "1544 sq/ft",
     built: 2000,
     price: 300_000,
+    lot: "Lot 0.13 acres",
     imgs: [
       current_21,
       current_22,
