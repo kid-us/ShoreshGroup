@@ -4,12 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
-import {
-  soldAssets,
-  currentAssets,
-  // SoldAssets,
-  // CurrentAssets,
-} from "../services/assets";
+import { soldAssets, currentAssets } from "../services/assets";
 import { useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
@@ -158,7 +153,7 @@ const Assets = () => {
                     </div>
                   ))
                 ) : (
-                  <p className="lg:col-span-2 p-2 w-full text-center bg-btn font-semibold text-white">
+                  <p className="lg:col-span-2 p-2 w-full text-center bg-btn font-semibold text-white mb-40">
                     No assets available right now. Check back later for updates!
                   </p>
                 )}
