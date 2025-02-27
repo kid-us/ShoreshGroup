@@ -6,6 +6,7 @@ import {
   SoldAssets,
 } from "../../services/assets";
 import SoldDescription from "./SoldDescription";
+import CurrentDescription from "./CurrentDescription";
 
 interface Props {
   onClose: () => void;
@@ -112,13 +113,18 @@ const Modal = ({ onClose, name, category }: Props) => {
               </div>
               {/* Description */}
 
-              <p className="mt-5 font-semibold text-gray-600 uppercase">
+              <p className="my-5 font-semibold text-gray-600 uppercase">
                 Description
               </p>
 
               {/* Sold Assets Info */}
               {category === "Sold" && (
                 <SoldDescription asset={asset as SoldAssets} />
+              )}
+
+              {/* Current Assets Info */}
+              {category === "Current" && (
+                <CurrentDescription asset={asset as CurrentAssets} />
               )}
             </div>
           </div>
