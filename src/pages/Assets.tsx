@@ -153,7 +153,7 @@ const Assets = () => {
                     </div>
                   ))
                 ) : (
-                  <p className="lg:col-span-2 p-2 w-full text-center bg-btn font-semibold text-white mb-40">
+                  <p className="lg:col-span-2 p-2 w-full text-center bg-btn font-semibold text-white mb-60">
                     No assets available right now. Check back later for updates!
                   </p>
                 )}
