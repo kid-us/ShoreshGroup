@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import {
   currentAssets,
   CurrentAssets,
+  ongoing,
   soldAssets,
   SoldAssets,
 } from "../../services/assets";
@@ -27,8 +28,11 @@ const Modal = ({ onClose, name, category }: Props) => {
     } else if (category === "Sold") {
       const filtered = soldAssets.filter((asset) => asset.name === name);
       setAsset(filtered[0]);
+    } else if (category === "Ongoing Renovation") {
+      const filtered = ongoing.filter((asset) => asset.name === name);
+      setAsset(filtered[0]);
     }
-  }, [name, soldAssets, currentAssets]);
+  }, [name, soldAssets, currentAssets, ongoing]);
 
   // Handle modal close
   const handleClose = () => {
@@ -144,6 +148,11 @@ const Modal = ({ onClose, name, category }: Props) => {
               {/* Current Assets Info */}
               {category === "Current" && (
                 <CurrentDescription asset={asset as CurrentAssets} />
+              )}
+
+              {/* Ongoing Assets Info */}
+              {category === "Ongoing Renovation" && (
+                <p className="mb-2">{asset?.desc}</p>
               )}
             </div>
           </div>

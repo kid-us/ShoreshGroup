@@ -4,12 +4,12 @@ import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
-import { soldAssets, currentAssets } from "../services/assets";
+import { soldAssets, currentAssets, ongoing } from "../services/assets";
 import { useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
 
-const categories = ["Current", "For Sale", "Sold"];
+const categories = ["Current", "For Sale", "Sold", "Ongoing Renovation"];
 
 const Assets = () => {
   const { isToggled } = useToggleStore();
@@ -52,6 +52,8 @@ const Assets = () => {
       ? soldAssets
       : activeCategory === "Current"
       ? currentAssets
+      : activeCategory === "Ongoing Renovation"
+      ? ongoing
       : [];
 
   const filteredAssets = assets.filter(
@@ -74,6 +76,8 @@ const Assets = () => {
       setCurrentPage(newPage);
     }
   };
+
+  console.log(activeCategory);
 
   return (
     <>
@@ -115,7 +119,7 @@ const Assets = () => {
                       : "text-gray-600 border border-btn lg:py-2 py-3 lg:px-10"
                   } `}
                 >
-                  {c} Assets
+                  {c}
                 </motion.button>
               ))}
             </motion.div>

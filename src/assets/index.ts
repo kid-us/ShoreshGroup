@@ -66,6 +66,13 @@ import current_51 from "./assets/current/current_51.jpg";
 import current_52 from "./assets/current/current_52.jpg";
 import current_53 from "./assets/current/current_53.jpg";
 
+import ongoing1 from "./assets/ongoing/ongoing_1.jpg";
+import ongoing_11 from "./assets/ongoing/ongoing_11.jpg";
+import ongoing_12 from "./assets/ongoing/ongoing_12.jpg";
+import ongoing_13 from "./assets/ongoing/ongoing_13.jpg";
+import ongoing_14 from "./assets/ongoing/ongoing_14.jpg";
+import ongoing_15 from "./assets/ongoing/ongoing_15.jpg";
+
 import lgHero1 from "./hero/1.jpg";
 import lgHero2 from "./hero/2.jpg";
 import lgHero3 from "./hero/3.jpg";
@@ -182,6 +189,14 @@ export {
   current_51,
   current_52,
   current_53,
+
+  // Ongoing
+  ongoing1,
+  ongoing_11,
+  ongoing_12,
+  ongoing_13,
+  ongoing_14,
+  ongoing_15,
 
   // Hero img for large device
   lgHero1,
