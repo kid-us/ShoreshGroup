@@ -1,6 +1,7 @@
 import {
   current1,
   current2,
+  current3,
   current_11,
   current_12,
   current_13,
@@ -13,6 +14,11 @@ import {
   current_24,
   current_25,
   current_26,
+  current_31,
+  current_32,
+  current_33,
+  current_34,
+  current_35,
   sold1,
   sold2,
   sold3,
@@ -53,17 +59,17 @@ export interface CurrentAssets {
   location?: string;
   category: string;
   desc: string;
-  desc2: string;
-  desc3: string;
-  desc4: string;
-  desc5: string;
-  bed: number;
-  bath: number;
-  purchased: number;
-  parking: number;
-  volume: string;
-  built: number;
-  price: number;
+  desc2?: string;
+  desc3?: string;
+  desc4?: string;
+  desc5?: string;
+  bed?: number;
+  bath?: number;
+  purchased?: number;
+  parking?: number;
+  volume?: string;
+  built?: number;
+  price?: number;
   lot?: string;
   imgs: string[];
 }
@@ -132,6 +138,15 @@ export const currentAssets: CurrentAssets[] = [
       current_25,
       current_26,
     ],
+  },
+  {
+    id: 3,
+    img: current3,
+    desc: "Nestled in a peaceful, sought-after area, CO Mesa Springs 2537 offers a spacious and well-maintained home with excellent potential. Located in close proximity to top-rated schools, parks, and convenient shopping centers, this property benefits from a prime location in a thriving community. A great addition to any investment portfolio, the property’s charm and location make it a standout in the area.",
+    category: "Current",
+    location: "Colorado springs",
+    name: "CO Mesa Springs 2537",
+    imgs: [current_31, current_32, current_33, current_34, current_35],
   },
 ];
 
