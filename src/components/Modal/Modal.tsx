@@ -28,7 +28,7 @@ const Modal = ({ onClose, name, category }: Props) => {
     } else if (category === "Sold") {
       const filtered = soldAssets.filter((asset) => asset.name === name);
       setAsset(filtered[0]);
-    } else if (category === "Ongoing Renovation") {
+    } else if (category === "In Progress") {
       const filtered = ongoing.filter((asset) => asset.name === name);
       setAsset(filtered[0]);
     }
@@ -151,7 +151,7 @@ const Modal = ({ onClose, name, category }: Props) => {
               )}
 
               {/* Ongoing Assets Info */}
-              {category === "Ongoing Renovation" && (
+              {category === "In Progress" && (
                 <p className="mb-2">{asset?.desc}</p>
               )}
             </div>

@@ -9,7 +9,7 @@ import { useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
 
-const categories = ["Current", "For Sale", "Sold", "Ongoing Renovation"];
+const categories = ["Current", "Sold", "In Progress"];
 
 const Assets = () => {
   const { isToggled } = useToggleStore();
@@ -52,7 +52,7 @@ const Assets = () => {
       ? soldAssets
       : activeCategory === "Current"
       ? currentAssets
-      : activeCategory === "Ongoing Renovation"
+      : activeCategory === "In Progress"
       ? ongoing
       : [];
 
@@ -119,7 +119,7 @@ const Assets = () => {
                       : "text-gray-600 border border-btn lg:py-2 py-3 lg:px-10"
                   } `}
                 >
-                  {c}
+                  {c} Assets
                 </motion.button>
               ))}
             </motion.div>
