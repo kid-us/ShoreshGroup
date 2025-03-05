@@ -14,13 +14,13 @@ export const footer: Nav[] = [
   },
   {
     id: 4,
-    name: "For Sale",
-    path: "/assets?asset=for-sale",
+    name: "Recently Sold",
+    path: "/assets?asset=sold",
   },
   {
     id: 5,
-    name: "Recently Sold",
-    path: "/assets?asset=sold",
+    name: "In Progress",
+    path: "/assets?asset=in-progress",
   },
 
   {
