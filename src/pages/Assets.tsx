@@ -136,7 +136,7 @@ const Assets = () => {
                       : "text-gray-600 border border-btn lg:py-2 py-3 lg:px-10"
                   } `}
                 >
-                  {c} Assets
+                  {c} {c === "Sold" ? "Properties" : "Assets"}
                 </motion.button>
               ))}
             </motion.div>
