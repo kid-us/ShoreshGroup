@@ -69,6 +69,7 @@ import current_53 from "./assets/current/current_53.jpg";
 import ongoing1 from "./assets/ongoing/ongoing_1.jpg";
 import ongoing2 from "./assets/ongoing/ongoing_2.jpg";
 import ongoing3 from "./assets/ongoing/ongoing_3.jpg";
+import ongoing4 from "./assets/ongoing/ongoing_4.jpg";
 
 import ongoing_11 from "./assets/ongoing/ongoing_11.jpg";
 import ongoing_12 from "./assets/ongoing/ongoing_12.jpg";
@@ -83,6 +84,10 @@ import ongoing_24 from "./assets/ongoing/ongoing_24.jpg";
 import ongoing_25 from "./assets/ongoing/ongoing_25.jpg";
 
 import ongoing_31 from "./assets/ongoing/ongoing_31.jpg";
+import ongoing_41 from "./assets/ongoing/ongoing_41.jpg";
+import ongoing_42 from "./assets/ongoing/ongoing_42.jpg";
+import ongoing_43 from "./assets/ongoing/ongoing_43.jpg";
+import ongoing_44 from "./assets/ongoing/ongoing_44.jpg";
 
 import lgHero1 from "./hero/1.jpg";
 import lgHero2 from "./hero/2.jpg";
@@ -216,6 +221,11 @@ export {
   ongoing_25,
   ongoing3,
   ongoing_31,
+  ongoing4,
+  ongoing_41,
+  ongoing_42,
+  ongoing_43,
+  ongoing_44,
 
   // Hero img for large device
   lgHero1,
