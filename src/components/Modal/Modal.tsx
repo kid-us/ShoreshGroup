@@ -38,32 +38,47 @@ const Modal = ({ onClose, name, category }: Props) => {
     }, 100);
   };
 
-  // Function to move to the next image
+  const [timer, setTimer] = useState<number | null>(null);
+
+  // Function to start/reset auto-slide
+  const startAutoSlide = useCallback(() => {
+    if (timer) clearInterval(timer); // Clear existing interval
+
+    const newTimer = setInterval(() => {
+      if (asset)
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % asset.imgs.length);
+    }, 5000);
+
+    setTimer(newTimer);
+  }, [asset, timer]);
+
+  // Function to move to the next image & restart auto-slide
   const nextImage = useCallback(() => {
     if (asset && asset.imgs.length > 0) {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % asset.imgs.length);
+      startAutoSlide(); // Restart auto-slide
     }
-  }, [asset]);
+  }, [asset, startAutoSlide]);
 
-  // Function to move to the previous image
+  // Function to move to the previous image & restart auto-slide
   const prevImage = useCallback(() => {
     if (asset && asset.imgs.length > 0) {
       setCurrentIndex(
         (prevIndex) => (prevIndex - 1 + asset.imgs.length) % asset.imgs.length
       );
+      startAutoSlide(); // Restart auto-slide
     }
-  }, [asset]);
+  }, [asset, startAutoSlide]);
 
-  // Automatically change image every 5 seconds (5000ms)
+  // Start auto-slide when component mounts
   useEffect(() => {
     if (!asset || asset.imgs.length === 0) return;
+    startAutoSlide();
 
-    const timer = setInterval(() => {
-      nextImage();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [nextImage, asset]);
+    return () => {
+      if (timer) clearInterval(timer); // Cleanup on unmount
+    };
+  }, [startAutoSlide, asset]);
 
   return (
     <>
