@@ -9,7 +9,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
 
-const categories = ["Current", "Sold", "In Progress"];
+const categories = ["Current", "In Progress", "Sold"];
 
 const Assets = () => {
   const { isToggled } = useToggleStore();
