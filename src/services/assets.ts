@@ -3,6 +3,7 @@ import {
   current2,
   current3,
   current4,
+  current5,
   current_11,
   current_12,
   current_13,
@@ -29,6 +30,9 @@ import {
   current_47,
   current_48,
   current_49,
+  current_51,
+  current_52,
+  current_53,
   sold1,
   sold2,
   sold3,
@@ -163,7 +167,7 @@ export const currentAssets: CurrentAssets[] = [
     img: current4,
     desc: "Enjoy easy living in this charming 2-bedroom, 2-full-bath ranch-style end-unit condo located in the cozy Lincolnshire complex just off 11 Mile Rd. The spacious rooms feature a finished basement with ample storage and closet space. The kitchen includes an eat-in nook, while the open dining room leads to a back patio and common outdoor area. The large living room is perfect for entertaining guests. Additional features include a full-sized washer and dryer on the main level, an attached 2-car garage with opener, and a security system. The finished basement includes a carpeted family room, a separate area ideal for a library or study, and more storage. Conveniently located near highways, shopping, dining, houses of worship, the post office, and the library.",
     category: "Current",
-    location: "MI",
+    location: "Michigan ",
     name: "West 11 mile 22490 MI",
     imgs: [
       current_41,
@@ -176,6 +180,15 @@ export const currentAssets: CurrentAssets[] = [
       current_48,
       current_49,
     ],
+  },
+  {
+    id: 5,
+    img: current5,
+    desc: "Located in the charming town of Cambridge, 7 Oak Street is currently undergoing a full renovation, transforming this property into a modern 3-bedroom, 2-bath home with two floors. The open floor layout enhances the space, creating a bright and welcoming atmosphere. The renovation includes a brand-new kitchen with modern finishes, making it perfect for both everyday living and entertaining. With updates throughout, this home is being designed with contemporary style and comfort in mind, offering great potential in a desirable location close to local amenities and the scenic Choptank River.",
+    category: "Current",
+    location: "Maryland",
+    name: "MD 7 Oak Street",
+    imgs: [current_51, current_52, current_53],
   },
 ];
 
