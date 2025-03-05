@@ -15,7 +15,7 @@ interface Props {
   onMenuOpen?: () => void;
 }
 
-const Nav = ({ bg, onMenuOpen }: Props) => {
+const Nav = ({ bg }: Props) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [menu, setMenu] = useState<boolean>(false);
   const [animationClass, setAnimationClass] = useState<string>(
@@ -179,7 +179,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
         <div className="flex lg:hidden gap-x-5">
           <button
             onClick={() => {
-              if (onMenuOpen) onMenuOpen();
+              // if (onMenuOpen) onMenuOpen();
               setMenu(true);
             }}
             className="bi-list text-2xl"
