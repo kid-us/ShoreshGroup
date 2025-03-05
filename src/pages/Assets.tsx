@@ -5,7 +5,7 @@ import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
 import { soldAssets, currentAssets, ongoing } from "../services/assets";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import useToggleStore from "../store/store";
 
@@ -21,6 +21,8 @@ const Assets = () => {
   const [title] = useState<string>("Our Assets");
   useDocumentTitle(title);
 
+  const navigate = useNavigate();
+
   const handleAssetClicked = (name: string) => {
     setModal(name);
     document.body.style.overflow = "hidden";
@@ -35,10 +37,10 @@ const Assets = () => {
 
     if (queryParam === "our-assets") {
       setActiveCategory("Current");
-    } else if (queryParam === "for-sale") {
-      setActiveCategory("For Sale");
     } else if (queryParam === "sold") {
       setActiveCategory("Sold");
+    } else if (queryParam === "in-progress") {
+      setActiveCategory("In Progress");
     } else {
       setActiveCategory("Current");
     }
@@ -77,7 +79,22 @@ const Assets = () => {
     }
   };
 
-  console.log(activeCategory);
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category);
+
+    const parameter =
+      category === "Sold"
+        ? "sold"
+        : category === "Current"
+        ? "current"
+        : "in-progress";
+
+    // Create a new search params object with only the selected category
+    const params = new URLSearchParams();
+    params.set("asset", parameter); // Add new category parameter
+
+    navigate(`?${params.toString()}`, { replace: true }); // Update the URL
+  };
 
   return (
     <>
@@ -112,7 +129,7 @@ const Assets = () => {
                 <motion.button
                   layout
                   key={c}
-                  onClick={() => setActiveCategory(c)}
+                  onClick={() => handleCategoryClick(c)}
                   className={`font-normal ${
                     activeCategory === c
                       ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"

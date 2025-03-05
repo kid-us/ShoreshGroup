@@ -20,14 +20,14 @@ export const assets: Nav[] = [
   },
   {
     id: 6,
-    name: "For Sale",
-    icon: "bi-door-open-fill",
-    path: "/assets?asset=for-sale",
-  },
-  {
-    id: 7,
     name: "Recently Sold",
     icon: "bi-buildings-fill",
     path: "/assets?asset=sold",
+  },
+  {
+    id: 7,
+    name: "In Progress",
+    icon: "bi-cone-striped",
+    path: "/assets?asset=in-progress",
   },
 ];
