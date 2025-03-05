@@ -12,43 +12,54 @@ import hero9 from "./hero9.jpg";
 import hero10 from "./hero10.jpg";
 import hero11 from "./hero11.jpg";
 
-import sold1 from "./assets/asset_sold_1.jpg";
-import sold2 from "./assets/asset_sold_2.jpg";
-import sold3 from "./assets/asset_sold_3.jpg";
+import sold1 from "./assets/sold/asset_sold_1.jpg";
+import sold2 from "./assets/sold/asset_sold_2.jpg";
+import sold3 from "./assets/sold/asset_sold_3.jpg";
 
-import sold_11 from "./assets/asset_sold_1_1.jpg";
-import sold_12 from "./assets/asset_sold_1_2.jpg";
-import sold_13 from "./assets/asset_sold_1_3.jpg";
-import sold_21 from "./assets/assets_sold_2_1.jpg";
-import sold_22 from "./assets/assets_sold_2_2.jpg";
-import sold_23 from "./assets/assets_sold_2_3.jpg";
-import sold_24 from "./assets/assets_sold_2_4.jpg";
-import sold_25 from "./assets/assets_sold_2_5.jpg";
-import sold_26 from "./assets/assets_sold_2_6.jpg";
+import sold_11 from "./assets/sold/asset_sold_1_1.jpg";
+import sold_12 from "./assets/sold/asset_sold_1_2.jpg";
+import sold_13 from "./assets/sold/asset_sold_1_3.jpg";
+import sold_21 from "./assets/sold/assets_sold_2_1.jpg";
+import sold_22 from "./assets/sold/assets_sold_2_2.jpg";
+import sold_23 from "./assets/sold/assets_sold_2_3.jpg";
+import sold_24 from "./assets/sold/assets_sold_2_4.jpg";
+import sold_25 from "./assets/sold/assets_sold_2_5.jpg";
+import sold_26 from "./assets/sold/assets_sold_2_6.jpg";
 
-import current1 from "./assets/current_1.jpg";
-import current2 from "./assets/current_2.jpg";
-import current3 from "./assets/current_3.jpg";
+import current1 from "./assets/current/current_1.jpg";
+import current2 from "./assets/current/current_2.jpg";
+import current3 from "./assets/current/current_3.jpg";
+import current4 from "./assets/current/current_4.jpg";
 
-import current_11 from "./assets/current_11.jpg";
-import current_12 from "./assets/current_12.jpg";
-import current_13 from "./assets/current_13.jpg";
-import current_14 from "./assets/current_14.jpg";
-import current_15 from "./assets/current_15.jpg";
-import current_16 from "./assets/current_16.jpg";
+import current_11 from "./assets/current/current_11.jpg";
+import current_12 from "./assets/current/current_12.jpg";
+import current_13 from "./assets/current/current_13.jpg";
+import current_14 from "./assets/current/current_14.jpg";
+import current_15 from "./assets/current/current_15.jpg";
+import current_16 from "./assets/current/current_16.jpg";
 
-import current_21 from "./assets/current_21.jpg";
-import current_22 from "./assets/current_22.jpg";
-import current_23 from "./assets/current_23.jpg";
-import current_24 from "./assets/current_24.jpg";
-import current_25 from "./assets/current_25.jpg";
-import current_26 from "./assets/current_26.jpg";
+import current_21 from "./assets/current/current_21.jpg";
+import current_22 from "./assets/current/current_22.jpg";
+import current_23 from "./assets/current/current_23.jpg";
+import current_24 from "./assets/current/current_24.jpg";
+import current_25 from "./assets/current/current_25.jpg";
+import current_26 from "./assets/current/current_26.jpg";
 
-import current_31 from "./assets/current_31.jpg";
-import current_32 from "./assets/current_32.jpg";
-import current_33 from "./assets/current_33.jpg";
-import current_34 from "./assets/current_34.jpg";
-import current_35 from "./assets/current_35.jpg";
+import current_31 from "./assets/current/current_31.jpg";
+import current_32 from "./assets/current/current_32.jpg";
+import current_33 from "./assets/current/current_33.jpg";
+import current_34 from "./assets/current/current_34.jpg";
+import current_35 from "./assets/current/current_35.jpg";
+
+import current_41 from "./assets/current/current_41.jpg";
+import current_42 from "./assets/current/current_42.jpg";
+import current_43 from "./assets/current/current_43.jpg";
+import current_44 from "./assets/current/current_44.jpg";
+import current_45 from "./assets/current/current_45.jpg";
+import current_46 from "./assets/current/current_46.jpg";
+import current_47 from "./assets/current/current_47.jpg";
+import current_48 from "./assets/current/current_48.jpg";
+import current_49 from "./assets/current/current_49.jpg";
 
 import lgHero1 from "./hero/1.jpg";
 import lgHero2 from "./hero/2.jpg";
@@ -135,6 +146,7 @@ export {
   current1,
   current2,
   current3,
+  current4,
   current_11,
   current_12,
   current_13,
@@ -152,6 +164,15 @@ export {
   current_33,
   current_34,
   current_35,
+  current_41,
+  current_42,
+  current_43,
+  current_44,
+  current_45,
+  current_46,
+  current_47,
+  current_48,
+  current_49,
 
   // Hero img for large device
   lgHero1,

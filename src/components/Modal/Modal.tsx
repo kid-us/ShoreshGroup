@@ -88,8 +88,12 @@ const Modal = ({ onClose, name, category }: Props) => {
               <p className="text-gray-700 text-sm mb-4">
                 <span className="bi-geo-alt-fill text-secondary me-1"></span>{" "}
                 {asset?.location}
-                <span className="bi-calendar-check-fill mx-3 text-secondary"></span>
-                Purchased : {asset?.purchased}
+                {asset?.purchased && (
+                  <>
+                    <span className="bi-calendar-check-fill mx-3 text-secondary"></span>
+                    Purchased : {asset?.purchased}
+                  </>
+                )}
               </p>
               {/* Image */}
               <div className="relative my-5 lg:h-96 h-80">
