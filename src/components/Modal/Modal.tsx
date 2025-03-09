@@ -510,7 +510,7 @@ const Modal = ({ onClose, name, category }: Props) => {
           />
           <button
             onClick={closeZoomedImage}
-            className="absolute top-5 right-5 text-white text-3xl bg-black/50 p-2 rounded-full"
+            className="absolute top-5 right-5 text-white text-2xl p-2 rounded-full"
           >
             ✖
           </button>
