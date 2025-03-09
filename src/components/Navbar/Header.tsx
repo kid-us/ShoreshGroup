@@ -21,10 +21,15 @@ const Header = ({ onClose }: Props) => {
 
           <div className="flex lg:justify-end justify-between gap-x-8 lg:mt-0 mt-1">
             <div className="text-amber-300">
-              <Link to={"/assets"} className="font-semibold lg:text-md text-sm">
+              <Link
+                to={"/assets"}
+                className="font-semibold lg:text-md text-sm group"
+              >
                 View Our Assets
+                <span className="inline-block transition-transform duration-300 group-hover:rotate-45 ms-3">
+                  <i className="bi bi-arrow-up-right text-xs"></i>
+                </span>
               </Link>
-              <span className="bi-arrow-up-right ms-1 text-xs"></span>
             </div>
             <p className="lg:inline hidden border-r border-white"></p>
             <button onClick={onClose} className="bi-x-lg text-red-200"></button>
