@@ -250,7 +250,7 @@ const Modal = ({ onClose, name, category }: Props) => {
               <img
                 src={asset?.imgs[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="w-full lg:h-96 object-contain border border-btn p-1 rounded-xl"
+                className="w-full lg:h-96 object-cover border border-btn p-1 rounded-xl"
               />
             </div>
 
@@ -275,9 +275,9 @@ const Modal = ({ onClose, name, category }: Props) => {
               ))}
             </div>
 
-            <div className="mt">
+            <div>
               {/* Description */}
-              <p className="lg:my-10 my-5 font-semibold text-gray-600 uppercase">
+              <p className="mt-10 mb-5 font-semibold text-gray-600 uppercase">
                 Description
               </p>
 
