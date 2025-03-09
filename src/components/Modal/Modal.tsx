@@ -186,19 +186,32 @@ const Modal = ({ onClose, name, category }: Props) => {
     useState<string>("animate__zoomIn");
   const [asset, setAsset] = useState<SoldAssets | CurrentAssets>();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [changeInterval, setChangeInterval] = useState(4000); // Default auto change every 4s
 
   useEffect(() => {
     if (category === "Current") {
-      const filtered = currentAssets.filter((asset) => asset.name === name);
-      setAsset(filtered[0]);
+      const filtered = currentAssets.find((asset) => asset.name === name);
+      setAsset(filtered);
     } else if (category === "Sold") {
-      const filtered = soldAssets.filter((asset) => asset.name === name);
-      setAsset(filtered[0]);
+      const filtered = soldAssets.find((asset) => asset.name === name);
+      setAsset(filtered);
     } else if (category === "In Progress") {
-      const filtered = ongoing.filter((asset) => asset.name === name);
-      setAsset(filtered[0]);
+      const filtered = ongoing.find((asset) => asset.name === name);
+      setAsset(filtered);
     }
   }, [name, category]);
+
+  // Auto change image
+  useEffect(() => {
+    if (!asset?.imgs || asset.imgs.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % asset.imgs.length);
+      setChangeInterval(4000); // Reset to 4s after auto change
+    }, changeInterval);
+
+    return () => clearInterval(interval);
+  }, [asset?.imgs, changeInterval]);
 
   // Handle modal close
   const handleClose = () => {
@@ -211,6 +224,7 @@ const Modal = ({ onClose, name, category }: Props) => {
   // Function to change image when thumbnail is clicked
   const changeImage = (index: number) => {
     setCurrentIndex(index);
+    setChangeInterval(60000); // Extend auto-change to 10s when user interacts
   };
 
   return (
@@ -223,7 +237,7 @@ const Modal = ({ onClose, name, category }: Props) => {
       <div className="fixed z-40 rounded-lg shadow-lg top-1/2 left-1/2 lg:w-[50%] w-[97%] -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-center items-center">
           <div
-            className={`relative animate__animated ${animationClass} bg-white rounded-lg lg:h-[85dvh] h-[95dvh] lg:p-16 py-7 px-5 overflow-y-scroll overflow-hidden`}
+            className={`relative animate__animated ${animationClass} bg-white rounded-lg lg:h-[90dvh] h-[95dvh] lg:p-10 py-7 px-5 overflow-y-scroll overflow-hidden`}
           >
             <button
               onClick={handleClose}
@@ -250,14 +264,16 @@ const Modal = ({ onClose, name, category }: Props) => {
               <img
                 src={asset?.imgs[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="w-full lg:h-96 object-cover border border-btn p-1 rounded-xl"
+                className="w-full lg:h-96 h-60 object-cover border border-btn p-1 rounded-xl"
               />
             </div>
 
             {/* Thumbnail Navigation */}
             <div
               className={`flex ${
-                asset && asset.imgs.length > 7 ? "" : "justify-center"
+                asset && asset.imgs.length > 4
+                  ? "lg:justify-centerm almost ther"
+                  : "justify-center"
               }  gap-2 mt-5 overflow-x-auto`}
             >
               {asset?.imgs.map((img, index) => (
