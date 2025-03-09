@@ -91,10 +91,10 @@ const Modal = ({ onClose, name, category }: Props) => {
         className="bg-neutral-700/60 fixed z-30 top-0 left-0 w-full h-[100dvh]"
       ></div>
 
-      <div className="fixed z-40  rounded-lg shadow-lg top-1/2 left-1/2 lg:w-[75%] w-[97%] -translate-x-1/2 -translate-y-1/2">
+      <div className="fixed z-40 rounded-lg shadow-lg top-1/2 left-1/2 lg:w-[50%] w-[97%] -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-center items-center">
           <div
-            className={`relative animate__animated ${animationClass} bg-white rounded-lg lg:h-[85dvh] h-[95dvh] lg:p-16 py-7 px-5 overflow-y-scroll overflow-hidden`}
+            className={`relative animate__animated ${animationClass} bg-white rounded-lg lg:h-[75dvh] h-[95dvh] lg:p-16 py-7 px-5 overflow-y-scroll overflow-hidden`}
           >
             <button
               onClick={() => handleClose()}
@@ -136,7 +136,7 @@ const Modal = ({ onClose, name, category }: Props) => {
               </div>
               {/* Description */}
 
-              <p className="my-5 font-semibold text-gray-600 uppercase">
+              <p className="lg:my-10 my-5 font-semibold text-gray-600 uppercase">
                 Description
               </p>
 
