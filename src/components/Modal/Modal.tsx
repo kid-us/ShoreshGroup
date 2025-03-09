@@ -272,7 +272,7 @@ const Modal = ({ onClose, name, category }: Props) => {
             <div
               className={`flex ${
                 asset && asset.imgs.length > 4
-                  ? "lg:justify-centerm almost ther"
+                  ? "lg:justify-center"
                   : "justify-center"
               }  gap-2 mt-5 overflow-x-auto`}
             >
