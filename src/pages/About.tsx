@@ -21,7 +21,8 @@ const About = () => {
   }, []);
 
   const short = [
-    "Shoresh Group was founded with the belief that true success isn’t just about financial gains—it’s about creating lasting impact for future generations. The company began with a modest vision of building generational wealth through real estate investments that would empower families, strengthen communities, and leave a legacy for years to come. Over time, the vision expanded as the company grew, with a new generation dedicated to taking the legacy forward. They saw the opportunity to not only provide for their family but to share this model of success with others, opening the door for other investors and families to join in the journey of growth.",
+    // "Shoresh Group was founded with the belief that true success isn’t just about financial gains—it’s about creating lasting impact for future generations. The company began with a modest vision of building generational wealth through real estate investments that would empower families, strengthen communities, and leave a legacy for years to come. Over time, the vision expanded as the company grew, with a new generation dedicated to taking the legacy forward. They saw the opportunity to not only provide for their family but to share this model of success with others, opening the door for other investors and families to join in the journey of growth.",
+    "Shoresh Group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
   ];
 
   const long = [
