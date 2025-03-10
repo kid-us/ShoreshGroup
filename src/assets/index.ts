@@ -12,6 +12,10 @@ import hero9 from "./hero9.jpg";
 import hero10 from "./hero10.jpg";
 import hero11 from "./hero11.jpg";
 
+import about1 from "./1.jpg";
+import about2 from "./2.jpg";
+import about3 from "./3.jpg";
+
 import sold1 from "./assets/sold/asset_sold_1.jpg";
 import sold2 from "./assets/sold/asset_sold_2.jpg";
 import sold3 from "./assets/sold/asset_sold_3.jpg";
@@ -140,6 +144,10 @@ import why from "./why.jpg";
 import join from "./join.jpg";
 
 export {
+  about1,
+  about2,
+  about3,
+
   // Hero vid
   heroVid,
 

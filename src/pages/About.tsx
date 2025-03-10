@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
-import { join } from "../assets";
+import { about1, about2, about3, join } from "../assets";
 import useToggleStore from "../store/store";
 
 const About = () => {
@@ -40,29 +40,46 @@ const About = () => {
       <div
         className={`hero ${
           isToggled ? "lg:pt-32 pt-28" : "lg:pt-58 pt-52"
-        } lg:pb-16 pb-10 bg`}
+        } lg:pb-16 pb-10`}
       >
         <div className="container mx-auto">
-          <p className="text-sm uppercase text-gray-200 mb-6">About US</p>
+          <div className="grid lg:grid-cols-2 lg:gap-10 gap-10">
+            <div className="grid grid-cols-3 lg:gap-x-3 gap-x-2 lg:order-0 order-2">
+              <img
+                src={about1}
+                alt="About"
+                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
+              />
+              <img
+                src={about2}
+                alt="About"
+                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full lg:mt-20 mt-14"
+              />
+              <img
+                src={about3}
+                alt="About"
+                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
+              />
+            </div>
+            <div className="">
+              <p className="text-sm uppercase text-gray-500 mb-6">About US</p>
 
-          <h1 className="lg:text-3xl text-2xl text-white">Our Story</h1>
+              <h1 className="lg:text-3xl text-2xl text-">Our Story</h1>
 
-          <div className="mt-5">
-            {showMore
-              ? long.map((l) => (
-                  <p className="lg:text-2xl text-xl text-white">{l}</p>
-                ))
-              : short.map((s) => (
-                  <p className="lg:text-2xl text-xl text-white">{s}</p>
-                ))}
+              <div className="mt-5">
+                {showMore
+                  ? long.map((l) => <p className="text-lg text-">{l}</p>)
+                  : short.map((s) => <p className="text-lg text-">{s}</p>)}
+              </div>
+
+              <button
+                onClick={() => setShowMore(!showMore)}
+                className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
+              >
+                {showMore ? "Read Less" : "Read More"}
+              </button>
+            </div>
           </div>
-
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-          >
-            {showMore ? "Read Less" : "Read More"}
-          </button>
           {/* <p className="text-sm uppercase text-gray-200">About US</p>
 
           <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium font-logo">

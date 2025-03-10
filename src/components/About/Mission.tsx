@@ -60,6 +60,7 @@ const Mission = () => {
                     }}
                     onMouseEnter={() => setOnHover(m.id)}
                     onMouseLeave={() => setOnHover(0)}
+                    viewport={{ once: true }}
                     className={`flex justify-center items-center col-span-4 border border-black/20 rounded p-5 font-medium  lg:shadow-[3px_4px_3px_0px_black] shadow-[3px_4px_3px_0px_black] ${
                       onHover === m.id ? "bg-white" : "bg"
                     } text-white hover:bg-white hover:text-black hover:border-amber-300 transition-colors duration-500 hover:shadow-none`}
