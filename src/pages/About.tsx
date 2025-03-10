@@ -43,12 +43,18 @@ const About = () => {
         } lg:pb-16 pb-10 bg`}
       >
         <div className="container mx-auto">
+          <p className="text-sm uppercase text-gray-200 mb-6">About US</p>
+
           <h1 className="lg:text-3xl text-2xl text-white">Our Story</h1>
 
           <div className="mt-5">
             {showMore
-              ? long.map((l) => <p className="text-lg text-white">{l}</p>)
-              : short.map((s) => <p className="text-lg text-white">{s}</p>)}
+              ? long.map((l) => (
+                  <p className="lg:text-2xl text-xl text-white">{l}</p>
+                ))
+              : short.map((s) => (
+                  <p className="lg:text-2xl text-xl text-white">{s}</p>
+                ))}
           </div>
 
           <button

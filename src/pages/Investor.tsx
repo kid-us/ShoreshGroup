@@ -50,7 +50,7 @@ const Investor = () => {
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
-          <p className="lg:text-4xl text-lg mt-6 lg:w-[80%] text-white font-medium">
+          <p className="lg:text-3xl text-lg mt-6 lg:w-[80%] text-white font-medium">
             Unlock Exclusive Real Estate Opportunities Join Shoresh Group’s
             investor network and gain access to exclusive real estate investment
             opportunities. Whether you're looking for short-term fix-and-flip
