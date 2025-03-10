@@ -42,8 +42,8 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
           <div className="space-y-5">
             {assets.map((asset) => (
               <Link
-                onClick={onClose}
                 key={asset.id}
+                onClick={onClose}
                 className="block py-1 text-lg text-white uppercase"
                 to={asset.path}
               >
@@ -52,9 +52,9 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
               </Link>
             ))}
 
-            {navs.map((n, index) => (
+            {navs.map((n) => (
               <Link
-                key={n.id || index}
+                key={n.id}
                 to={n.path}
                 className="block py-1 text-lg text-white uppercase"
               >
