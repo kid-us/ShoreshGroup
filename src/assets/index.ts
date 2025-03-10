@@ -12,6 +12,7 @@ import hero9 from "./hero9.jpg";
 import hero10 from "./hero10.jpg";
 import hero11 from "./hero11.jpg";
 
+import about_us from "./about.png";
 import about1 from "./1.jpg";
 import about2 from "./2.jpg";
 import about3 from "./3.jpg";
@@ -144,6 +145,7 @@ import why from "./why.jpg";
 import join from "./join.jpg";
 
 export {
+  about_us,
   about1,
   about2,
   about3,

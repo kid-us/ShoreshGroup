@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
-import { about1, about2, about3, join } from "../assets";
+import { about_us, join } from "../assets";
 import useToggleStore from "../store/store";
 
 const About = () => {
@@ -45,23 +45,27 @@ const About = () => {
       >
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-500 mb-6">About US</p>
-          <div className="grid lg:grid-cols-2 lg:gap-10 gap-10">
-            <div className="grid grid-cols-3 lg:gap-x-3 gap-x-2 lg:order-0 order-2">
-              <img
+          <div className="grid lg:grid-cols-2 lg:gap-1 gap-10">
+            <div className="lg:order-0 order-2">
+              <img src={about_us} alt="About us" />
+              {/* <img
                 src={about1}
                 alt="About"
                 className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
               />
-              <img
-                src={about2}
-                alt="About"
-                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full lg:mt-31 mt-18"
-              />
+              <div className="relative">
+                <img
+                  src={about2}
+                  alt="About"
+                  className="absolute top-31 rounded-2xl lg:h-[55vh] h-[35vh] w-full"
+                />
+              </div>
               <img
                 src={about3}
                 alt="About"
                 className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
               />
+              */}
             </div>
             <div className="">
               <h1 className="lg:text-3xl text-2xl text-">Our Story</h1>
