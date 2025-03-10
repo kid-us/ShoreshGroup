@@ -14,6 +14,7 @@ const Investor = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.style.overflow = "auto";
   }, []);
 
   const choose = [

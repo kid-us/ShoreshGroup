@@ -32,6 +32,7 @@ const Assets = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.style.overflow = "auto";
 
     const queryParam = searchParams.get("asset");
 

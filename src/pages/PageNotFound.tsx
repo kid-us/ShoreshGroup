@@ -11,6 +11,7 @@ const PageNotFound = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.style.overflow = "auto";
   }, []);
   return (
     <>
