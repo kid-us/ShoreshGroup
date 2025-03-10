@@ -43,6 +43,7 @@ const About = () => {
         } lg:pb-16 pb-10`}
       >
         <div className="container mx-auto">
+          <p className="text-sm uppercase text-gray-500 mb-6">About US</p>
           <div className="grid lg:grid-cols-2 lg:gap-10 gap-10">
             <div className="grid grid-cols-3 lg:gap-x-3 gap-x-2 lg:order-0 order-2">
               <img
@@ -62,8 +63,6 @@ const About = () => {
               />
             </div>
             <div className="">
-              <p className="text-sm uppercase text-gray-500 mb-6">About US</p>
-
               <h1 className="lg:text-3xl text-2xl text-">Our Story</h1>
 
               <div className="mt-5">
