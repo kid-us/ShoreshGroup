@@ -55,7 +55,7 @@ const About = () => {
               <img
                 src={about2}
                 alt="About"
-                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full lg:mt-20 mt-14"
+                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full lg:mt-31 mt-18"
               />
               <img
                 src={about3}
