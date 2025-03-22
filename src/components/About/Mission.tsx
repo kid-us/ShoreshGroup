@@ -27,7 +27,6 @@ const Mission = () => {
   return (
     <div className="overflow-hidden lg:mb-10">
       <div className="relative lg:h-[85vh] h-auto w-full">
-        <div className="absolute lg:-top-20 -left-96 border border-btn w-[3000px] h-full -z-20 -rotate-2 overflow-hidden"></div>
         <div className="container mx-auto">
           <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
             <div className="flex items-center">
