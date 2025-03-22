@@ -44,31 +44,11 @@ const Hero = () => {
     <div
       className={`${
         isToggled ? "hero-after-hide" : "hero-before-hide"
-      } relative overflow-hidden lg:h-[108dvh] h-[100dvh]`}
+      } relative overflow-hidden h-[100dvh]`}
     >
-      <div className="">
+      <div>
         <ImageFromFrames frames={lgFrames} fps={0.1} />
-
-        {/* <video
-          style={{
-            position: "absolute",
-            top: isToggled ? 0 : "4em",
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: -2,
-          }}
-          src={heroVid}
-          autoPlay
-          muted
-          loop
-        ></video> */}
       </div>
-
-      {/* <div className="lg:hidden block">
-        <ImageFromFrames frames={frames} fps={0.4} />
-      </div> */}
 
       <div className="container mx-auto px-5">
         <div className="flex items-center h-screen">
@@ -91,26 +71,6 @@ const Hero = () => {
             >
               Turning real estate opportunities into generational prosperity.
             </motion.p>
-
-            {/* <div className="mt-16 mb-10">
-              <LinkButton
-                name="Invest With Us"
-                path="/contact"
-                style="bg-[white] hover:text-gray-700"
-              />
-            </div> */}
-
-            {/* <motion.div
-              initial={{ opacity: 0, scale: 1.1 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-              className="flex text-white mt-14 gap-x-10"
-            >
-              <Link to="/" className="text-btn text-xl bi-facebook"></Link>
-              <Link to="/" className="text-btn text-xl bi-instagram"></Link>
-              <Link to="/" className="text-btn text-xl bi-linkedin"></Link>
-              <Link to="/" className="text-btn text-xl bi-twitter-x"></Link>
-            </motion.div> */}
           </div>
         </div>
       </div>
