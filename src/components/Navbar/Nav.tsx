@@ -72,11 +72,11 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
                     <img src={logo} alt="Logo" className="w-13" />
 
                     <div className="leading-6 w-full">
-                      <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1">
+                      <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-btn decoration-1">
                         Shoresh-Group
                       </p>
                       <p
-                        className={`items-center flex logo-font logo-font uppercase text-xl text-amber-400 justify-center`}
+                        className={`items-center flex logo-font logo-font uppercase text-xl text-btn justify-center`}
                       >
                         Real Estate
                       </p>
