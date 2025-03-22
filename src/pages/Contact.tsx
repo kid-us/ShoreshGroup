@@ -1,5 +1,4 @@
 import Container from "../components/Container/Container";
-import Navbar from "../components/Navbar/Navbar";
 import z from "zod";
 import { FieldValues, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,13 +6,13 @@ import Footer from "../components/Footer/Footer";
 import { contact } from "../assets";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useEffect, useState } from "react";
-import useToggleStore from "../store/store";
+import Nav from "../components/Navbar/Nav";
 
 const schema = z.object({
   email: z.string().email({ message: "Email address required" }),
-  location: z.string().min(3, { message: "Email address required" }),
-  address: z.string().min(3, { message: "Email address required" }),
-  message: z.string().min(10, { message: "Email address required" }),
+  location: z.string().min(3, { message: "Location address required" }),
+  address: z.string().min(3, { message: "Address required" }),
+  message: z.string().min(10, { message: "Message required" }),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -37,26 +36,24 @@ const Contact = () => {
     console.log(data);
   };
 
-  const { isToggled } = useToggleStore();
-
   return (
     <>
-      <Navbar bg />
+      <Nav bg />
 
-      <div className={`${isToggled ? "lg:pt-1 pt-10" : "lg:pt-20 pt-36"}`}>
+      <div className={`lg:pt-20 pt-24`}>
         <Container>
           <p className={`text-sm uppercase text-gray-500`}>Contact us</p>
           <div className="grid lg:grid-cols-5 lg:mt-10 mt-6 gap-x-20">
             <div className="lg:col-span-3">
-              <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-10">
-                Get in Touch with Shoresh Group:
+              <h1 className="font-semibold lg:text-4xl text-3xl lg:mb-10 mb-5">
+                Get in Touch with Shoresh-group:
               </h1>
 
               <p className="text-gray-800 font-medium">
                 We’re here to answer your questions, discuss investment
                 opportunities, and explore ways to collaborate. Whether you're
                 an investor, partner, or just looking to learn more about
-                Shoresh Group, we’d love to hear from you.
+                Shoresh-group, we’d love to hear from you.
               </p>
 
               <div className="mt-5">

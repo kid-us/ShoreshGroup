@@ -84,7 +84,7 @@ const Team = () => {
           <p className="text-sm mb-2 text-gray-800">
             Comprised of dedicated, ethical, and innovative professionals with
             diverse expertise, we work together to protect and grow your wealth
-            while making Shoresh Group a leader in real estate investment.
+            while making Shoresh-group a leader in real estate investment.
           </p>
 
           <p className="text-sm mb-2 text-gray-800">

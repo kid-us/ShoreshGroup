@@ -45,12 +45,12 @@ const Stat = () => {
     <Container>
       <div className="grid lg:grid-cols-2 lg:gap-x-40">
         <div>
-          {/* <p className="text-sm uppercase text-gray-600">About Shoresh Group</p> */}
+          {/* <p className="text-sm uppercase text-gray-600">About Shoresh-group</p> */}
           <h1 className="font-semibold lg:text-4xl text-3xl lg:mt-16 mb-6 lg:mb-10">
             Who we are
           </h1>
           <p>
-            Shoresh Group is a family-owned real estate investment firm
+            Shoresh-group is a family-owned real estate investment firm
             committed to building lasting wealth through strategic acquisitions
             and impactful partnerships. We specialize in both short-term flips
             and long-term investments, transforming distressed properties into

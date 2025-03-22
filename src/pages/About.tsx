@@ -7,7 +7,7 @@ import { about_us, join } from "../assets";
 import Nav from "../components/Navbar/Nav";
 
 const About = () => {
-  const [title] = useState<string>("About Shoresh Group");
+  const [title] = useState<string>("About Shoresh-group");
   useDocumentTitle(title);
 
   const [showMore, setShowMore] = useState<boolean>(false);
@@ -18,15 +18,15 @@ const About = () => {
   }, []);
 
   const short = [
-    "Shoresh Group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
+    "Shoresh-group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
   ];
 
   const long = [
-    "Shoresh Group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
+    "Shoresh-group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
 
-    "Through strategic real estate investments, Shoresh grew the family’s financial stability, allowing them to reach new heights of success. As the company evolved and the next generation took the reins, the name changed to Shoresh Group to reflect its broader ambitions and growth. The values and mission established in the early years were embraced by those who continued to lead the company, using their skills and knowledge to propel Shoresh Group to new levels of success.",
+    "Through strategic real estate investments, Shoresh grew the family’s financial stability, allowing them to reach new heights of success. As the company evolved and the next generation took the reins, the name changed to Shoresh-group to reflect its broader ambitions and growth. The values and mission established in the early years were embraced by those who continued to lead the company, using their skills and knowledge to propel Shoresh-group to new levels of success.",
 
-    "As Shoresh Group continues to expand, it seeks to share this powerful model with others. By opening its doors to investors and families who share the same values, Shoresh Group is building a community of like-minded individuals committed to growth, success, and long-term prosperity.",
+    "As Shoresh-group continues to expand, it seeks to share this powerful model with others. By opening its doors to investors and families who share the same values, Shoresh-group is building a community of like-minded individuals committed to growth, success, and long-term prosperity.",
   ];
 
   return (

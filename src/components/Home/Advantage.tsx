@@ -38,7 +38,7 @@ const Advantage = () => {
       <Container>
         <div>
           <h1 className="lg:text-5xl text-4xl text-white mb-5 text-center">
-            Shoresh Group Partners Advantage
+            Shoresh-group Partners Advantage
           </h1>
           <div className="flex justify-center">
             <div className="lg:w-[50%] my-10">
@@ -47,7 +47,7 @@ const Advantage = () => {
                 vision.
               </p>
               <p className="text-center text-gray-200 text-xl">
-                At Shoresh Group, we honor our heritage while creating new
+                At Shoresh-group, we honor our heritage while creating new
                 opportunities for the future."
               </p>
             </div>

@@ -16,7 +16,7 @@ const Testimony = () => {
     {
       id: 1,
       comment:
-        "Investing with Shoresh Group has been one of the best financial decisions I’ve made. Their deep industry knowledge and strategic approach to real estate assets have consistently delivered strong returns. I appreciate their transparency and commitment to investor success.",
+        "Investing with Shoresh-group has been one of the best financial decisions I’ve made. Their deep industry knowledge and strategic approach to real estate assets have consistently delivered strong returns. I appreciate their transparency and commitment to investor success.",
       img: we1,
       name: "Marta",
       title: "Private Investor",
@@ -24,7 +24,7 @@ const Testimony = () => {
     {
       id: 2,
       comment:
-        "Shoresh Group’s expertise in identifying high-potential properties is unmatched. They manage every aspect with precision, ensuring not only financial growth but also long-term sustainability. I highly recommend them to anyone looking for a trustworthy investment partner.",
+        "Shoresh-group’s expertise in identifying high-potential properties is unmatched. They manage every aspect with precision, ensuring not only financial growth but also long-term sustainability. I highly recommend them to anyone looking for a trustworthy investment partner.",
       img: we3,
       name: "Michael E. ",
       title: "Private Investor",
@@ -32,7 +32,7 @@ const Testimony = () => {
     {
       id: 3,
       comment:
-        "Shoresh Group has built an impressive portfolio that speaks for itself. Their data-driven approach and market foresight have given me confidence in every investment. Their team is professional, responsive, and truly dedicated to maximizing value for investors.",
+        "Shoresh-group has built an impressive portfolio that speaks for itself. Their data-driven approach and market foresight have given me confidence in every investment. Their team is professional, responsive, and truly dedicated to maximizing value for investors.",
       img: we2,
       name: "Sarah L, ",
       title: "Real Estate Partner",
@@ -40,7 +40,7 @@ const Testimony = () => {
     {
       id: 4,
       comment:
-        "Shoresh Group has exceeded my expectations in every way. Their ability to identify lucrative real estate opportunities while maintaining a risk-conscious approach is truly commendable. I feel confident knowing my investments are in capable hands.",
+        "Shoresh-group has exceeded my expectations in every way. Their ability to identify lucrative real estate opportunities while maintaining a risk-conscious approach is truly commendable. I feel confident knowing my investments are in capable hands.",
       img: we4,
       name: "Emilt T.",
       title: "High-Net-Worth Investor",
@@ -48,7 +48,7 @@ const Testimony = () => {
     {
       id: 5,
       comment:
-        "What sets Shoresh Group apart is their commitment to both financial success and ethical investment practices. Their team is always transparent, keeping me informed every step of the way. I’ve seen consistent growth and look forward to future opportunities with them.",
+        "What sets Shoresh-group apart is their commitment to both financial success and ethical investment practices. Their team is always transparent, keeping me informed every step of the way. I’ve seen consistent growth and look forward to future opportunities with them.",
       img: we5,
       name: "James P.",
       title: "Long-Term Investor",
@@ -56,7 +56,7 @@ const Testimony = () => {
     {
       id: 6,
       comment:
-        "Investing in real estate can be complex, but Shoresh Group makes it simple and rewarding. Their deep market insights and strong management strategies ensure optimal returns. I highly recommend them to serious investors.",
+        "Investing in real estate can be complex, but Shoresh-group makes it simple and rewarding. Their deep market insights and strong management strategies ensure optimal returns. I highly recommend them to serious investors.",
       img: we6,
       name: "Robert D.",
       title: "Commercial Real Estate Investor",

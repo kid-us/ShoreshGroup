@@ -22,7 +22,7 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
 
               <div className="leading-6 w-full">
                 <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-white">
-                  Shoresh Group
+                  Shoresh-Group
                 </p>
                 <p
                   className={`items-center flex logo-font logo-font uppercase text-xl text-amber-400 justify-center`}

@@ -51,7 +51,7 @@ const Investor = () => {
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
           <p className="lg:text-3xl text-xl mt-6 lg:w-[80%] text-white font-medium">
-            Unlock Exclusive Real Estate Opportunities Join Shoresh Group’s
+            Unlock Exclusive Real Estate Opportunities Join Shoresh-group’s
             investor network and gain access to exclusive real estate investment
             opportunities. Whether you're looking for short-term fix-and-flip
             projects or long-term, cash-flowing properties, our private equity

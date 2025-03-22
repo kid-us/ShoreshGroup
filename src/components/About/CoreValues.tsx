@@ -33,7 +33,7 @@ const values: Value[] = [
     id: 3,
     name: "Vision for the Future:",
     icon: plan,
-    desc: "Planning and investing with the future in mind. Shoresh Group is driven by a forward-thinking mindset, focusing on creating sustainable wealth and opportunities that benefit generations to come.",
+    desc: "Planning and investing with the future in mind. Shoresh-group is driven by a forward-thinking mindset, focusing on creating sustainable wealth and opportunities that benefit generations to come.",
   },
 
   {
@@ -46,7 +46,7 @@ const values: Value[] = [
     id: 5,
     name: "Legacy:",
     icon: innovation,
-    desc: "Building generational wealth that empowers future generations. Shoresh Group is focused on creating lasting value for both our family and the broader community.",
+    desc: "Building generational wealth that empowers future generations. Shoresh-group is focused on creating lasting value for both our family and the broader community.",
   },
 ];
 
@@ -71,7 +71,7 @@ const CoreValues = () => {
       >
         <div className="flex h-full w-full flex-col items-stretch justify-between lg:gap-8">
           <p className="text-center text-2xl mb-10">
-            At Shoresh Group, our core values are the foundation of everything
+            At Shoresh-group, our core values are the foundation of everything
             we do. They guide our decision-making, shape our company culture,
             and help us stay focused on building lasting value.
           </p>
@@ -163,10 +163,10 @@ const CoreValues = () => {
                     Vision for the Future:
                   </p>
                   <p className="text-sm mt-2 text-gray-100">
-                    Planning and investing with the future in mind. Shoresh
-                    Group is driven by a forward-thinking mindset, focusing on
-                    creating sustainable wealth and opportunities that benefit
-                    generations to come.
+                    Planning and investing with the future in mind.
+                    Shoresh-group is driven by a forward-thinking mindset,
+                    focusing on creating sustainable wealth and opportunities
+                    that benefit generations to come.
                   </p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ const CoreValues = () => {
                   <p className="text-lg mt-3 text-white">Legacy:</p>
                   <p className="text-sm mt-2 text-gray-100">
                     Building generational wealth that empowers future
-                    generations. Shoresh Group is focused on creating lasting
+                    generations. Shoresh-group is focused on creating lasting
                     value for both our family and the broader community.
                   </p>
                 </div>

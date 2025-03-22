@@ -14,7 +14,7 @@ const Footer = () => {
 
                 <div className="leading-6">
                   <p className="items-center flex logo-font logo-font uppercase underline underline-offset-4 decoration-amber-400 decoration-1 text-2xl text-white">
-                    Shoresh Group
+                    Shoresh-Group
                   </p>
                   <p
                     className={`items-center flex logo-font logo-font uppercase text-xl text-amber-400 justify-center`}
@@ -42,7 +42,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="lg:block hidden text-xs text-btn mt-6">
-                &copy;2025 SHORESH GROUP. All right reserved.
+                &copy;2025 SHORESH-GROUP. All right reserved.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
 
           <p className="lg:hidden block text-xs text-btn mt-8 pb-8">
-            &copy;2025 SHORESH GROUP. All right reserved.
+            &copy;2025 SHORESH-GROUP. All right reserved.
           </p>
         </div>
       </div>

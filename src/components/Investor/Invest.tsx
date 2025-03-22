@@ -12,7 +12,7 @@ const Invest = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="font-semibold lg:text-3xl text-2xl mb-8 text-white"
         >
-          Invest with Shoresh Group: Passive Investing, GP-Level Returns
+          Invest with Shoresh-group: Passive Investing, GP-Level Returns
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -38,7 +38,7 @@ const Invest = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="mb-2 tex text-sm text-zinc-200"
         >
-          Shoresh Group offers a unique opportunity to invest as a Co-GP
+          Shoresh-group offers a unique opportunity to invest as a Co-GP
           alongside our team, unlocking the benefits of multifamily real estate
           ownership while keeping your investment passive.
         </motion.p>

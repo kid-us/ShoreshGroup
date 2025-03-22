@@ -35,7 +35,7 @@ const Mission = () => {
                 <h1 className="lg:text-3xl text-2xl">Our</h1>
                 <h1 className="lg:text-3xl text-2xl text-btn">Mission</h1>
                 <p className="mt-5 lg:text-lg text-black">
-                  At Shoresh Group, our mission is simple: Building generational
+                  At Shoresh-group, our mission is simple: Building generational
                   wealth for families and investors through strategic real
                   estate investments. We are committed to creating lasting value
                   by identifying opportunities with high growth potential,
