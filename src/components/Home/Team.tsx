@@ -113,7 +113,7 @@ const Team = () => {
             <div className="lg:flex lg:justify-center lg:items-center lg:col-span-4 lg:px-16">
               <div className="lg:block flex justify-between mt-5">
                 <div className="">
-                  <p className="lg:text-3xl text-2xl font-bold text-btn">
+                  <p className="lg:text-3xl text-2xl font-bold">
                     {teams[index].name}
                   </p>
                   <p className="text-gray-700 lg:mt-2 text-sm mt-1">

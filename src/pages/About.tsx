@@ -5,6 +5,7 @@ import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
 import { about_us, join } from "../assets";
 import Nav from "../components/Navbar/Nav";
+import Team from "../components/Home/Team";
 
 const About = () => {
   const [title] = useState<string>("About Shoresh-group");
@@ -58,6 +59,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <Team />
 
       <Mission />
 
