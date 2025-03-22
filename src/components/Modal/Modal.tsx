@@ -8,6 +8,7 @@ import {
 } from "../../services/assets";
 import SoldDescription from "./SoldDescription";
 import CurrentDescription from "./CurrentDescription";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Props {
   onClose: () => void;
@@ -85,6 +86,22 @@ const Modal = ({ onClose, name, category }: Props) => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  // Next
+  const nextImage = () => {
+    if (asset?.imgs) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % asset.imgs.length);
+    }
+  };
+
+  // Previous
+  const prevImage = () => {
+    if (asset?.imgs) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? asset.imgs.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
   return (
     <>
       {/* Background Overlay */}
@@ -123,12 +140,22 @@ const Modal = ({ onClose, name, category }: Props) => {
             </div>
 
             {/* Main Image - Click to Enlarge */}
-            <div onClick={openZoomedImage} className="cursor-pointer">
+            <div className="relative">
+              <button onClick={prevImage} className="absolute top-1/2 -left-12">
+                <ChevronLeft size={50} className="text-btn" />
+              </button>
               <img
+                onClick={openZoomedImage}
                 src={asset?.imgs[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="w-full lg:h-96 object-cover border border-btn p-1 rounded-xl transition-transform hover:scale-105"
+                className="cursor-pointer w-full lg:h-96 object-cover border border-btn p-1 rounded-xl transition-transform hover:scale-[1.02]"
               />
+              <button
+                onClick={nextImage}
+                className="absolute top-1/2 -right-12"
+              >
+                <ChevronRight size={50} className="text-btn" />
+              </button>
             </div>
 
             {/* Thumbnail Navigation */}
