@@ -30,7 +30,7 @@ const Footer = () => {
               </p>
 
               <p className="lg:text-xs text-sm mt-2 text-zinc-300 lg:w-96">
-                Address : 1230 E.Kiowa Street Colorado Springs, CO 80909
+                Address : 1230 E Kiowa Street Colorado Springs, CO 80909
               </p>
               <p className="lg:text-xs text-sm mt-1 text-zinc-300 lg:w-96">
                 Office #:(248)-450-4836

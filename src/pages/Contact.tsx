@@ -61,7 +61,7 @@ const Contact = () => {
                   <span className="font-semibold text-lg bi-geo-alt-fill">
                     Address :
                   </span>{" "}
-                  1230 E.Kiowa Street Colorado Springs, CO 80909
+                  1230 E Kiowa Street Colorado Springs, CO 80909
                 </p>
                 <p className="mb-1">
                   <span className="font-semibold text-lg bi-building-fill">
