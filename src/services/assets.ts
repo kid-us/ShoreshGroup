@@ -132,6 +132,7 @@ export const currentAssets: CurrentAssets[] = [
     built: 1985,
     price: 450_000,
     imgs: [
+      current1,
       current_11,
       current_12,
       current_13,
@@ -164,6 +165,7 @@ export const currentAssets: CurrentAssets[] = [
     price: 300_000,
     lot: "Lot 0.13 acres",
     imgs: [
+      current2,
       current_21,
       current_22,
       current_23,
@@ -179,7 +181,14 @@ export const currentAssets: CurrentAssets[] = [
     category: "Current",
     location: "Colorado springs",
     name: "CO Mesa Springs 2537",
-    imgs: [current_31, current_32, current_33, current_34, current_35],
+    imgs: [
+      current3,
+      current_31,
+      current_32,
+      current_33,
+      current_34,
+      current_35,
+    ],
   },
   {
     id: 4,
@@ -189,6 +198,7 @@ export const currentAssets: CurrentAssets[] = [
     location: "Michigan ",
     name: "West 11 mile 22490 MI",
     imgs: [
+      current4,
       current_41,
       current_42,
       current_43,
@@ -207,7 +217,7 @@ export const currentAssets: CurrentAssets[] = [
     category: "Current",
     location: "Jerusalem",
     name: "Nachlaot nisim bachar",
-    imgs: [current_51, current_52, current_53],
+    imgs: [current5, current_51, current_52, current_53],
   },
 ];
 
@@ -220,7 +230,14 @@ export const ongoing: CurrentAssets[] = [
     category: "In Progress",
     location: "Maryland",
     name: "MD 7 Oak Street",
-    imgs: [ongoing_11, ongoing_12, ongoing_13, ongoing_14, ongoing_15],
+    imgs: [
+      ongoing1,
+      ongoing_11,
+      ongoing_12,
+      ongoing_13,
+      ongoing_14,
+      ongoing_15,
+    ],
   },
   {
     id: 2,
@@ -229,7 +246,14 @@ export const ongoing: CurrentAssets[] = [
     category: "In Progress",
     location: "Maryland",
     name: "1721 Crestwood Cir, Salisbury, MD 21804",
-    imgs: [ongoing_21, ongoing_22, ongoing_23, ongoing_24, ongoing_25],
+    imgs: [
+      ongoing2,
+      ongoing_21,
+      ongoing_22,
+      ongoing_23,
+      ongoing_24,
+      ongoing_25,
+    ],
   },
   {
     id: 3,
@@ -247,7 +271,7 @@ export const ongoing: CurrentAssets[] = [
     category: "In Progress",
     location: "Maryland",
     name: "MD 8695 Mar Lynn Dr",
-    imgs: [ongoing_41, ongoing_42, ongoing_43, ongoing_44],
+    imgs: [ongoing4, ongoing_41, ongoing_42, ongoing_43, ongoing_44],
   },
 ];
 
@@ -270,7 +294,7 @@ export const soldAssets: SoldAssets[] = [
     profit: "$37,093.88",
     roi: "14.7%",
     coc: "",
-    imgs: [sold_11, sold_12, sold_13],
+    imgs: [sold1, sold_11, sold_12, sold_13],
   },
   {
     id: 2,
@@ -288,7 +312,7 @@ export const soldAssets: SoldAssets[] = [
     profit: "$22,282.35",
     roi: "9%",
     coc: "",
-    imgs: [sold_21, sold_22, sold_23, sold_24, sold_25, sold_26],
+    imgs: [sold2, sold_21, sold_22, sold_23, sold_24, sold_25, sold_26],
   },
   {
     id: 3,
