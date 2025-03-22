@@ -63,7 +63,7 @@ const Advantage = () => {
                   x: 0,
                   transition: { delay: index * 0.01, duration: 0.5 },
                 }}
-                className="relative p-5 cursor-pointer hover:text-gray-500"
+                className="relative p-5 hover:text-gray-500"
                 onMouseEnter={() => setHoveredItem(a.id)}
                 onMouseLeave={() => setHoveredItem(0)}
               >

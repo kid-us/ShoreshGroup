@@ -39,7 +39,7 @@ const Portfolio = () => {
             <div
               key={asset.id}
               onClick={() => handleAssetClicked(asset.name, asset.category)}
-              className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] group transition-all duration-300 shadow cursor-pointer"
+              className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] group transition-all duration-300 shadow"
             >
               <img
                 src={asset.img}

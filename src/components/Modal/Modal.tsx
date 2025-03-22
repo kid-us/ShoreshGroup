@@ -148,7 +148,7 @@ const Modal = ({ onClose, name, category }: Props) => {
                 onClick={openZoomedImage}
                 src={asset?.imgs[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="cursor-pointer w-full lg:h-96 object-cover border border-btn p-1 rounded-xl transition-transform hover:scale-[1.02]"
+                className="w-full lg:h-96 object-cover border border-btn p-1 rounded-xl transition-transform hover:scale-[1.02]"
               />
               <button
                 onClick={nextImage}
@@ -169,7 +169,7 @@ const Modal = ({ onClose, name, category }: Props) => {
                   key={index}
                   src={img}
                   alt={`Thumbnail ${index + 1}`}
-                  className={`w-20 h-20 object-cover border rounded cursor-pointer ${
+                  className={`w-20 h-20 object-cover border rounded ${
                     index === currentIndex
                       ? "border-btn border-2 scale-90 p-1"
                       : "border-gray-300"
