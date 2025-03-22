@@ -344,3 +344,77 @@ export const soldAssets: SoldAssets[] = [
   //   purchased: "2022",
   // },
 ];
+
+// Portfolio Assets
+export const portfolioAssets = [
+  {
+    id: 1,
+    img: sold1,
+    desc: "This property, purchased on July 18, 2024, and sold after a 4.5-month holding period, achieved a profit of $15,970 from an out-of-pocket investment of $31,110, resulting in an impressive ROl of 51.3%. The project demonstrates efficient execution and strategic management, delivering strong returns within a short timeframe",
+    category: "Sold",
+    location: "Maryland",
+    name: "110 Long Ave Salisbury",
+    purchased: "July 18, 2024",
+    sale: "December 6, 2024",
+    holding: "4 1/2 Months",
+    purchasePrice: "$135,000.00",
+    cost: "$117,906.12",
+    salePrice: "$290,000.00",
+    profit: "$37,093.88",
+    roi: "14.7%",
+    coc: "",
+    imgs: [sold1, sold_11, sold_12, sold_13],
+  },
+  {
+    id: 2,
+    img: current1,
+    desc: "Welcome to your dream home in the heart of Greenbriar! This beautifully renovated 3 bedroom, 2 bathroom ranch-style home offers a total of 1,737 square feet between the main level and the full basement. Step inside and be greeted by a recently updated and renovated interior with stylish finishes throughout. The spacious living room is perfect for relaxing or gathering with friends and family. The adjacent dining area is ideal for enjoying meals together, and the updated kitchen boasts sleek countertops, stainless steel appliances and garden window.",
+    desc2:
+      "Down the hall, you'll find two bedrooms including a master suite with attached bathroom. The full basement provides plenty of room for storage, a home gym, or a recreation room – the possibilities are endless! Also in the basement you’ll find the 3rd bedroom, a three quarter bath and the utility / laundry room.",
+    desc3:
+      "Step outside and enjoy your private backyard, perfect for barbecues, outdoor gatherings and space for the dog to roam. This home is situated across the street from the expansive Cottonwood Creek Park, offering walking and running trails, sports complexes, a disc golf course, and the Cottonwood Creek Family Center YMCA.",
+    desc4:
+      "Located in the desirable Greenbriar neighborhood, this home offers the perfect blend of convenience and tranquility. You'll be just minutes from Woodmen Road, with easy access to shopping, entertainment, and amenities, yet tucked away in a quiet and family-friendly community.",
+    desc5:
+      "Don't miss out on this incredible opportunity to own a move-in ready home in a fantastic location. Schedule your showing today!",
+    category: "Current",
+    location: "Colorado springs",
+    name: "6765 Montarbor dr",
+    purchased: 2020,
+    bed: 3,
+    bath: 2,
+    parking: 1,
+    volume: "1737 sq/ft",
+    built: 1985,
+    price: 450_000,
+    imgs: [
+      current1,
+      current_11,
+      current_12,
+      current_13,
+      current_14,
+      current_15,
+      current_16,
+    ],
+  },
+  {
+    id: 3,
+    img: current4,
+    desc: "Enjoy easy living in this charming 2-bedroom, 2-full-bath ranch-style end-unit condo located in the cozy Lincolnshire complex just off 11 Mile Rd. The spacious rooms feature a finished basement with ample storage and closet space. The kitchen includes an eat-in nook, while the open dining room leads to a back patio and common outdoor area. The large living room is perfect for entertaining guests. Additional features include a full-sized washer and dryer on the main level, an attached 2-car garage with opener, and a security system. The finished basement includes a carpeted family room, a separate area ideal for a library or study, and more storage. Conveniently located near highways, shopping, dining, houses of worship, the post office, and the library.",
+    category: "Current",
+    location: "Michigan ",
+    name: "West 11 mile 22490 MI",
+    imgs: [
+      current4,
+      current_41,
+      current_42,
+      current_43,
+      current_44,
+      current_45,
+      current_46,
+      current_47,
+      current_48,
+      current_49,
+    ],
+  },
+];

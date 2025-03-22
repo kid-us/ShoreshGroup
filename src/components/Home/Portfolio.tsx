@@ -1,13 +1,15 @@
 import { useState } from "react";
-import { soldAssets } from "../../services/assets";
+import { portfolioAssets } from "../../services/assets";
 import LinkButton from "../Button/LinkButton";
 import Container from "../Container/Container";
 import Modal from "../Modal/Modal";
 
 const Portfolio = () => {
   const [modal, setModal] = useState<string | null>(null);
+  const [category, setCategory] = useState<string>("");
 
-  const handleAssetClicked = (name: string) => {
+  const handleAssetClicked = (name: string, category: string) => {
+    setCategory(category);
     setModal(name);
     document.body.style.overflow = "hidden";
   };
@@ -15,9 +17,9 @@ const Portfolio = () => {
   return (
     <>
       {/* Modal */}
-      {modal && (
+      {modal && category && (
         <Modal
-          category="Sold"
+          category={category}
           name={modal}
           onClose={() => {
             setModal(null);
@@ -33,10 +35,10 @@ const Portfolio = () => {
           long-term growth, stability, and exceptional returns.
         </p>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-5 lg:gap-y-7 gap-y-5 mb-6 mt-8">
-          {soldAssets.slice(0, 3).map((asset) => (
+          {portfolioAssets.slice(0, 3).map((asset) => (
             <div
               key={asset.id}
-              onClick={() => handleAssetClicked(asset.name)}
+              onClick={() => handleAssetClicked(asset.name, asset.category)}
               className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] group transition-all duration-300 shadow cursor-pointer"
             >
               <img
