@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import Modal from "../components/Modal/Modal";
 import Container from "../components/Container/Container";
 import { motion } from "motion/react";
 import { soldAssets, currentAssets, ongoing } from "../services/assets";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import useDocumentTitle from "../hooks/useDocumentTitle";
-import useToggleStore from "../store/store";
+import Nav from "../components/Navbar/Nav";
 
 const categories = ["Current", "In Progress", "Sold"];
 
 const Assets = () => {
-  const { isToggled } = useToggleStore();
-
   const [modal, setModal] = useState<string | null>(null);
 
   const [activeCategory, setActiveCategory] = useState<string>("Current");
@@ -111,9 +108,9 @@ const Assets = () => {
         />
       )}
 
-      <Navbar bg />
+      <Nav bg />
 
-      <div className={`${isToggled ? "lg:pt-1 pt-10" : "lg:pt-20 pt-40"}`}>
+      <div className={`lg:pt-16 pt-24`}>
         <Container>
           <div className="lg:mb-8 mb-3">
             <h1 className="lg:text-3xl text-2xl">Our Properties</h1>
