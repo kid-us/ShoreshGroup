@@ -53,10 +53,10 @@ const Portfolio = () => {
                     <span className="bi-geo-alt-fill text-secondary me-2"></span>
                     {asset.location}
                   </p>
-                  <p className="text-gray-700 text-sm font-semibold">
+                  {/* <p className="text-gray-700 text-sm font-semibold">
                     <span className="bi-calendar-check-fill me-2 text-secondary"></span>
                     Purchased : {asset.purchased}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
