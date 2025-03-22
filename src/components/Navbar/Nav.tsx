@@ -48,9 +48,9 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
         <div
           className={`w-full  ${
             bg
-              ? "bg-white border-b border-gray-300"
+              ? "bg-[#fcf9f4] border-b border-gray-300"
               : hidden
-              ? "bg-white border-b border-gray-300"
+              ? "bg-[#fcf9f4] border-b border-gray-300"
               : "nav border-b border-gray-600"
           } py-3`}
         >

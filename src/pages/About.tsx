@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
-// import CoreValues from "../components/About/CoreValues";
 import Mission from "../components/About/Mission";
-// import WhoWeAre from "../components/About/WhoWeAre";
 import Footer from "../components/Footer/Footer";
-import Navbar from "../components/Navbar/Navbar";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
 import { about_us, join } from "../assets";
-import useToggleStore from "../store/store";
+import Nav from "../components/Navbar/Nav";
 
 const About = () => {
   const [title] = useState<string>("About Shoresh Group");
@@ -21,7 +18,6 @@ const About = () => {
   }, []);
 
   const short = [
-    // "Shoresh Group was founded with the belief that true success isn’t just about financial gains—it’s about creating lasting impact for future generations. The company began with a modest vision of building generational wealth through real estate investments that would empower families, strengthen communities, and leave a legacy for years to come. Over time, the vision expanded as the company grew, with a new generation dedicated to taking the legacy forward. They saw the opportunity to not only provide for their family but to share this model of success with others, opening the door for other investors and families to join in the journey of growth.",
     "Shoresh Group was founded by individuals who believed in creating a legacy for future generations. Initially established as Shoresh, the company began with a simple vision: to invest in real estate and build lasting value for the family. Living a modest life, they focused on investing their hard-earned resources into something that would provide for the next generation, ensuring they had the tools to succeed in an ever-changing world.",
   ];
 
@@ -33,39 +29,15 @@ const About = () => {
     "As Shoresh Group continues to expand, it seeks to share this powerful model with others. By opening its doors to investors and families who share the same values, Shoresh Group is building a community of like-minded individuals committed to growth, success, and long-term prosperity.",
   ];
 
-  const { isToggled } = useToggleStore();
-
   return (
     <>
-      <Navbar bg />
-      <div
-        className={`hero ${
-          isToggled ? "lg:pt-32 pt-28" : "lg:pt-58 pt-52"
-        } lg:pb-16 pb-10`}
-      >
+      <Nav bg />
+      <div className={`hero lg:pt-44 pt-40 lg:pb-16 pb-10`}>
         <div className="container mx-auto">
           <p className="text-sm uppercase text-gray-500 mb-6">About US</p>
           <div className="grid lg:grid-cols-2 lg:gap-1 gap-10">
             <div className="lg:order-0 order-2">
               <img src={about_us} alt="About us" />
-              {/* <img
-                src={about1}
-                alt="About"
-                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
-              />
-              <div className="relative">
-                <img
-                  src={about2}
-                  alt="About"
-                  className="absolute top-31 rounded-2xl lg:h-[55vh] h-[35vh] w-full"
-                />
-              </div>
-              <img
-                src={about3}
-                alt="About"
-                className="rounded-2xl lg:h-[55vh] h-[35vh] w-full"
-              />
-              */}
             </div>
             <div className="">
               <h1 className="lg:text-3xl text-2xl text-">Our Story</h1>
@@ -84,58 +56,10 @@ const About = () => {
               </button>
             </div>
           </div>
-          {/* <p className="text-sm uppercase text-gray-200">About US</p>
-
-          <p className="lg:text-4xl text-lg mt-10 lg:w-[80%] text-white font-medium font-logo">
-            Shoresh Group began as a family venture focused on creating
-            generational wealth through real estate. As we experienced growth
-            and success, we saw the opportunity to share our journey and open
-            doors for other like-minded families and investors to join us.
-            Today, we unlock value through a range of real estate projects, from
-            distressed homes and multifamily real estate to large-scale
-            developments, creating opportunities for all involved.
-          </p> */}
         </div>
       </div>
 
-      {/* <WhoWeAre /> */}
-
-      {/* <div className="bg-[#502b11]"> */}
-      {/* <div className="container mx-auto py-20">
-        <h1 className="lg:text-3xl text-2xl lg:text-left text-center">
-          Our Story
-        </h1>
-
-        <div className="mt-5">
-          {showMore
-            ? long.map((l) => <p className="text-lg">{l}</p>)
-            : short.map((s) => <p className="text-lg">{s}</p>)}
-        </div>
-
-        <button
-          onClick={() => setShowMore(!showMore)}
-          className={`${"bg text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-        >
-          {showMore ? "Read Less" : "Read More"}
-        </button>
-      </div> */}
-      {/* <button
-          onClick={() => setShowMore(!showMore)}
-          className={`${"bg2 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-        >
-          {showMore ? "Read Less" : "Read More"}
-        </button>
-
-        <button
-          onClick={() => setShowMore(!showMore)}
-          className={`${"bg3 block text-white hover:text-gray-200"} mt-4 font-semibold px-12 py-3 text-xs rounded uppercase group`}
-        >
-          {showMore ? "Read Less" : "Read More"}
-        </button> */}
-      {/* </div> */}
-
       <Mission />
-      {/* <CoreValues /> */}
 
       <div className="container mx-auto px-5 my-10 lg:w-[70%]">
         <div className="grid lg:grid-cols-2 gap-x-10 gap-y-5">
