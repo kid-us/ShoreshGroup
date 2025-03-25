@@ -7,7 +7,7 @@ module.exports = {
           200: "var(--color-link-200)",
         },
         background: "var(--color-bg)",
-        btn: "#F9BA0D;",
+        btn: "#FFBF00;",
         icon: "#E0B84D",
         secondary: "#06402B",
       },
