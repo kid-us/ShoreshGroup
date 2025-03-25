@@ -112,15 +112,13 @@ export const currentAssets: CurrentAssets[] = [
   {
     id: 1,
     img: current1,
-    desc: "Welcome to your dream home in the heart of Greenbriar! This beautifully renovated 3 bedroom, 2 bathroom ranch-style home offers a total of 1,737 square feet between the main level and the full basement. Step inside and be greeted by a recently updated and renovated interior with stylish finishes throughout. The spacious living room is perfect for relaxing or gathering with friends and family. The adjacent dining area is ideal for enjoying meals together, and the updated kitchen boasts sleek countertops, stainless steel appliances and garden window.",
+    desc: "This recently renovated 3-bedroom, 2-bathroom ranch-style home in Greenbriar offers 1,737 square feet of living space across the main level and a full basement. The interior has been thoughtfully updated, with modern finishes throughout, creating a welcoming and comfortable atmosphere. The spacious living room provides a great space for everyday living, while the adjacent dining area offers a practical setting for meals. The kitchen features sleek countertops, stainless steel appliances, and a garden window.",
     desc2:
-      "Down the hall, you'll find two bedrooms including a master suite with attached bathroom. The full basement provides plenty of room for storage, a home gym, or a recreation room – the possibilities are endless! Also in the basement you’ll find the 3rd bedroom, a three quarter bath and the utility / laundry room.",
+      "The hallway leads to two bedrooms, including a master suite with an attached bath. The full basement offers ample storage and flexible space that could serve as a home gym, recreation room, or additional living area. It also includes a third bedroom, a three-quarter bath, and a utility/laundry room",
     desc3:
-      "Step outside and enjoy your private backyard, perfect for barbecues, outdoor gatherings and space for the dog to roam. This home is situated across the street from the expansive Cottonwood Creek Park, offering walking and running trails, sports complexes, a disc golf course, and the Cottonwood Creek Family Center YMCA.",
+      "Outside, the private backyard offers a peaceful retreat, ideal for outdoor gatherings or relaxation. The home is directly across from Cottonwood Creek Park, providing access to walking and running trails, sports complexes, a disc golf course, and the Cottonwood Creek Family Center YMCA.",
     desc4:
-      "Located in the desirable Greenbriar neighborhood, this home offers the perfect blend of convenience and tranquility. You'll be just minutes from Woodmen Road, with easy access to shopping, entertainment, and amenities, yet tucked away in a quiet and family-friendly community.",
-    desc5:
-      "Don't miss out on this incredible opportunity to own a move-in ready home in a fantastic location. Schedule your showing today!",
+      "Located in the desirable Greenbriar neighborhood, this property balances easy access to Woodmen Road and local amenities with the tranquility of a family-friendly environment.",
     category: "Current",
     location: "Colorado",
     name: "Montarbor Dr., Greenbriar",
@@ -177,7 +175,7 @@ export const currentAssets: CurrentAssets[] = [
   {
     id: 3,
     img: current3,
-    desc: "Nestled in a peaceful, sought-after area, Messa Springs, Colorado Springs, Colorado offers a spacious and well-maintained home with excellent potential. Located in close proximity to top-rated schools, parks, and convenient shopping centers, this property benefits from a prime location in a thriving community. A great addition to any investment portfolio, the property’s charm and location make it a standout in the area.",
+    desc: "Located in a peaceful, desirable neighborhood, CO Mesa Springs 2537 offers a well-maintained home with excellent potential. Its prime location provides easy access to top-rated schools, nearby parks, and convenient shopping centers, making it a highly sought-after area. This property’s charm, combined with its strong location, presents a great opportunity for any investment portfolio.",
     category: "Current",
     location: "Colorado",
     name: "Messa Springs, Colorado Springs,",
@@ -193,7 +191,9 @@ export const currentAssets: CurrentAssets[] = [
   {
     id: 4,
     img: current4,
-    desc: "Enjoy easy living in this charming 2-bedroom, 2-full-bath ranch-style end-unit condo located in the cozy Lincolnshire complex just off 11 Mile Rd. The spacious rooms feature a finished basement with ample storage and closet space. The kitchen includes an eat-in nook, while the open dining room leads to a back patio and common outdoor area. The large living room is perfect for entertaining guests. Additional features include a full-sized washer and dryer on the main level, an attached 2-car garage with opener, and a security system. The finished basement includes a carpeted family room, a separate area ideal for a library or study, and more storage. Conveniently located near highways, shopping, dining, houses of worship, the post office, and the library.",
+    desc: "This charming 2-bedroom, 2-bathroom ranch-style end-unit condo is located in the cozy Lincolnshire complex, just off 11 Mile Rd. The spacious layout includes a finished basement offering ample storage and closet space. The kitchen features an eat-in nook, while the open dining room flows into a back patio and shared outdoor area. The large living room provides a comfortable space for entertaining.",
+    desc2:
+      "Additional features include a full-sized washer and dryer on the main level, an attached 2-car garage with opener, and a security system. The finished basement includes a carpeted family room, a separate area suitable for a library or study, and extra storage. Conveniently situated near highways, shopping, dining, places of worship, the post office, and the library.",
     category: "Current",
     location: "Michigan ",
     name: "West 11 Mile, Southfield",
@@ -350,15 +350,11 @@ export const portfolioAssets = [
   {
     id: 1,
     img: current2,
-    desc: "Welcome to carefree living in this beautifully updated condo! This 3 bedroom, 2.5 bathroom condo offers 1,544 square feet of move-in ready living space in the highly sought-after District 20 school district.",
+    desc: "This updated 3-bedroom, 2.5-bathroom condo offers 1,544 square feet of living space and is located within the highly desirable District 20 school district. The interior features fresh paint and new LVP flooring throughout, creating a clean, modern feel. The updated kitchen is equipped with sleek granite countertops and a brand-new stainless steel appliance package, perfect for everyday cooking.",
     desc2:
-      "Step inside and be impressed by the fresh paint and brand new LVP flooring that flows throughout. The updated kitchen is a chef's dream, featuring sleek granite countertops and a brand new stainless steel appliance package.",
+      "Upstairs, you'll find two spacious bedrooms, a full bathroom, and a convenient laundry area. The finished basement adds a third bedroom and a full bathroom, providing flexible living space. A half-bathroom on the main level offers additional convenience for residents and guests.",
     desc3:
-      "Upstairs, you'll find two generously sized bedrooms, a full bathroom and a laundry area. The finished basement offers a third bedroom and a full bathroom. With a half bathroom on the main level, there's plenty of space for everyone to get ready in the morning.",
-    desc4:
-      "This condo also features an attached 1-car garage for your convenience. This condo is ideally situated near the intersection of Austin Bluffs and Woodmen, offering easy access to a variety of shopping and dining options. Nature enthusiasts will love that the Briargate Trail runs behind the community, connecting to Cottonwood Creek Park with its expansive green spaces and recreational opportunities.",
-    desc5:
-      "Don't wait! This turn-key condo is ready for its new owner and won't last long. Schedule your showing today!",
+      "The condo also includes an attached 1-car garage for added convenience. Its location near the intersection of Austin Bluffs and Woodmen provides easy access to shopping, dining, and other amenities. Outdoor enthusiasts will appreciate the proximity to the Briargate Trail, which connects to Cottonwood Creek Park, offering expansive green spaces and recreational opportunities.",
     category: "Current",
     location: "Colorado",
     name: "Antelope Vally Point, Colorado Springs, ",
