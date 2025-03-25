@@ -124,9 +124,11 @@ import community from "./value/community.png";
 import transparency from "./value/transparency.png";
 import plan from "./value/plan.png";
 
-import invest from "./investment.png";
-import buy from "./buy.png";
-import sale from "./sale.png";
+import capital from "./capital.png";
+import reward from "./reward.png";
+import properties from "./properties.png";
+import generate from "./generate.png";
+import deployment from "./rocket.png";
 
 import net from "./net.png";
 import transaction from "./transaction.png";
@@ -270,9 +272,11 @@ export {
   logo,
 
   // How it works
-  buy,
-  invest,
-  sale,
+  capital,
+  deployment,
+  generate,
+  properties,
+  reward,
 
   // Stat
   managed,
