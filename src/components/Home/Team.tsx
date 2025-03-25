@@ -1,8 +1,8 @@
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 import { we1, we2, we4, we5 } from "../../assets";
 import Container from "../Container/Container";
-import { useEffect, useState } from "react";
-import LinkButton from "../Button/LinkButton";
+// import { useEffect, useState } from "react";
+// import LinkButton from "../Button/LinkButton";
 
 interface Team {
   id: number;
@@ -39,62 +39,80 @@ const teams: Team[] = [
 ];
 
 const Team = () => {
-  const [index, setIndex] = useState(0); // Track current team member index
-  const [autoChange, setAutoChange] = useState<number | null>(null);
+  // const [index, setIndex] = useState(0); // Track current team member index
+  // const [autoChange, setAutoChange] = useState<number | null>(null);
 
-  const handleNext = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % teams.length);
-    restartAutoChange();
-  };
+  // const handleNext = () => {
+  //   setIndex((prevIndex) => (prevIndex + 1) % teams.length);
+  //   restartAutoChange();
+  // };
 
-  // Function to restart auto-change counter
-  const restartAutoChange = () => {
-    if (autoChange) clearInterval(autoChange);
+  // // Function to restart auto-change counter
+  // const restartAutoChange = () => {
+  //   if (autoChange) clearInterval(autoChange);
 
-    const newInterval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % teams.length);
-    }, 15000);
+  //   const newInterval = setInterval(() => {
+  //     setIndex((prevIndex) => (prevIndex + 1) % teams.length);
+  //   }, 15000);
 
-    setAutoChange(newInterval);
-  };
+  //   setAutoChange(newInterval);
+  // };
 
-  // Start auto-change when component mounts
-  useEffect(() => {
-    restartAutoChange();
+  // // Start auto-change when component mounts
+  // useEffect(() => {
+  //   restartAutoChange();
 
-    return () => {
-      if (autoChange) clearInterval(autoChange);
-    };
-  }, []);
+  //   return () => {
+  //     if (autoChange) clearInterval(autoChange);
+  //   };
+  // }, []);
+
+  const first3Team = teams.slice(0, 3);
 
   return (
     <Container>
-      <div className="grid lg:grid-cols-5 mt-28 gap-x-10 py-20">
-        <div className="lg:col-span-2">
-          <p className="text-sm uppercase text-white">Meet our Team</p>
-          <h1 className="font-semibold lg:text-3xl text-2xl lg:mt-16 lg:mb-10 my-8 text-white">
-            We Build Wealth Through Smart Real Estate Investments.
-          </h1>
+      <div className="lg:col-span-2 lg:pt-16 lg:pb-10 py-8">
+        <p className="text-sm uppercase text-white mb-10">Meet our Team</p>
+        <h1 className="font-semibold lg:text-3xl text-2xl  text-white">
+          We Build Wealth Through Smart Real Estate Investments.
+        </h1>
 
-          <p className="text-sm mb-2 text-white">
-            Our team brings years of experience in real estate and
-            wealth-building.
-          </p>
+        <p className="text-sm mb-2 text-white">
+          Our team brings years of experience in real estate and
+          wealth-building.
+        </p>
 
-          <p className="text-sm mb-2 text-white">
-            Comprised of dedicated, ethical, and innovative professionals with
-            diverse expertise, we work together to protect and grow your wealth
-            while making Shoresh-group a leader in real estate investment.
-          </p>
+        <p className="text-sm mb-2 text-white">
+          Comprised of dedicated, ethical, and innovative professionals with
+          diverse expertise, we work together to protect and grow your wealth
+          while making Shoresh-group a leader in real estate investment.
+        </p>
 
-          <p className="text-sm mb-2 text-white">
-            We invite you to invest passively alongside us.
-          </p>
-          <div className="lg:mt-16 mt-10 mb-10">
-            <LinkButton name=" Meet OUr Team" path="/about-us" />
+        <p className="text-sm mb-2 text-white">
+          We invite you to invest passively alongside us.
+        </p>
+        {/* <div className="lg:mt-16 mt-10 mb-10">
+          <LinkButton name=" Meet OUr Team" path="/about-us" />
+        </div> */}
+      </div>
+
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pb-10">
+        {first3Team.map((t) => (
+          <div key={t.id}>
+            <img
+              src={t.img}
+              alt={t.name}
+              className="rounded-lg h-96 w-full object-cover object-top"
+            />
+            <div className="bg-white rounded-xl p-3 mt-2">
+              <p className="font-bold text-xl mt-2">{t.name}</p>
+              <p className="text-gray-600">{t.job_title}</p>
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
 
+      {/* <div className="grid lg:grid-cols-5 mt-28 gap-x-10 py-20">
         <div className="lg:col-span-3">
           <div className="grid lg:grid-cols-9">
             <div className="lg:col-span-4 lg:col-start-2 overflow-hidden shadow-[7px_3px_3px_0px_#E0B84D] lg:rounded-full rounded-xl">
@@ -142,7 +160,7 @@ const Team = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 };
