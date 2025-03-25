@@ -18,23 +18,23 @@ const Investor = () => {
   const choose = [
     {
       id: 1,
-      title: "Proven Success",
-      desc: "A track record of profitable real estate investments.",
+      title: "Transparency & Trust",
+      desc: "We keep you informed every step of the way, building confidence through clear communication.",
     },
     {
       id: 2,
-      title: "Diversified Portfolio",
-      desc: "Gain exposure to a mix of single-family, multifamily, and large-scale projects.",
+      title: "Proven Track Record",
+      desc: "Completely new our history of profitable investments reflects our expertise and commitment to success.",
     },
     {
       id: 3,
-      title: "Transparency & Trust",
-      desc: "We prioritize clear communication and investor confidence.",
+      title: "Diverse Investment Opportunities - ",
+      desc: "Gain access to a balanced portfolio spanning residential and commercial properties.",
     },
     {
       id: 4,
-      title: "Passive Income Potential",
-      desc: "Invest in projects without the hassle of day-to-day management.",
+      title: " Hassle-Free Passive Income",
+      desc: "Invest confidently while we handle the complexities of property management.",
     },
   ];
 
@@ -47,12 +47,12 @@ const Investor = () => {
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
           <p className="lg:text-3xl text-xl mt-6 lg:w-[80%] text-white font-medium">
-            Unlock Exclusive Real Estate Opportunities Join Shoresh-group’s
-            investor network and gain access to exclusive real estate investment
-            opportunities. Whether you're looking for short-term fix-and-flip
-            projects or long-term, cash-flowing properties, our private equity
-            fund allows you to invest alongside an experienced team with a
-            proven track record.
+            Join Shoresh Group’s investor network and discover the power of
+            strategic real estate investments. Whether you're focused on
+            consistent passive income or capitalizing on value-add
+            opportunities, our debt fund provides a pathway to invest with
+            confidence alongside an experienced team dedicated to delivering
+            exceptional returns.
           </p>
         </div>
       </div>
