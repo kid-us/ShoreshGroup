@@ -17,6 +17,7 @@ import {
   lgHero8,
   lgHero9,
   lgHero10,
+  hero11,
 } from "../../assets";
 // import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
@@ -38,6 +39,7 @@ const Hero = () => {
     lgHero8,
     lgHero9,
     lgHero10,
+    hero11,
   ];
 
   return (

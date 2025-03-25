@@ -41,7 +41,7 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
             opacity: index === currentFrameIndex ? 1 : 0,
             transform: index === currentFrameIndex ? "scale(1)" : "scale(1.1)",
             zIndex: -2,
-            objectPosition: "bottom",
+            objectPosition: "top",
           }}
           className="hero-img"
         />
