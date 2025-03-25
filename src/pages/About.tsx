@@ -67,9 +67,9 @@ const About = () => {
       <Mission />
 
       <div className="contact-bg">
-        <div className="container mx-auto px-5 my-10 lg:w-[40%] h-full">
+        <div className="container mx-auto px-5 my-8 lg:w-[40%] h-full">
           <div className="flex flex-col justify-center items-center h-full">
-            <p className="lg:text-3xl mb-10 lg:font-semibold text-white text-center">
+            <p className="lg:text-3xl lg:font-semibold text-white text-center">
               Interested in learning more? Reach out today to explore how we can
               collaborate and grow together.
             </p>
