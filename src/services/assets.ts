@@ -142,15 +142,11 @@ export const currentAssets: CurrentAssets[] = [
   {
     id: 2,
     img: current2,
-    desc: "Welcome to carefree living in this beautifully updated condo! This 3 bedroom, 2.5 bathroom condo offers 1,544 square feet of move-in ready living space in the highly sought-after District 20 school district.",
+    desc: "This updated 3-bedroom, 2.5-bathroom condo offers 1,544 square feet of living space and is located within the highly desirable District 20 school district. The interior features fresh paint and new LVP flooring throughout, creating a clean, modern feel. The updated kitchen is equipped with sleek granite countertops and a brand-new stainless steel appliance package, perfect for everyday cooking.",
     desc2:
-      "Step inside and be impressed by the fresh paint and brand new LVP flooring that flows throughout. The updated kitchen is a chef's dream, featuring sleek granite countertops and a brand new stainless steel appliance package.",
+      "Upstairs, you'll find two spacious bedrooms, a full bathroom, and a convenient laundry area. The finished basement adds a third bedroom and a full bathroom, providing flexible living space. A half-bathroom on the main level offers additional convenience for residents and guests.",
     desc3:
-      "Upstairs, you'll find two generously sized bedrooms, a full bathroom and a laundry area. The finished basement offers a third bedroom and a full bathroom. With a half bathroom on the main level, there's plenty of space for everyone to get ready in the morning.",
-    desc4:
-      "This condo also features an attached 1-car garage for your convenience. This condo is ideally situated near the intersection of Austin Bluffs and Woodmen, offering easy access to a variety of shopping and dining options. Nature enthusiasts will love that the Briargate Trail runs behind the community, connecting to Cottonwood Creek Park with its expansive green spaces and recreational opportunities.",
-    desc5:
-      "Don't wait! This turn-key condo is ready for its new owner and won't last long. Schedule your showing today!",
+      "The condo also includes an attached 1-car garage for added convenience. Its location near the intersection of Austin Bluffs and Woodmen provides easy access to shopping, dining, and other amenities. Outdoor enthusiasts will appreciate the proximity to the Briargate Trail, which connects to Cottonwood Creek Park, offering expansive green spaces and recreational opportunities.",
     category: "Current",
     location: "Colorado",
     name: "Antelope Vally Point, Colorado Springs",
