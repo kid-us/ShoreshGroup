@@ -3,7 +3,7 @@ import Mission from "../components/About/Mission";
 import Footer from "../components/Footer/Footer";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import LinkButton from "../components/Button/LinkButton";
-import { about_us, join } from "../assets";
+import { about_us } from "../assets";
 import Nav from "../components/Navbar/Nav";
 import Team from "../components/Home/Team";
 
@@ -60,25 +60,20 @@ const About = () => {
         </div>
       </div>
 
-      <Team />
+      <div className="team-bg">
+        <Team />
+      </div>
 
       <Mission />
 
-      <div className="container mx-auto px-5 my-10 lg:w-[70%]">
-        <div className="grid lg:grid-cols-2 gap-x-10 gap-y-5">
-          <div className="flex flex-col justify-center">
-            <p className="lg:text-xl mb-10 lg:font-semibold text-gray-700">
-              Want to be a part of something bigger? Get in touch today and
-              discover how you can join our growing legacy.
+      <div className="contact-bg mb-20">
+        <div className="container mx-auto px-5 my-10 lg:w-[40%] h-full">
+          <div className="flex flex-col justify-center items-center h-full">
+            <p className="lg:text-3xl mb-10 lg:font-semibold text-white text-center">
+              Interested in learning more? Reach out today to explore how we can
+              collaborate and grow together.
             </p>
-            <LinkButton name="Join Our Journey" path="/contact" />
-          </div>
-          <div>
-            <img
-              src={join}
-              alt="Join Our Journey"
-              className="w-full lg:h-96 lg:object-cover lg:object-right rounded-lg"
-            />
+            <LinkButton name="Contact Us" path="/contact" />
           </div>
         </div>
       </div>

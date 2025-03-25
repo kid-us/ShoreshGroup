@@ -32,7 +32,7 @@ const Mission = () => {
             <div className="flex items-center">
               <div className="lg:mt-20 mt-16">
                 <h1 className="lg:text-3xl text-2xl">Our</h1>
-                <h1 className="lg:text-3xl text-2xl text-btn">Mission</h1>
+                <h1 className="lg:text-3xl">Mission</h1>
                 <p className="mt-5 lg:text-lg text-black">
                   At Shoresh-group, our mission is simple: Building generational
                   wealth for families and investors through strategic real

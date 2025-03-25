@@ -69,25 +69,25 @@ const Team = () => {
 
   return (
     <Container>
-      <div className="grid lg:grid-cols-5 mt-28 gap-x-10">
+      <div className="grid lg:grid-cols-5 mt-28 gap-x-10 py-20">
         <div className="lg:col-span-2">
-          <p className="text-sm uppercase text-gray-600">Meet our Team</p>
-          <h1 className="font-semibold lg:text-3xl text-2xl lg:mt-16 lg:mb-10 my-8">
+          <p className="text-sm uppercase text-white">Meet our Team</p>
+          <h1 className="font-semibold lg:text-3xl text-2xl lg:mt-16 lg:mb-10 my-8 text-white">
             We Build Wealth Through Smart Real Estate Investments.
           </h1>
 
-          <p className="text-sm mb-2 text-gray-800">
+          <p className="text-sm mb-2 text-white">
             Our team brings years of experience in real estate and
             wealth-building.
           </p>
 
-          <p className="text-sm mb-2 text-gray-800">
+          <p className="text-sm mb-2 text-white">
             Comprised of dedicated, ethical, and innovative professionals with
             diverse expertise, we work together to protect and grow your wealth
             while making Shoresh-group a leader in real estate investment.
           </p>
 
-          <p className="text-sm mb-2 text-gray-800">
+          <p className="text-sm mb-2 text-white">
             We invite you to invest passively alongside us.
           </p>
           <div className="lg:mt-16 mt-10 mb-10">
@@ -113,10 +113,10 @@ const Team = () => {
             <div className="lg:flex lg:justify-center lg:items-center lg:col-span-4 lg:px-16">
               <div className="lg:block flex justify-between mt-5">
                 <div className="">
-                  <p className="lg:text-3xl text-2xl font-bold">
+                  <p className="lg:text-3xl text-2xl font-bold text-white">
                     {teams[index].name}
                   </p>
-                  <p className="text-gray-700 lg:mt-2 text-sm mt-1">
+                  <p className="lg:mt-2 text-sm mt-1 text-white">
                     {teams[index].job_title}
                   </p>
                 </div>

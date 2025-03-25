@@ -44,6 +44,17 @@ body {
   background-size: cover;
 }
 
+.contact-bg {
+  background-image: url("../src/assets/contact\ us.jpg");
+  background-size: cover;
+  height: 60dvh;
+}
+
+.team-bg {
+  background-image: url("../src/assets/meet.jpg");
+  background-size: cover;
+}
+
 h1,
 h2,
 h3,
