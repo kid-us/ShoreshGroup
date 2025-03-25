@@ -9,17 +9,17 @@ export const footer: Nav[] = [
 
   {
     id: 4,
-    name: "Our Assets",
+    name: "Long Term Properties",
     path: "/assets?asset=our-assets",
   },
   {
     id: 5,
-    name: "Recently Sold",
+    name: "Completed Properties",
     path: "/assets?asset=sold",
   },
   {
     id: 6,
-    name: "In Progress",
+    name: "Current Projects",
     path: "/assets?asset=in-progress",
   },
 
@@ -27,6 +27,11 @@ export const footer: Nav[] = [
   //   id: 7,
   //   name: "Privacy Policy",
   //   path: "/",
+  // {c === "Current"
+  //   ? "Long Term Properties"
+  //   : c === "In Progress"
+  //   ? "Current Projects"
+  //   : "Completed Properties"}{" "}
   // },
 
   // {

@@ -136,11 +136,10 @@ const Assets = () => {
                   } `}
                 >
                   {c === "Current"
-                    ? "Long Term"
+                    ? "Long Term Properties"
                     : c === "In Progress"
-                    ? "Value-Add"
-                    : c}{" "}
-                  Properties
+                    ? "Current Projects"
+                    : "Completed Properties"}
                 </motion.button>
               ))}
             </motion.div>

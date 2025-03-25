@@ -14,19 +14,19 @@ export const navs: Nav[] = [
 export const assets: Nav[] = [
   {
     id: 5,
-    name: "Our Assets",
+    name: "Long Term Properties",
     icon: "bi-building",
     path: "/assets?asset=our-assets",
   },
   {
     id: 6,
-    name: "Recently Sold",
+    name: "Completed Projects",
     icon: "bi-buildings-fill",
     path: "/assets?asset=sold",
   },
   {
     id: 7,
-    name: "In Progress",
+    name: "Current Projects",
     icon: "bi-cone-striped",
     path: "/assets?asset=in-progress",
   },
