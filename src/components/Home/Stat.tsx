@@ -50,13 +50,14 @@ const Stat = () => {
             Who we are
           </h1>
           <p>
-            Shoresh-group is a family-owned real estate investment firm
-            committed to building lasting wealth through strategic acquisitions
-            and impactful partnerships. We specialize in both short-term flips
-            and long-term investments, transforming distressed properties into
-            valuable assets. Our expertise spans multifamily, commercial, and
-            residential sectors, where we focus on sustainable growth and
-            exceptional returns for our family and investors.
+            Shoresh-Group is a family-owned real estate investment firm
+            dedicated to building lasting wealth through strategic acquisitions
+            and meaningful partnerships. We focus on both short-term property
+            transformations and long-term investments, turning distressed assets
+            into valuable opportunities. With expertise across multifamily,
+            commercial, and residential sectors, we are committed to sustainable
+            growth and delivering exceptional returns for our
+            family and investors.
           </p>
 
           <div className="lg:mt-16 mt-8 mb-10">
