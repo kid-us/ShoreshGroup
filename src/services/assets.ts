@@ -152,8 +152,8 @@ export const currentAssets: CurrentAssets[] = [
     desc5:
       "Don't wait! This turn-key condo is ready for its new owner and won't last long. Schedule your showing today!",
     category: "Current",
-    location: "Colorado springs",
-    name: "Antelope valley point",
+    location: "Colorado",
+    name: "Antelope Vally Point, Colorado Springs",
     purchased: 2000,
     bed: 3,
     bath: 2.5,

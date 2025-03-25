@@ -1,11 +1,4 @@
-import {
-  Bath,
-  BedDouble,
-  CarFront,
-  Crop,
-  MountainSnow,
-  Tag,
-} from "lucide-react";
+import { Bath, BedDouble, CarFront, Crop, Tag } from "lucide-react";
 import { CurrentAssets } from "../../services/assets";
 
 interface Props {
@@ -54,12 +47,12 @@ const CurrentDescription = ({ asset }: Props) => {
                   <p>{asset.volume}</p>
                 </div>
 
-                {asset.lot && (
+                {/* {asset.lot && (
                   <div className="flex gap-x-3 items-center justify-center border rounded p-3">
                     <MountainSnow size={18} />
                     <p>{asset.lot}</p>
                   </div>
-                )}
+                )} */}
               </div>
             </>
           )}
