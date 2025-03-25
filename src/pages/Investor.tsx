@@ -47,7 +47,7 @@ const Investor = () => {
           <p className="text-sm uppercase text-gray-200">Invest With US</p>
 
           <p className="lg:text-3xl text-xl mt-6 lg:w-[80%] text-white font-medium">
-            Join Shoresh Group’s investor network and discover the power of
+            Join Shoresh-Group’s investor network and discover the power of
             strategic real estate investments. Whether you're focused on
             consistent passive income or capitalizing on value-add
             opportunities, our debt fund provides a pathway to invest with
