@@ -12,7 +12,9 @@ const LinkButton = ({ name, path, style }: Props) => {
       to={path}
       className={`${
         style ? style : "bg text-white hover:text-gray-200"
-      }  font-semibold px-12 py-3 text-sm rounded-full uppercase group text-center`}
+      }  font-semibold px-12 py-3 text-sm rounded-full uppercase group text-center ${
+        path === "/contact" && "border-2 border-white"
+      }`}
     >
       {name}
       <span className="inline-block transition-transform duration-300 group-hover:rotate-45 ms-3">
