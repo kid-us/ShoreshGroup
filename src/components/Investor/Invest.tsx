@@ -12,7 +12,7 @@ const Invest = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="font-semibold lg:text-3xl text-2xl mb-8 text-white"
         >
-          Invest with Shoresh-group: Passive Investing, GP-Level Returns
+          Invest with Shoresh Group
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -20,7 +20,7 @@ const Invest = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="mb-2 tex text-sm text-zinc-200"
         >
-          Invest passively like an LP, earn like a GP.
+          Build your portfolio with a trusted partner in real estate.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -28,9 +28,10 @@ const Invest = () => {
           transition={{ delay: 0.2, duration: 0.4 }}
           className="mb-2 tex text-sm text-zinc-200"
         >
-          Traditional multifamily real estate funds allow LPs (limited partners)
-          to invest passively while GPs (general partners) manage the deal and
-          take a larger share of the returns.
+          We’re committed to providing opportunities that align with your goals,
+          offering transparency, expertise, and a proven track record. Whether
+          you're exploring options or ready to make your next move, we’re here
+          to guide you every step of the way.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -65,7 +66,7 @@ const Invest = () => {
           className="mt-10"
         >
           <LinkButton
-            name="Invest With Us"
+            name="Contact Us"
             path="/contact"
             style="bg-[white] hover:text-gray-700"
           />
