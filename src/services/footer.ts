@@ -23,15 +23,15 @@ export const footer: Nav[] = [
     path: "/assets?asset=in-progress",
   },
 
-  {
-    id: 7,
-    name: "Privacy Policy",
-    path: "/",
-  },
+  // {
+  //   id: 7,
+  //   name: "Privacy Policy",
+  //   path: "/",
+  // },
 
-  {
-    id: 8,
-    name: "Terms of Service",
-    path: "/",
-  },
+  // {
+  //   id: 8,
+  //   name: "Terms of Service",
+  //   path: "/",
+  // },
 ];
