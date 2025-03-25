@@ -115,8 +115,9 @@ const Assets = () => {
           <div className="lg:mb-8 mb-3">
             <h1 className="lg:text-3xl text-2xl">Our Properties</h1>
             <p className="mt-3 lg:w-[60%]">
-              Discover our premium real estate assets, carefully selected for
-              long-term growth, stability, and exceptional returns.
+              Explore our carefully selected real estate assets, chosen for
+              their potential in both short- and long-term growth, stability,
+              and enduring value.
             </p>
             <p className="text-gray-500 mb-5 mt-10">Categories</p>
             <motion.div
@@ -134,7 +135,12 @@ const Assets = () => {
                       : "text-gray-600 border border-btn lg:py-2 py-3 lg:px-10"
                   } `}
                 >
-                  {c} {c === "Sold" ? "Properties" : "Assets"}
+                  {c === "Current"
+                    ? "Long Term"
+                    : c === "In Progress"
+                    ? "Value-Add"
+                    : c}{" "}
+                  Properties
                 </motion.button>
               ))}
             </motion.div>
