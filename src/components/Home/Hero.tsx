@@ -1,12 +1,5 @@
 import { motion } from "motion/react";
 import {
-  // heroVid,
-  // hero2,
-  // hero3,
-  // hero4,
-  // hero5,
-  // hero6,
-  // hero7,
   // lgHero1,
   lgHero2,
   lgHero3,
@@ -17,17 +10,13 @@ import {
   lgHero8,
   lgHero9,
   lgHero10,
-  hero11,
 } from "../../assets";
-// import { Link } from "react-router-dom";
 import ImageFromFrames from "./ImageFrame";
-// import LinkButton from "../Button/LinkButton";
 import useToggleStore from "../../store/store";
 
 const Hero = () => {
   const { isToggled } = useToggleStore();
 
-  // const frames = [hero2, hero3, hero4, hero5, hero6, hero7];
   const lgFrames = [
     // lgHero1,
     lgHero2,
@@ -39,7 +28,6 @@ const Hero = () => {
     lgHero8,
     lgHero9,
     lgHero10,
-    hero11,
   ];
 
   return (

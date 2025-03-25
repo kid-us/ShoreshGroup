@@ -1,6 +1,6 @@
 import heroVid from "./hero.mp4";
 
-import hero from "./hero.png";
+import hero from "./hero/1.jpg";
 import hero2 from "./hero2.jpg";
 import hero3 from "./hero3.jpg";
 import hero4 from "./hero4.jpg";
@@ -10,7 +10,7 @@ import hero7 from "./hero7.jpg";
 import hero8 from "./hero8.jpg";
 import hero9 from "./hero9.jpg";
 import hero10 from "./hero10.jpg";
-import hero11 from "./hero11.jpg";
+// import hero11 from "./hero11.jpg";
 
 import about_us from "./about.png";
 import about1 from "./1.jpg";
@@ -166,7 +166,7 @@ export {
   hero8,
   hero9,
   hero10,
-  hero11,
+  // hero11,
 
   // sold
   sold1,
