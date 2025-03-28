@@ -91,9 +91,6 @@ const Team = () => {
         <p className="text-sm mb-2 text-white">
           We invite you to invest passively alongside us.
         </p>
-        {/* <div className="lg:mt-16 mt-10 mb-10">
-          <LinkButton name=" Meet OUr Team" path="/about-us" />
-        </div> */}
       </div>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pb-10">

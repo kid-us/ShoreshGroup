@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import {
-  // lgHero1,
   lgHero2,
   lgHero3,
   lgHero4,
@@ -18,7 +17,6 @@ const Hero = () => {
   const { isToggled } = useToggleStore();
 
   const lgFrames = [
-    // lgHero1,
     lgHero2,
     lgHero3,
     lgHero4,
