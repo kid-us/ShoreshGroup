@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { we1, we2, we3, we4, we5, we6 } from "../../assets";
+import { we1, we2, we3 } from "../../assets";
 // import Container from "../Container/Container";
 import "./slider.css";
 
@@ -41,7 +41,7 @@ const Testimony = () => {
       id: 4,
       comment:
         "Shoresh-group has exceeded my expectations in every way. Their ability to identify lucrative real estate opportunities while maintaining a risk-conscious approach is truly commendable. I feel confident knowing my investments are in capable hands.",
-      img: we4,
+      img: we1,
       name: "Emilt T.",
       title: "High-Net-Worth Investor",
     },
@@ -49,7 +49,7 @@ const Testimony = () => {
       id: 5,
       comment:
         "What sets Shoresh-group apart is their commitment to both financial success and ethical investment practices. Their team is always transparent, keeping me informed every step of the way. I’ve seen consistent growth and look forward to future opportunities with them.",
-      img: we5,
+      img: we2,
       name: "James P.",
       title: "Long-Term Investor",
     },
@@ -57,7 +57,7 @@ const Testimony = () => {
       id: 6,
       comment:
         "Investing in real estate can be complex, but Shoresh-group makes it simple and rewarding. Their deep market insights and strong management strategies ensure optimal returns. I highly recommend them to serious investors.",
-      img: we6,
+      img: we3,
       name: "Robert D.",
       title: "Commercial Real Estate Investor",
     },

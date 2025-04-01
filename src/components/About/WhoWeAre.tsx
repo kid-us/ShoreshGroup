@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { arrow, we1, we2, we3, we4 } from "../../assets";
+import { arrow, we1, we2, we3 } from "../../assets";
 import Container from "../Container/Container";
 
 const WhoWeAre = () => {
@@ -169,11 +169,6 @@ const WhoWeAre = () => {
               viewport={{ once: true }}
               className="relative rounded-xl overflow-hidden"
             >
-              <img
-                src={we4}
-                alt="Ceo"
-                className="lg:h-72 h-40 w-full object-cover object-top shadow shadow-black"
-              />
               <div className="bg-gradient-to-r from-neutral-900/50 to-neutral-900/50 h- w-full absolute bottom-0 left-0 leading-6 lg:p-3 p-1">
                 <p className="uppercase text-white poppins-semibold lg:text-lg text-sm">
                   Architect
