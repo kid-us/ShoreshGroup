@@ -108,9 +108,6 @@ import lgHero10 from "./hero/10.jpg";
 import we1 from "./we/1.jpg";
 import we2 from "./we/2.jpg";
 import we3 from "./we/3.jpg";
-import we4 from "./we/4.jpg";
-import we5 from "./we/5.jpg";
-import we6 from "./we/6.jpg";
 
 import arrow from "./arrow.svg";
 import aim from "./target.png";
@@ -254,9 +251,6 @@ export {
   we1,
   we2,
   we3,
-  we4,
-  we5,
-  we6,
   arrow,
   aim,
 

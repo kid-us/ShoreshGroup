@@ -1,5 +1,5 @@
 // import { motion } from "motion/react";
-import { we1, we2, we4, we5 } from "../../assets";
+import { we1, we2, we3 } from "../../assets";
 import Container from "../Container/Container";
 // import { useEffect, useState } from "react";
 // import LinkButton from "../Button/LinkButton";
@@ -20,13 +20,13 @@ const teams: Team[] = [
   },
   {
     id: 2,
-    img: we4,
+    img: we2,
     name: "David Sher",
     job_title: "Chief Financial Officer",
   },
   {
     id: 3,
-    img: we5,
+    img: we3,
     name: "Daniel Pitrone",
     job_title: "Chief Operating Officer",
   },
