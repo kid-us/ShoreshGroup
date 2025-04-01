@@ -26,9 +26,9 @@ const Mission = () => {
 
   return (
     <div className="overflow-hidden lg:mb-10">
-      <div className="relative lg:h-[85vh] h-auto w-full">
+      <div className="relative  h-auto w-full">
         <div className="container mx-auto">
-          <div className="lg:grid grid-cols-3 lg:my-50 mb-16 gap-x-8">
+          <div className="lg:grid grid-cols-3 mb-16 gap-x-8">
             <div className="flex items-center">
               <div className="lg:mt-20 mt-16">
                 <h1 className="lg:text-3xl text-2xl">Our</h1>
