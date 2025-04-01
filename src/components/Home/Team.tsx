@@ -15,26 +15,20 @@ const teams: Team[] = [
   {
     id: 1,
     img: we1,
-    name: "Sarah Michael",
-    job_title: "Founder & CEO",
+    name: "Johai Mor",
+    job_title: "Chief Executive Officer",
   },
   {
     id: 2,
     img: we4,
-    name: "James Arthur",
-    job_title: "President & CIO",
+    name: "David Sher",
+    job_title: "Chief Financial Officer",
   },
   {
     id: 3,
     img: we5,
-    name: "Shawn Mendes",
-    job_title: "Fund Manger",
-  },
-  {
-    id: 4,
-    img: we2,
-    name: "Martha Nicholas",
-    job_title: "Finance",
+    name: "Daniel Pitrone",
+    job_title: "Chief Operating Officer",
   },
 ];
 
@@ -67,8 +61,6 @@ const Team = () => {
   //   };
   // }, []);
 
-  const first3Team = teams.slice(0, 3);
-
   return (
     <Container>
       <div className="lg:col-span-2 lg:pt-16 lg:pb-10 py-8">
@@ -94,7 +86,7 @@ const Team = () => {
       </div>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pb-10">
-        {first3Team.map((t) => (
+        {teams.map((t) => (
           <div key={t.id}>
             <img
               src={t.img}
