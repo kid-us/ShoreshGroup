@@ -64,8 +64,8 @@ const Team = () => {
   return (
     <Container>
       <div className="lg:col-span-2 lg:pt-16 lg:pb-10 py-8">
-        <p className="text-sm uppercase text-white mb-10">Meet our Team</p>
-        <h1 className="font-semibold lg:text-3xl text-2xl  text-white">
+        <p className="text-sm uppercase text-white mb-5">Meet our Team</p>
+        {/* <h1 className="font-semibold lg:text-3xl text-2xl mb-8 text-white">
           We Build Wealth Through Smart Real Estate Investments.
         </h1>
 
@@ -82,7 +82,7 @@ const Team = () => {
 
         <p className="text-sm mb-2 text-white">
           We invite you to invest passively alongside us.
-        </p>
+        </p> */}
       </div>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pb-10">
